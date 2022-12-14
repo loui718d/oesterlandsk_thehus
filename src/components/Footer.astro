@@ -3,6 +3,7 @@ import "../styles/global.css";
 ---
 
 <footer>
+    <div class="footer_baggrund">
   <div class="footer_grid">
     <div>
       <h4>Butikker</h4>
@@ -32,30 +33,38 @@ import "../styles/global.css";
       <p class="body1">Firmaordninger</p>
       <p class="body1">Kontakt</p>
     </div>
-  </div>
+     </div> 
 
-  <div>
-    <div class="footer.linje">
-     <img src="public/img/ikoner_logo/ikoner_kontrol_trustpilot.svg" alt="testimonials" width="141" height="34">
+  <div class="ikoner">
+     <div>
+     <img src="public/img/ikoner_logo/ikoner_sociale_medier.svg" alt="some" width="138" height="30">
     </div>
     <div>
     <img src="public/img/ikoner_logo/ikoner_betaling.svg" alt="betalingskort" width="243" height="23">
     </div>
     <div>
-     <img src="public/img/ikoner_logo/ikoner_sociale_medier.svg" alt="some" width="138" height="30">
+     <img src="public/img/ikoner_logo/ikoner_kontrol_trustpilot.svg" alt="testimonials" width="141" height="34">
     </div>
   </div>
+     </div> 
 </footer>
 
 <style>
-.footer.linje {
-border-bottom: 2px solid var(--color-creme);
-display: flex;
-flex-direction: row;
-align-items: flex-start;
+.ikoner {
+border-top: 2px solid var(--color-creme);
 padding: 0px;
 gap: 24px;
-  }
+}
+.body1{
+color: var(--color-creme);
+}
+h4{
+color: var(--color-creme);
+}
+
+.footer_baggrund{
+background-color: var(--color-oliven-110);
+}
 
 .footer_grid {
 display: flex;
@@ -63,9 +72,7 @@ flex-direction: column;
 align-items: flex-start;
 padding: 0px;
 gap: 46px;
-color: var(--color-creme);
-    }
-
+}
 
   @media (min-width: 600px) {
 .footer_grid {
@@ -82,8 +89,7 @@ display: flex;
 flex-direction: row;
 align-items: flex-end;
 padding: 0px;
-gap:
- 12px;
+gap: 12px;
 }
   }
 </style>
