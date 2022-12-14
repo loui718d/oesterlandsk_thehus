@@ -39,12 +39,10 @@ import "../styles/global.css";
      <img src="" alt="testimonials" width="141" height="34">
     </div>
     <div>
-    <img src="" alt="betalingskort" width="28" height="34">
+    <img src="" alt="betalingskort" width="243" height="23">
     </div>
-    <div class="some.ikoner">
-     <img src="" alt="facebook" width="30" height="30">
-      <img src="" alt="instagram" width="30" height="30">
-       <img src="" alt="linkin" width="30" height="30">
+    <div>
+     <img src="" alt="some" width="138" height="30">
     </div>
   </div>
 </footer>
@@ -54,13 +52,24 @@ import "../styles/global.css";
     border-bottom: 2px solid var(--color-creme);
   }
 
-  .some.ikoner
-  {
+ .footer_grid {
 display: flex;
-  }
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 46px;
+    }
 
-  .footer_grid{
-    
+
+  @media (min-width: 600px) {
+.footer_grid {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 168px;
+justify-content: center;
   }
+    }
 </style>
 
