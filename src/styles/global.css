@@ -6,14 +6,14 @@
   --line-height-mob-body2-label-button: 22px;
   --line-height-mob-body1: 23px;
   --line-height-mob-h4-h5: 21px;
-  --line-height-mob-h3: 34px;
+  --line-height-mob-h3: 36px;
   --line-height-mob-h2: 47px;
   --line-height-mob-h1: 67px;
   --font-size-mob-body2: 12.8px;
   --font-size-mob-body1-label-button: 16px;
   --font-size-mob-h5: 20.25px;
   --font-size-mob-h4: 22.78px;
-  --font-size-mob-h3: 25.63px;
+  --font-size-mob-h3: 24.6px;
   --font-size-mob-h2: 28.83px;
   --font-size-mob-h1: 32.44px;
   --color-gul-130: #5e5939;
@@ -161,11 +161,11 @@ h5{
   font-weight: var(--font-weight-body-bold);
 }
 .body1i{
-  font-family: "EB Garamond, italic", serif;
+  font-family: "EB Garamond", serif;
+  font-style: italic;
   font-size: var(--font-size-mob-body1-label-button);
   color: var(--color-oliven);
   line-height: var(--line-height-mob-body1);
-  font-weight: var(--font-weight-body-bold);
 }
 .body2{
   font-family: "EB Garamond", serif;
@@ -180,5 +180,32 @@ h5{
   line-height: var(--line-height-mob-body2-label-button);
   font-weight: var(--font-weight-body-bold);
 }
+.body2i{
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-size: var(--font-size-mob-body2-label-button);
+  color: var(--color-oliven);
+  line-height: var(--line-height-mob-body2-label-button);
+}
+.label{
+  font-family: "EB Garamond", serif;
+  font-size: var(--font-size-mob-body1-label-button);
+  color: var(--color-oliven);
+  line-height: var(--line-height-mob-body2-label-button);
+  letter-spacing:var(--letter-spacing-label-button);
+  font-weight: var(--font-weight-label);
+}
+button{
+  font-family: "EB Garamond", serif;
+  font-size: var(--font-size-mob-body1-label-button);
+  color: var(--color-oliven);
+  line-height: var(--line-height-mob-body2-label-button);
+  letter-spacing:var(--letter-spacing-label-button);
+  font-weight: var(--font-weight-button-mob);
+}
+
 
 /* Desktop font styling */
+@media screen {
+  
+}
