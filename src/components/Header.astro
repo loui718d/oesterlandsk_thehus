@@ -2,36 +2,44 @@
 import "../styles/global.css";
 ---
 
-<header class="sticky top-0">
-  <div id="stickyhead" class="sticky top-0 hidden h-24 bg-lyslilla"></div>
+<header class="">
+  <div id="stickyhead" class=""></div>
   <!-- <div class="fixed top-0 md:visible">
         <img class="h-20" src="/img/logo_beige1.svg" alt="" />
       </div> -->
-  <div class="fixed top-4 left-6">
+  <div class="logo">
     <a href="index.html">
-      <img class="h-16" src="/img/ikoner_logo/Logo_gron.svg" alt="" />
+      <img class="" src="/img/ikoner_logo/Logo_gron.svg" alt="" />
     </a>
   </div>
-  <div id="mySidepanel" class="sidepanel visible md:invisible">
+  <div id="mySidepanel" class="sidepanel">
     <a href="javascript:void(0)" class="closebtn"
-      ><img src="/img/x.svg" alt="" />
+      ><img src="/img/ikoner_logo/X.svg" alt="" />
     </a>
-    <a href="program.html">Program</a>
-    <a href="events.html">Events</a>
-    <a href="find_os.html">Lokationer</a>
+    <a href="te.astro">Shop Te</a>
+    <a href="te.astro">Shop Kaffe</a>
+    <a href="te.astro">Shop andre produkter</a>
+    <a href="kontakt.astro">Kontakt</a>
+    <a href="historie.astro">Vores historie</a>
+    <a href="laesOm_te.astro">Læs om te</a>
+    <a href="laesOm_te.astro">Læs om kaffe</a>
 
-    <div class="subnav">
+    <div>
+      <div><img src="" alt="" /><img src="" alt="" /><img src="" alt="" /></div>
+    </div>
+
+    <!-- <div class="subnav">
       <button class="subnavbtn">Om os</button>
       <div class="subnav-content">
         <a href="om_vaermed.html">Vær med</a>
         <a href="om_kontakt.html">Kontakt</a>
         <a href="om_vildskud.html">Om Vildskud</a>
       </div>
-    </div>
+    </div> -->
   </div>
   <div id="open">
     <button class="openbtn visible md:invisible">
-      <img src="/img/menulilla.svg" alt="" />
+      <img src="/img/ikoner_logo/menu.svg" alt="" />
     </button>
   </div>
   <nav
@@ -39,7 +47,7 @@ import "../styles/global.css";
     class="invisible fixed top-3 right-0 mr-10 flex gap-16 md:visible md:p-7"
   >
     <ul class="flex gap-16">
-      <li><a class="text-lilla" href="program.html">Program</a></li>
+      <li><a class="text-lilla" href="program.html">hej</a></li>
       <li>
         <a class="text-lilla" href="events.html">Events</a>
       </li>
@@ -47,11 +55,16 @@ import "../styles/global.css";
         <a class="text-lilla" href="find_os.html">Lokationer</a>
       </li>
     </ul>
-    <div class="mr-3 flex flex-wrap">
-      <button class="subnavbtn2 peer text-lilla">Om os</button>
+    <div class="logo_desk">
+      <a href="index.html">
+        <img class="" src="/img/ikoner_logo/Logo_gron.svg" alt="" />
+      </a>
+    </div>
+    <div class="dropdown mr-3 flex flex-wrap">
+      <button class="subnavbtn peer text-lilla">Om os</button>
       <img src="/img/chevron-down.svg" alt="" />
       <div
-        class="subnav-content2 absolute mt-6 hidden gap-2 pt-2 text-lilla hover:grid peer-hover:grid"
+        class="subnav-content2 absolute mt-6 hidden gap-2 pt-2 hover:grid peer-hover:grid"
       >
         <a href="om_vaermed.html">Vær med</a>
         <a href="om_kontakt.html">Kontakt</a>
@@ -63,6 +76,33 @@ import "../styles/global.css";
 
 <style>
   /* Nav */
+
+  header {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-creme);
+  }
+  #nav_desktop {
+    display: none;
+  }
+
+  #stickyhead {
+    background-color: var(--color-creme);
+    position: sticky;
+    top: 0;
+    height: 178px;
+    display: block;
+  }
+
+  .logo {
+    position: fixed;
+    top: 4px;
+  }
+
+  ul {
+    display: flex;
+    gap: 16px;
+  }
   .sidepanel {
     height: 100%; /* Specify a height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -70,10 +110,11 @@ import "../styles/global.css";
     z-index: 1; /* Stay on top */
     top: 0;
     right: 0;
-    background-color: #e8e1d1; /* Black*/
+    background-color: var(--color-creme); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+    display: block;
   }
 
   /* The sidepanel links */
@@ -109,10 +150,11 @@ import "../styles/global.css";
     right: 10px;
     font-size: 20px;
     cursor: pointer;
-    color: white;
+    background-color: var(--color-creme);
     padding: 10px 15px;
     border: none;
     place-self: end end;
+    display: block;
   }
 
   .openbtn img {
@@ -163,4 +205,83 @@ import "../styles/global.css";
   .subnav:hover .subnav-content {
     display: block;
   }
+  .logo img {
+    height: 97px;
+  }
+
+  a {
+    font-family: "EB Garamond", serif;
+    font-size: var(--font-size-mob-h3);
+    color: var(--color-oliven);
+    line-height: var(--line-height-mob-h3);
+  }
+
+  @media (min-width: 600px) {
+    .sidepanel {
+      display: none;
+    }
+    .openbtn {
+      display: none;
+    }
+    #nav_desktop {
+      display: block;
+      padding: 7px;
+      display: none;
+      display: flex;
+      position: fixed;
+      top: 3px;
+      gap: 16px;
+      background-color: var(--color-creme);
+    }
+    .dropdown {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #stickyhead {
+      display: none;
+    }
+
+    .logo {
+      display: none;
+    }
+
+    a {
+      font-family: "EB Garamond", serif;
+      font-size: var(--font-size-web-h5);
+      color: var(--color-oliven);
+      line-height: var(--line-height-web-h4-h5);
+    }
+  }
 </style>
+
+<script>
+  const openNav = document.querySelector(".openbtn");
+  const closeNav = document.querySelector(".closebtn");
+  const myNav = document.getElementById("stickyhead");
+
+  openNav.addEventListener("click", open);
+  closeNav.addEventListener("click", close);
+  function open() {
+    document.getElementById("mySidepanel").style.width = "100%";
+  }
+
+  /* Set the width of the sidebar to 0 (hide it) */
+  function close() {
+    document.getElementById("mySidepanel").style.width = "0";
+  }
+
+  // window.onscroll = function () {
+  //   scrollFunction();
+  // };
+
+  // function scrollFunction() {
+  //   if (
+  //     document.body.scrollTop > 60 ||
+  //     document.documentElement.scrollTop > 60
+  //   ) {
+  //     myNav.style.display = "block";
+  //   } else {
+  //     myNav.style.display = "none";
+  //   }
+  // }
+</script>
