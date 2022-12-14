@@ -91,7 +91,8 @@
   --font-family-headings: "BuenaParkJF", serif;
   --font-size-web-body2: 12.8px;
   --font-size-web-body1-label: 16px;
-  --font-size-web-h5-button: 20px;
+  --font-size-web-h5: 20px;
+  --font-size-web-button: 22px;
   --font-size-web-h4: 25px;
   --font-size-web-h3: 31.25px;
   --font-size-web-h2: 39.06px;
@@ -105,3 +106,12 @@
   --line-height-web-h2: 57px;
   --line-height-web-h1: 97px;
 }
+
+/* h5 {
+  font-family: "open-sans", sans-serif;
+  border-bottom: 1px solid #656d74;
+  letter-spacing: var(--letter-spacing-header-4-5);
+  font-size: var(--font-size-label-button);
+  color: var(--color-secondary-mint);
+  padding: var(--spacing-8);
+} */
