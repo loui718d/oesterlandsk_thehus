@@ -1,4 +1,6 @@
 ---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 import "../styles/global.css";
 ---
 
@@ -13,37 +15,46 @@ import "../styles/global.css";
   </head>
 
   <body>
-    <header></header>
+    <Header />
 
     <main>
       <h1>KONTAKT</h1>
-        <section class="section_1">
+      <section class="section_1">
         <h3>BUTIKKER & ÅBNINGSTIDER</h3>
-          <div>
-            <p class="body1b">Nørre Voldgade 9, 1358 København</p>
-            <p class="body1">Mandag til torsdag Kl. 10:00 - 18:00</p>
-            <p class="body1">Fredag Kl. 10:00 - 19:00</p>
-            <p class="body1">Lørdag Kl. 10:00 - 18:00</p>
-            <p class="body1">Søndag Kl. 11:00 - 17:00</p>
-          </div>
-          <div>
-            <p class="body1b">Falkonér Allé 11, 2000 Frederiksberg</p>
-            <p class="body1">Mandag til torsdag Kl. 10:00 - 18:00</p>
-            <p class="body1">Fredag Kl. 10:00 - 19:00</p>
-            <p class="body1">Lørdag Kl. 10:00 - 17:00</p>
-            <p class="body1">Søndag Kl. 11:00 - 16:00</p>
-          </div>
-          <div>
-            <p class="body1b">Likørstræde 5, 2800 Kongens Lyngby</p>
-            <p class="body1">Mandag til fredag Kl. 10:00 - 18:00</p>
-            <p class="body1">Lørdag Kl. 10:00 - 17:00</p>
-            <p class="body1">Søndag Lukket</p>
-          </div>
-          <div>
-            <p class="body1b">Magasin Du Nord Kongens Nytorv 13, 1095 København</p>
-            <p class="body1">Alle ugens dage Kl. 10:00 - 20:00</p>
-          </div>
-        <div><img src="public/img/billeder/kortkontakt.svg" alt="kort" width="325" height="320"/></div>
+        <div>
+          <p class="body1b">Nørre Voldgade 9, 1358 København</p>
+          <p class="body1">Mandag til torsdag Kl. 10:00 - 18:00</p>
+          <p class="body1">Fredag Kl. 10:00 - 19:00</p>
+          <p class="body1">Lørdag Kl. 10:00 - 18:00</p>
+          <p class="body1">Søndag Kl. 11:00 - 17:00</p>
+        </div>
+        <div>
+          <p class="body1b">Falkonér Allé 11, 2000 Frederiksberg</p>
+          <p class="body1">Mandag til torsdag Kl. 10:00 - 18:00</p>
+          <p class="body1">Fredag Kl. 10:00 - 19:00</p>
+          <p class="body1">Lørdag Kl. 10:00 - 17:00</p>
+          <p class="body1">Søndag Kl. 11:00 - 16:00</p>
+        </div>
+        <div>
+          <p class="body1b">Likørstræde 5, 2800 Kongens Lyngby</p>
+          <p class="body1">Mandag til fredag Kl. 10:00 - 18:00</p>
+          <p class="body1">Lørdag Kl. 10:00 - 17:00</p>
+          <p class="body1">Søndag Lukket</p>
+        </div>
+        <div>
+          <p class="body1b">
+            Magasin Du Nord Kongens Nytorv 13, 1095 København
+          </p>
+          <p class="body1">Alle ugens dage Kl. 10:00 - 20:00</p>
+        </div>
+        <div>
+          <img
+            src="public/img/billeder/kortkontakt.svg"
+            alt="kort"
+            width="325"
+            height="320"
+          />
+        </div>
       </section>
       <section class="section_2">
         <div class="info_grid">
@@ -66,15 +77,29 @@ import "../styles/global.css";
         <div>
           <div class="container">
             <form>
-          
               <label for="fname">Fulde navn</label>
-              <input type="text" id="fname" name="firstname" placeholder="eks. Anders Andersen">
-          
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="eks. Anders Andersen"
+              />
+
               <label for="lname">Email</label>
-              <input type="text" id="lname" name="lastname" placeholder="eks. anders@andersen.com">
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="eks. anders@andersen.com"
+              />
 
               <label for="lname">Emne</label>
-              <input type="text" id="lname" name="lastname" placeholder="eks. returnering">
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="eks. returnering"
+              />
 
               <label for="fname">Privatkunde/webshop henvendelser</label>
               <select id="privat/webshop" name="privat/webshop">
@@ -82,69 +107,73 @@ import "../styles/global.css";
                 <option value="privatkunde">Privatkunde</option>
                 <option value="webshop">Webshop henvendelser</option>
               </select>
-              <textarea id="subject" name="subject" placeholder="Skriv din besked her.." style="height:200px"></textarea>
-          
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Skriv din besked her.."
+                style="height:200px"></textarea>
             </form>
           </div>
           <button></button>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <Footer />
   </body>
 
+  <style>
+    /* mobil */
+    .info_grid {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 28px;
+      justify-content: center;
+    }
 
-<style>
-/* mobil */
-.info_grid{
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 28px;
-justify-content: center
-}
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #413c1c;
+      border-radius: 12px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    .container {
+      border-radius: 10px;
+      padding: 30px;
+    }
 
-input[type=text], select, textarea {
-  width: 100%; 
-  padding: 12px; 
-  border: 2px solid #413C1C; 
-  border-radius: 12px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
-  resize: vertical 
-}
-.container {
-  border-radius: 10px;
-  padding: 30px;
-  }
-
-.section_1{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 32px;
-  }
-
+    .section_1 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+    }
 
     /* desktop */
     @media (min-width: 600px) {
-      .section_1{
+      .section_1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
       }
-      .div_1{
+      .div_1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
       }
-      .section_2{
+      .section_2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
       }
       .container {
-  border-radius: 10px;
-  padding: 30px;
-}
+        border-radius: 10px;
+        padding: 30px;
+      }
     }
   </style>
+</html>

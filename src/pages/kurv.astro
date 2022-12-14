@@ -1,4 +1,6 @@
 ---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 import "../styles/global.css";
 ---
 
@@ -13,7 +15,7 @@ import "../styles/global.css";
   </head>
 
   <body>
-    <header></header>
+    <Header />
 
     <main>
       <a href=""></a>
@@ -50,11 +52,13 @@ import "../styles/global.css";
         <div><div><a href=""></a></div><div><a href=""></a></div></div>
       </section>
     </main>
-    <footer></footer>
+
+    <Footer />
+
+    <style>
+      /* desktop */
+      @media (min-width: 600px) {
+      }
+    </style>
   </body>
-  <style>
-    /* desktop */
-    @media (min-width: 600px) {
-    }
-  </style>
 </html>
