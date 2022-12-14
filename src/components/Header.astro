@@ -16,13 +16,13 @@ import "../styles/global.css";
     <a href="javascript:void(0)" class="closebtn"
       ><img src="/img/ikoner_logo/X.svg" alt="" />
     </a>
-    <a href="/te.astro">Shop Te</a>
-    <a href="/te.astro">Shop Kaffe</a>
-    <a href="/te.astro">Shop andre produkter</a>
-    <a href="/kontakt.astro">Kontakt</a>
-    <a href="/historie.astro">Vores historie</a>
-    <a href="/laesOm_te.astro">Læs om te</a>
-    <a href="/laesOm_te.astro">Læs om kaffe</a>
+    <a href="/te.html">Shop Te</a>
+    <a href="/te.html">Shop Kaffe</a>
+    <a href="/te.html">Shop andre produkter</a>
+    <a href="/kontakt.html">Kontakt</a>
+    <a href="/historie.html">Vores historie</a>
+    <a href="/laesOm_te.html">Læs om te</a>
+    <a href="/laesOm_te.html">Læs om kaffe</a>
 
     <div>
       <div>
@@ -50,12 +50,12 @@ import "../styles/global.css";
   <nav id="nav_desktop" class="">
     <div class="nav1">
       <ul class="">
-        <li><a class="text-lilla" href="program.html">TE</a></li>
+        <li><a class="text-lilla" href="/te.html">TE</a></li>
         <li>
-          <a class="text-lilla" href="events.html">KAFFE</a>
+          <a class="text-lilla" href="/te.html">KAFFE</a>
         </li>
         <li>
-          <a class="text-lilla" href="find_os.html">ANDRE PRODUKTER</a>
+          <a class="text-lilla" href="/te.html">ANDRE PRODUKTER</a>
         </li>
       </ul>
     </div>
@@ -69,16 +69,16 @@ import "../styles/global.css";
         <button class="subnavbtn peer text-lilla">LÆS OM</button>
         <img src="/img/ikoner_logo/trkant_ned.svg" alt="" />
         <div class="subnav-content">
-          <a href="om_vaermed.html">Læs om te</a>
-          <a href="om_kontakt.html">Læs om kaffe</a>
+          <a href="/laesOm_te.html">Læs om te</a>
+          <a href="/laesOm_te.html">Læs om kaffe</a>
         </div>
       </div>
       <div class="subnav mr-3 flex flex-wrap">
         <button class="subnavbtn peer text-lilla">OM OS</button>
         <img src="/img/ikoner_logo/trkant_ned.svg" alt="" />
         <div class="subnav-content">
-          <a href="om_vaermed.html">Vores historie</a>
-          <a href="om_kontakt.html">Kontakt</a>
+          <a href="/historie.html">Vores historie</a>
+          <a href="/kontakt.html">Kontakt</a>
         </div>
       </div>
       <div>
@@ -95,9 +95,9 @@ import "../styles/global.css";
   /* Nav */
 
   header {
-    position: sticky;
     top: 0;
     background-color: var(--color-creme);
+    height: 150px;
   }
   #nav_desktop {
     display: none;
@@ -105,14 +105,14 @@ import "../styles/global.css";
 
   #stickyhead {
     background-color: var(--color-creme);
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     height: 178px;
     display: block;
   }
 
   .logo {
-    position: fixed;
+    position: absolute;
     top: 4px;
   }
 
@@ -169,7 +169,7 @@ import "../styles/global.css";
 
   /* Style the button that is used to open the sidepanel */
   .openbtn {
-    position: fixed; /* Stay in place */
+    position: absolute; /* Stay in place */
     /* Stay on top */
     top: 20px;
     right: 10px;
@@ -265,7 +265,7 @@ import "../styles/global.css";
       padding: 7px;
       display: grid;
       grid-template-columns: 2fr 1fr 2fr;
-      position: fixed;
+      position: absolute;
       top: 3px;
       gap: 16px;
       background-color: var(--color-creme);
