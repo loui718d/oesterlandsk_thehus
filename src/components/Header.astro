@@ -47,12 +47,12 @@ import "../styles/global.css";
     class="invisible fixed top-3 right-0 mr-10 flex gap-16 md:visible md:p-7"
   >
     <ul class="flex gap-16">
-      <li><a class="text-lilla" href="program.html">hej</a></li>
+      <li><a class="text-lilla" href="program.html">TE</a></li>
       <li>
-        <a class="text-lilla" href="events.html">Events</a>
+        <a class="text-lilla" href="events.html">KAFFE</a>
       </li>
       <li>
-        <a class="text-lilla" href="find_os.html">Lokationer</a>
+        <a class="text-lilla" href="find_os.html">ANDRE PRODUKTER</a>
       </li>
     </ul>
     <div class="logo_desk">
@@ -60,15 +60,20 @@ import "../styles/global.css";
         <img class="" src="/img/ikoner_logo/Logo_gron.svg" alt="" />
       </a>
     </div>
-    <div class="dropdown mr-3 flex flex-wrap">
+    <div class="subnav mr-3 flex flex-wrap">
+      <button class="subnavbtn peer text-lilla">Læs os</button>
+      <img src="/img/ikoner_logo/trkant_ned.svg" alt="" />
+      <div class="subnav-content">
+        <a href="om_vaermed.html">Læs om te</a>
+        <a href="om_kontakt.html">Læs om kaffe</a>
+      </div>
+    </div>
+    <div class="subnav mr-3 flex flex-wrap">
       <button class="subnavbtn peer text-lilla">Om os</button>
-      <img src="/img/chevron-down.svg" alt="" />
-      <div
-        class="subnav-content2 absolute mt-6 hidden gap-2 pt-2 hover:grid peer-hover:grid"
-      >
-        <a href="om_vaermed.html">Vær med</a>
+      <img src="/img/ikoner_logo/trkant_ned.svg" alt="" />
+      <div class="subnav-content">
+        <a href="om_vaermed.html">Vores historie</a>
         <a href="om_kontakt.html">Kontakt</a>
-        <a href="om_vildskud.html">Om Vildskud</a>
       </div>
     </div>
   </nav>
@@ -102,6 +107,9 @@ import "../styles/global.css";
   ul {
     display: flex;
     gap: 16px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
   .sidepanel {
     height: 100%; /* Specify a height */
@@ -120,12 +128,12 @@ import "../styles/global.css";
   /* The sidepanel links */
   .sidepanel a,
   .subnavbtn {
-    padding: 8px 8px 8px 32px;
+    padding: 2px;
     text-decoration: none;
-    font-size: 25px;
-    color: #6432c9;
+    background-color: var(--color-creme);
     display: block;
     transition: 0.3s;
+    border: none;
   }
 
   /* When you mouse over the navigation links, change their color */
@@ -167,8 +175,9 @@ import "../styles/global.css";
 
   /* The subnavigation menu */
   .subnav {
-    float: left;
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
   }
 
   /* Subnav button */
@@ -176,29 +185,36 @@ import "../styles/global.css";
   /* Add a red background color to navigation links on hover */
   a:hover,
   .subnav:hover .subnavbtn {
-    color: #ff6434;
+    color: var(--color-oliven-90);
   }
 
   /* Style the subnav content - positioned absolute */
   .subnav-content {
     position: absolute;
-    left: 0;
-    background-color: none;
-    width: 100%;
+    top: 80px;
+    background-color: var(--color-oliven);
+    width: 150px;
     z-index: 1;
+    display: none;
+    padding-top: 10px;
+    gap: 16px;
+    border-radius: 7px;
+    padding-bottom: 10px;
+  }
+  .subnav:hover .subnav-content {
+    display: block;
   }
 
   /* Style the subnav links */
   .subnav-content a {
     margin-left: 20px;
-    color: #6432c9;
-    text-decoration: none;
-    font-size: 20px;
+    margin-right: 20px;
+    color: var(--color-creme);
   }
 
   /* Add a grey background color on hover */
   .subnav-content a:hover {
-    color: #ff6434;
+    color: var(--color-creme-110);
   }
 
   /* When you move the mouse over the subnav container, open the subnav content */
@@ -214,6 +230,7 @@ import "../styles/global.css";
     font-size: var(--font-size-mob-h3);
     color: var(--color-oliven);
     line-height: var(--line-height-mob-h3);
+    text-decoration: none;
   }
 
   @media (min-width: 600px) {
@@ -232,17 +249,20 @@ import "../styles/global.css";
       top: 3px;
       gap: 16px;
       background-color: var(--color-creme);
+      width: 100%;
+      justify-content: center;
+      height: 100px;
     }
-    .dropdown {
-      display: flex;
-      flex-wrap: wrap;
-    }
+
     #stickyhead {
       display: none;
     }
 
     .logo {
       display: none;
+    }
+    .logo_desk img {
+      height: 100px;
     }
 
     a {
