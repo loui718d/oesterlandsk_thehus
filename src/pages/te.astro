@@ -1,4 +1,5 @@
 ---
+import Filter from "../components/Filter.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import "../styles/global.css";
@@ -17,26 +18,56 @@ import "../styles/global.css";
   <body>
     <Header />
     <main>
-      <a href=""></a>
-      <section>
-        <div></div><h1></h1><p></p><h3></h3><div>
-          <div><img src="" alt="" /><h5></h5></div>
-        </div>
-      </section>
-      <section>
-        <div>
-          <!-- filtrering -->
-        </div>
-        <div>
-          <div>
-            <div>
-              <!-- produktsøgning -->
-            </div>
-            <div>
-              <!-- sorter efter -->
-            </div>
+      <div class="brodkrumme">
+        <a href="">Hjem</a><img src="/img/ikoner_logo/pil_hojre.svg" alt="" /><p
+        >
+          Te
+        </p>
+      </div>
+      <section class="section1">
+        <div></div><h1>TE</h1><p>
+          Vores sortiment spænder over de fineste kvaliteter af rene sorte,
+          grønne og hvide theer, de mere moderne theer tilført aroma og over til
+          rooibos the, urtethe og frugt theer. Et stort udvalg af vores theer er
+          desuden økologiske. Tag et kig i vores brede sortiment af the! Benyt
+          evt. menuen til venstre for en mere overskuelig oplevelse.
+        </p>
+        <h3>Vælg variant</h3>
+        <div class="variant">
+          <div class="">
+            <a href="">
+              <img src="/img/Billeder/loes_te_valg.svg" alt="løs te" />
+            </a><h5>Løs te</h5>
           </div>
           <div>
+            <img src="/img/Billeder/daaser_valg.svg" alt="dåser te" /><h5>
+              Dåser
+            </h5>
+          </div>
+          <div>
+            <img src="/img/Billeder/tebreve_valg.svg" alt="Tebreve" /><h5>
+              Tebreve
+            </h5>
+          </div>
+        </div>
+      </section>
+      <section class="filter">
+        <div>
+          <Filter />
+        </div>
+        <div>
+          <div class="filter2">
+            <div class="sog">
+              <p>Produktsøgning</p><img
+                src="/img/ikoner_logo/sog.svg"
+                alt="søg"
+              />
+            </div>
+            <div>
+              <button>Sortering</button>
+            </div>
+          </div>
+          <div class="card_grid">
             <!-- cards indsættes her -->
             <article></article>
             <article></article>
@@ -54,8 +85,92 @@ import "../styles/global.css";
     <Footer />
   </body>
   <style>
+    .section1 p {
+      max-width: 750px;
+      justify-self: center;
+      margin-bottom: 50px;
+    }
+    .brodkrumme {
+      display: flex;
+    }
+    .brodkrumme img {
+      height: 16px;
+    }
+
+    .brodkrumme a {
+      font-family: "EB Garamond", serif;
+      font-size: var(--font-size-web-body1-label);
+      color: var(--color-oliven);
+      line-height: var(--line-height-web-body1);
+      font-weight: var(--font-weight-body-bold);
+      /* text-decoration: none; */
+    }
+
+    .variant {
+      display: flex;
+      place-content: center;
+      gap: 16px;
+      margin-bottom: 60px;
+    }
+    .variant img:hover {
+      filter: drop-shadow(8px 8px 10px gray);
+    }
+    .variant img {
+      max-width: 100px;
+    }
+
+    .section1 {
+      text-align: center;
+      display: grid;
+      justify-content: center;
+    }
+
+    .sog {
+      display: flex;
+      justify-content: space-between;
+      width: 320px;
+      height: 35px;
+      border-radius: 14px;
+      background: var(--color-creme-70);
+      padding: 6px;
+      align-content: center;
+      color: var(--color-oliven-90);
+    }
+
+    .filter2 {
+      margin-top: 46px;
+    }
+
+    article {
+      height: 280px;
+      width: 230px;
+      background-color: var(--color-creme-70);
+      border-radius: 20px;
+    }
     /* desktop */
     @media (min-width: 600px) {
+      .brodkrumme {
+        grid-column: 2/3;
+      }
+
+      .variant img {
+        max-width: 300px;
+      }
+      .filter {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+      }
+      .filter2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .card_grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 60px;
+      }
     }
   </style>
 </html>
