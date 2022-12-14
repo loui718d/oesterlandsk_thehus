@@ -25,7 +25,12 @@ import "../styles/global.css";
     <a href="/laesOm_te.astro">Læs om kaffe</a>
 
     <div>
-      <div><img src="" alt="" /><img src="" alt="" /><img src="" alt="" /></div>
+      <div>
+        <a href=""><img src="/img/ikoner_logo/profil.svg" alt="" /></a><a
+          href="/kurv.astro"
+          ><img src="/img/ikoner_logo/indkobskurv.svg" alt="" />
+        </a><a href=""><img src="/img/ikoner_logo/hjelp.svg" alt="" /></a>
+      </div>
     </div>
 
     <!-- <div class="subnav">
@@ -42,38 +47,45 @@ import "../styles/global.css";
       <img src="/img/ikoner_logo/menu.svg" alt="" />
     </button>
   </div>
-  <nav
-    id="nav_desktop"
-    class="invisible fixed top-3 right-0 mr-10 flex gap-16 md:visible md:p-7"
-  >
-    <ul class="flex gap-16">
-      <li><a class="text-lilla" href="program.html">TE</a></li>
-      <li>
-        <a class="text-lilla" href="events.html">KAFFE</a>
-      </li>
-      <li>
-        <a class="text-lilla" href="find_os.html">ANDRE PRODUKTER</a>
-      </li>
-    </ul>
+  <nav id="nav_desktop" class="">
+    <div class="nav1">
+      <ul class="">
+        <li><a class="text-lilla" href="program.html">TE</a></li>
+        <li>
+          <a class="text-lilla" href="events.html">KAFFE</a>
+        </li>
+        <li>
+          <a class="text-lilla" href="find_os.html">ANDRE PRODUKTER</a>
+        </li>
+      </ul>
+    </div>
     <div class="logo_desk">
       <a href="index.html">
-        <img class="" src="/img/ikoner_logo/Logo_gron.svg" alt="" />
+        <img class="" src="/img/ikoner_logo/Logo_gron.svg" alt="logo" />
       </a>
     </div>
-    <div class="subnav mr-3 flex flex-wrap">
-      <button class="subnavbtn peer text-lilla">Læs os</button>
-      <img src="/img/ikoner_logo/trkant_ned.svg" alt="" />
-      <div class="subnav-content">
-        <a href="om_vaermed.html">Læs om te</a>
-        <a href="om_kontakt.html">Læs om kaffe</a>
+    <div class="nav3">
+      <div class="subnav mr-3 flex flex-wrap">
+        <button class="subnavbtn peer text-lilla">LÆS OM</button>
+        <img src="/img/ikoner_logo/trkant_ned.svg" alt="" />
+        <div class="subnav-content">
+          <a href="om_vaermed.html">Læs om te</a>
+          <a href="om_kontakt.html">Læs om kaffe</a>
+        </div>
       </div>
-    </div>
-    <div class="subnav mr-3 flex flex-wrap">
-      <button class="subnavbtn peer text-lilla">Om os</button>
-      <img src="/img/ikoner_logo/trkant_ned.svg" alt="" />
-      <div class="subnav-content">
-        <a href="om_vaermed.html">Vores historie</a>
-        <a href="om_kontakt.html">Kontakt</a>
+      <div class="subnav mr-3 flex flex-wrap">
+        <button class="subnavbtn peer text-lilla">OM OS</button>
+        <img src="/img/ikoner_logo/trkant_ned.svg" alt="" />
+        <div class="subnav-content">
+          <a href="om_vaermed.html">Vores historie</a>
+          <a href="om_kontakt.html">Kontakt</a>
+        </div>
+      </div>
+      <div>
+        <a href=""><img src="/img/ikoner_logo/profil.svg" alt="" /></a><a
+          href="/kurv.astro"
+          ><img src="/img/ikoner_logo/indkobskurv.svg" alt="" />
+        </a><a href=""><img src="/img/ikoner_logo/hjelp.svg" alt="" /></a>
       </div>
     </div>
   </nav>
@@ -106,10 +118,11 @@ import "../styles/global.css";
 
   ul {
     display: flex;
-    gap: 16px;
+
     list-style-type: none;
     margin: 0;
     padding: 0;
+    gap: 80px;
   }
   .sidepanel {
     height: 100%; /* Specify a height */
@@ -120,7 +133,7 @@ import "../styles/global.css";
     right: 0;
     background-color: var(--color-creme); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+    padding-top: 80px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
     display: block;
   }
@@ -135,10 +148,14 @@ import "../styles/global.css";
     transition: 0.3s;
     border: none;
   }
+  .sidepanel a {
+    padding-left: 50px;
+    margin-bottom: 10px;
+  }
 
   /* When you mouse over the navigation links, change their color */
   .sidepanel a:hover {
-    color: #ff6434;
+    color: var(--color-oliven-90);
   }
 
   /* Position and style the close button (top right corner) */
@@ -146,7 +163,7 @@ import "../styles/global.css";
     position: absolute;
     top: 20px;
     right: 25px;
-    font-size: 36px;
+
     margin-left: 50px;
   }
 
@@ -178,6 +195,7 @@ import "../styles/global.css";
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    gap: 8px;
   }
 
   /* Subnav button */
@@ -191,13 +209,13 @@ import "../styles/global.css";
   /* Style the subnav content - positioned absolute */
   .subnav-content {
     position: absolute;
-    top: 80px;
+    top: 30px;
     background-color: var(--color-oliven);
-    width: 150px;
+    width: 160px;
     z-index: 1;
     display: none;
     padding-top: 10px;
-    gap: 16px;
+    gap: 20px;
     border-radius: 7px;
     padding-bottom: 10px;
   }
@@ -209,6 +227,7 @@ import "../styles/global.css";
   .subnav-content a {
     margin-left: 20px;
     margin-right: 20px;
+
     color: var(--color-creme);
   }
 
@@ -225,7 +244,8 @@ import "../styles/global.css";
     height: 97px;
   }
 
-  a {
+  a,
+  button {
     font-family: "EB Garamond", serif;
     font-size: var(--font-size-mob-h3);
     color: var(--color-oliven);
@@ -233,7 +253,7 @@ import "../styles/global.css";
     text-decoration: none;
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 800px) {
     .sidepanel {
       display: none;
     }
@@ -243,15 +263,25 @@ import "../styles/global.css";
     #nav_desktop {
       display: block;
       padding: 7px;
-      display: none;
-      display: flex;
+      display: grid;
+      grid-template-columns: 2fr 1fr 2fr;
       position: fixed;
       top: 3px;
       gap: 16px;
       background-color: var(--color-creme);
       width: 100%;
+      height: 150px;
+      align-items: center;
       justify-content: center;
-      height: 100px;
+    }
+
+    .nav1 {
+      display: grid;
+      justify-content: center;
+    }
+    .nav3 {
+      display: flex;
+      gap: 80px;
     }
 
     #stickyhead {
@@ -264,12 +294,17 @@ import "../styles/global.css";
     .logo_desk img {
       height: 100px;
     }
+    .logo_desk {
+      justify-self: center;
+    }
 
-    a {
+    a,
+    button {
       font-family: "EB Garamond", serif;
       font-size: var(--font-size-web-h5);
       color: var(--color-oliven);
       line-height: var(--line-height-web-h4-h5);
+      font-weight: 400;
     }
   }
 </style>
