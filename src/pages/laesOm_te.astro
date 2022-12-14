@@ -19,7 +19,7 @@ import "../styles/global.css";
     <main>
       <h1>BLIV KLOGERE PÅ TEVARIANTER</h1>
       <section>
-        <div>
+        <div class="div_1">
           <div><h2>Sort te</h2><p class="body1">Forskellen mellem grøn, hvid, gul, oolong og sort the, findes i behandlingen af thebladene efter plukning. Al reel the kommer nemlig fra theplanten, Camellia Sinensis. Typisk er det mængden af oxidering, en proces hvor thebladene reagerer med ilt, der er et vigtigt element i at bestemme typen af the. Sort the er kendetegnet ved at være oxideret helt, nærmere bestemt mellem 90 og 99,99 %. Denne oxidation er med til at udvikle smagen i sort the. Thebladene i sort the får en mørkebrun farve, når de er færdigoxiderede. Dette har givet theen navnet ”sort the” i vesten. I Kina kaldes theen kaldt for 'rød the', efter den rødlige og kobberagtige farve, som den bryggede the antager. Modsat manges overbevisning, er sort the ikke fermenteret.</p></div>
           <div><img src="public/img/billeder/sortte.svg" alt="sortte"></div>
         </div>
@@ -34,8 +34,15 @@ import "../styles/global.css";
     <footer></footer>
   </body>
   <style>
+h1{
+  grid-column: 2/3;
+}
     /* desktop */
     @media (min-width: 600px) {
+      .div_1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
     }
   </style>
 </html>
