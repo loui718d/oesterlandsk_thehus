@@ -23,11 +23,51 @@ import "../styles/global.css";
         </div>
       </section>
       <section>
-        <div>
+        <div class="div_1">
+          <div class="div_2">
           <img src="public/img/ikoner_logo/stjerner.svg" alt="stjerner" width="122" height="40"/>
         </div>
         <h2>Topsellers</h2>
-        <div>
+      </div>
+
+
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img class="imgslideshow" src="public/img/billeder/top_dragon.svg" style="width:50%">
+    <div class="text"><h3>58 ,-</h3><h5>pr. 100 g</h5></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img class="imgslideshow" src="public/img/billeder/top_english.svg" style="width:50%">
+    <div class="text"><h3>52 ,-</h3><h5>pr. 100 g</h5></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img class="imgslideshow" src="public/img/billeder/top_chai.svg" style="width:50%">
+    <div class="text"><h3>54 ,-</h3><h5>pr. 100 g</h5></div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+        <!-- <div>
           <div>
             <h3>Dragon Mint</h3>
             <img src="public/img/billeder/top_dragon.svg" alt="dragonmint" width="200" height="320"/><div><h3>58 ,-</h3><h5>pr. 100 g</h5></div><button></button>
@@ -40,13 +80,14 @@ import "../styles/global.css";
             <h3>Green Apple Chai</h3>
             <img src="public/img/billeder/top_chai.svg"  alt="chai"  width="200" height="320"/><div><h3>54 ,- </h3><h5>pr. 100 g</h5></div><button></button>
           </div>
-        </div>
+        </div> -->
+
       </section>
       <section>
-        <div><img src="public/img/billeder/stort_billede.svg"  alt="stortbillede"  width="515" height="365"/></div>
         <div><h2>KEND DIN TE-TYPE</h2><h3>Hvilken te passer til din personlig smag?</h3><p>I dag kan enhver te-elsker få tilfredsstillet trangen til en god te-oplevelse. I te-saloner og på cafeer serveres fine kvalitets teer, og hos te-handlerne finder man hundredevis af udsøgte teer, som hver især inviterer til unikke te-oplevelser. Hvorvidt man er til sort te, grøn te, oolong te eller den milde hvide te afhænger af personlig smag og temperament. Overordnet set har de hver især nogle helt særlige karakteristika.</p><button></button></div>
       </section>
       <section><div><img src="public/img/billeder/kenddinte.svg"  alt="mandibutik" width="320" height="320"/></div></section>
+      <div><img src="public/img/billeder/stort_billede.svg"  alt="stortbillede" width="430px" height="365px"/></div>
       <section>
         <div><h2>Kvalitets produkter siden 1889 - En historie om traditioner</h2><p>I 1887 deltog en dansk marinesoldat i 50-års jubilæet for Dronning Victorias kroning i England. I London bød det engelske admiralitet på en kop the, som gjorde et uforglemmeligt indtryk på den unge Søren Vilhelm Jacobsen. Han tog en dåse af den vidunderlige the med sig hjem til Danmark og grundlagde Østerlandsk Thehus, da han 20. april 1889 åbnede forretning i det indre København.</p><button></button></div>
         <div><img src="public/img/billeder/vores_historie.svg"alt="kvalitetste" width="320" height="320"/></div>
@@ -59,5 +100,115 @@ import "../styles/global.css";
   background-image: url(public/img/monstre/herounitmonster.svg);
   background-size: cover;
 }
+.div_1{
+padding-top: 20px;
+display: grid;
+justify-content: center;
+text-align: center;
+}
+.div_2{
+  justify-content: center;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #413C1C;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #b7b7b7;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .9}
+  to {opacity: 1}
+}
+
   </style>
+  <script>
+  let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+  </script>
 </html>
