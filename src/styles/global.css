@@ -207,19 +207,7 @@ button {
 
 /* Desktop font styling */
 @media (min-width: 600px) {
-  main {
-    display: grid;
-    grid-template-columns: 1fr minmax(0, 1100px) 1fr;
-    margin: 1rem;
-  }
-
-  section {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 30px;
-    grid-column: 2/3;
-    margin-bottom: 10rem;
-  }
+ 
 
   h1 {
     font-family: "BuenaParkJF", serif;
