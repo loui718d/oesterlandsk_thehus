@@ -1,3 +1,166 @@
 ---
 import "../styles/global.css";
 ---
+
+<header class="sticky top-0">
+  <div id="stickyhead" class="sticky top-0 hidden h-24 bg-lyslilla"></div>
+  <!-- <div class="fixed top-0 md:visible">
+        <img class="h-20" src="/img/logo_beige1.svg" alt="" />
+      </div> -->
+  <div class="fixed top-4 left-6">
+    <a href="index.html">
+      <img class="h-16" src="/img/ikoner_logo/Logo_gron.svg" alt="" />
+    </a>
+  </div>
+  <div id="mySidepanel" class="sidepanel visible md:invisible">
+    <a href="javascript:void(0)" class="closebtn"
+      ><img src="/img/x.svg" alt="" />
+    </a>
+    <a href="program.html">Program</a>
+    <a href="events.html">Events</a>
+    <a href="find_os.html">Lokationer</a>
+
+    <div class="subnav">
+      <button class="subnavbtn">Om os</button>
+      <div class="subnav-content">
+        <a href="om_vaermed.html">Vær med</a>
+        <a href="om_kontakt.html">Kontakt</a>
+        <a href="om_vildskud.html">Om Vildskud</a>
+      </div>
+    </div>
+  </div>
+  <div id="open">
+    <button class="openbtn visible md:invisible">
+      <img src="/img/menulilla.svg" alt="" />
+    </button>
+  </div>
+  <nav
+    id="nav_desktop"
+    class="invisible fixed top-3 right-0 mr-10 flex gap-16 md:visible md:p-7"
+  >
+    <ul class="flex gap-16">
+      <li><a class="text-lilla" href="program.html">Program</a></li>
+      <li>
+        <a class="text-lilla" href="events.html">Events</a>
+      </li>
+      <li>
+        <a class="text-lilla" href="find_os.html">Lokationer</a>
+      </li>
+    </ul>
+    <div class="mr-3 flex flex-wrap">
+      <button class="subnavbtn2 peer text-lilla">Om os</button>
+      <img src="/img/chevron-down.svg" alt="" />
+      <div
+        class="subnav-content2 absolute mt-6 hidden gap-2 pt-2 text-lilla hover:grid peer-hover:grid"
+      >
+        <a href="om_vaermed.html">Vær med</a>
+        <a href="om_kontakt.html">Kontakt</a>
+        <a href="om_vildskud.html">Om Vildskud</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<style>
+  /* Nav */
+  .sidepanel {
+    height: 100%; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #e8e1d1; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+
+  /* The sidepanel links */
+  .sidepanel a,
+  .subnavbtn {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #6432c9;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: #ff6434;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  /* Style the button that is used to open the sidepanel */
+  .openbtn {
+    position: fixed; /* Stay in place */
+    /* Stay on top */
+    top: 20px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    place-self: end end;
+  }
+
+  .openbtn img {
+    height: 35px;
+  }
+  .closebtn img {
+    z-index: 2;
+    height: 35px;
+  }
+
+  /* The subnavigation menu */
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+
+  /* Subnav button */
+
+  /* Add a red background color to navigation links on hover */
+  a:hover,
+  .subnav:hover .subnavbtn {
+    color: #ff6434;
+  }
+
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    position: absolute;
+    left: 0;
+    background-color: none;
+    width: 100%;
+    z-index: 1;
+  }
+
+  /* Style the subnav links */
+  .subnav-content a {
+    margin-left: 20px;
+    color: #6432c9;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    color: #ff6434;
+  }
+
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+</style>
