@@ -115,3 +115,11 @@
   color: var(--color-secondary-mint);
   padding: var(--spacing-8);
 } */
+
+/*  mobil font styling */
+h1{
+  font-family: "BuenaParkJF", serif;
+}
+
+
+/* Desktop font styling */
