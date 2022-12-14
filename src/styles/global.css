@@ -108,6 +108,14 @@
   --line-height-web-h1: 97px;
 }
 
+/* Generelle regler */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 /* h5 {
   font-family: "open-sans", sans-serif;
   border-bottom: 1px solid #656d74;
@@ -207,8 +215,6 @@ button {
 
 /* Desktop font styling */
 @media (min-width: 600px) {
- 
-
   h1 {
     font-family: "BuenaParkJF", serif;
     font-size: var(--font-size-web-h1);
