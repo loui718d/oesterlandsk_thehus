@@ -17,9 +17,9 @@ import "../styles/global.css";
   <body>
     <Header />
 
-    <main>
+    <main class="main">
       <h1>HISTORIEN OM ØSTERLANDSK TEHUS</h1>
-      <section class="section">
+      <section class="section1">
         <div class="tekst">
           <h3>EN MARINESOLDAT DROG UD OG KOM HJEM SOM THE-KØBMAND</h3><p
             class="body1"
@@ -42,7 +42,7 @@ import "../styles/global.css";
         </div>
       </section>
       <div></div>
-      <section class="section">
+      <section class="section2">
         <div class="tekst">
           <h3>MERE END 130 ÅRS FORRETNING MIDT I KØBENHAVN</h3><p class="body1">
             Butikken på Nørreport pryder stadig ét af byens travleste
@@ -66,7 +66,7 @@ import "../styles/global.css";
         </div>
       </section>
       <div></div>
-      <section class="section">
+      <section class="section1">
         <div class="tekst">
           <h3>ET FAMILIE-FORETAGENDE MED SANS FOR GOD SMAG</h3><p class="body1">
             Østerlandsk Thehus har været et familieforetagende siden starten. I
@@ -94,7 +94,7 @@ import "../styles/global.css";
         </div>
       </section>
       <div></div>
-      <section class="section">
+      <section class="section2">
         <div class="tekst">
           <h3>THE OG KAFFE AF BEDSTE KVALITET – TIL HELE VERDEN</h3><p
             class="body1"
@@ -133,16 +133,16 @@ import "../styles/global.css";
       padding-right: 36px;
     }
 
-    h3{
+    h3 {
       margin-bottom: 16px;
-         margin-top: 64px;
+      margin-top: 64px;
     }
 
-    p{
-        margin-bottom: 16px;
+    p {
+      margin-bottom: 16px;
     }
 
-    img{
+    img {
       margin-bottom: 36px;
     }
 
@@ -152,17 +152,20 @@ import "../styles/global.css";
         padding-left: 0;
         padding-right: 0;
       }
-    .section {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 30px;
-    }
+      .section1 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 30px;
+      }
+      .section2 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+      }
 
-    .img{
-     order: 1; 
+      .img_venstre {
+        order: -1;
+      }
     }
-    }
-
-
   </style>
 </html>
