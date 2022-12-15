@@ -44,7 +44,9 @@ import "../styles/global.css";
           </div>
           <h2>Topsellers</h2>
         </div>
-      <section class="main">
+      </div>
+        
+      <section class="main maincarousel">
         <section id="testimonial" class="max-width">
           <article class="testimonial-container" data-index="1">
             
@@ -58,12 +60,12 @@ import "../styles/global.css";
           </article>
           <article class="testimonial-container" data-index="2">
             <div>
-              <h3>English Breakfast Organic</h3>
+              <h3>English Breakfast</h3>
               <img
                 src="public/img/billeder/top_english.svg"
                 alt="english" width="80%"
               /><div>
-                <h3>52 ,-</h3><h5>pr. 100 g</h5><button></button>
+                <h3>52 ,-</h3><h5>pr. 100 g</h5> </div><button></button>
             </div>
           </article>
           <article class="testimonial-container" data-index="3">
@@ -77,26 +79,28 @@ import "../styles/global.css";
           <article class="testimonial-container" data-index="4">
             
             <div>
-              <h3>Dragon Mint</h3>
+              <h3>Mermaid Te</h3>
               <img
-                src="public/img/billeder/top_dragon.svg"
-                alt="dragonmint" width="80%"
-              /><div><h3>58 ,-</h3><h5>pr. 100 g</h5></div><button></button>
+                src="public/img/billeder/mermaidtop.svg"
+                alt="mermaid" width="80%"
+              /><div><h3>52 ,-</h3><h5>pr. 100 g</h5></div><button></button>
             </div>
           </article>
           <article class="testimonial-container" data-index="5">
             <div>
-              <h3>Dragon Mint</h3>
+              <h3>Cool Mint</h3>
               <img
-                src="public/img/billeder/top_dragon.svg"
-                alt="dragonmint" width="80%"
-              /><div><h3>58 ,-</h3><h5>pr. 100 g</h5></div><button></button>
+                src="public/img/billeder/coolminttop.svg"
+                alt="coolmint" width="80%"
+              /><div><h3>54 ,-</h3><h5>pr. 100 g</h5></div><button></button>
             </div>
           </article>
-          <button class="carousel-btn previous">←</button>
-          <button class="carousel-btn next">→</button>
+          <button class="carousel-btn previous"><img src="public/img/ikoner_logo/pil_venstre_cirkel.svg" alt="venstre" width="150%"></button>
+          <button class="carousel-btn next"><img src="public/img/ikoner_logo/pil_hojre_cirkel.svg" alt="hojre" width="150%"></button>
         </section>
         </section>
+
+        
       <div class="main">
         <section class="section2">
           <div>
@@ -204,7 +208,7 @@ import "../styles/global.css";
     padding-bottom: 10px;
   }
   
-
+/* --------------------------- topseller carousel ---------------------------*/
 /* ignorer det der er ovenover */
 
 #testimonial {
@@ -215,20 +219,18 @@ import "../styles/global.css";
 }
 
 .testimonial-container {
-    position: absolute;
+overflow: hidden;
+  position: absolute;
     top: 10%;
     text-align: center;
     width: clamp(100px, 25vw, 320px);
     display: flex;
     flex-direction: column;
     gap: 16px;
-    transform: translateX(-50%);
+    transform: translateX(-48%);
     transition: left 0.75s ease-out, opacity 0.375s ease-in-out;
-  } 
 
-  .quote {
-    font-size: 1rem;
-  }
+  } 
 
   [data-index="1"] {
     left: -20%;
@@ -279,9 +281,10 @@ import "../styles/global.css";
 
   .carousel-btn {
     position: absolute;
-    padding: 16px 8px;
+    padding: 1px 1px;
+    border-radius: 100px;
     border: 0;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0);
     opacity: 0;
     transition: background-color 0.3s, opacity 0.15s, transform 0.3s ease-in-out;
     z-index: 10;
@@ -301,10 +304,6 @@ import "../styles/global.css";
     transform: translateX(0);
   }
 
-  .carousel-btn:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
   .previous {
     left: 8px;
     transform: translateX(-6px);
@@ -318,7 +317,7 @@ import "../styles/global.css";
   .testimonial-container > * {
     margin: 0;
   }
-
+/* --------------------------- topseller carousel  slut---------------------------*/
   /* desktop */
   @media (min-width: 600px) {
     .section_1 {
