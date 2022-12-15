@@ -220,6 +220,7 @@ button {
   line-height: var(--line-height-mob-body2-label-button);
   letter-spacing: var(--letter-spacing-label-button);
   font-weight: var(--font-weight-button-mob);
+  text-transform: uppercase;
 }
 
 .maincarousel{
@@ -313,6 +314,7 @@ button {
     line-height: var(--line-height-web-button);
     letter-spacing: var(--letter-spacing-label-button);
     font-weight: var(--font-weight-button-web);
+    text-transform: uppercase;
   }
 
   .main {
