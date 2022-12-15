@@ -47,14 +47,7 @@ import "../styles/global.css";
         </div>
       </section>
       <section class="monstergronte">
-        <div class="div_2">
-          <div>
-            <img
-              src="public/img/billeder/gronte.svg"
-              alt="gronte"
-              width="80%"
-            />
-          </div>
+        <div class="div_1 div_2">
           <div class="text">
             <h2>Grøn te</h2><p class="body1">
               Grøn the laves ved hjælp af teplanten, Camellia Sinensis, ligesom
@@ -73,6 +66,13 @@ import "../styles/global.css";
               slippe for den følelse af tørhed i munden, som eksempelvis sort
               the kan give.
             </p>
+          </div>
+          <div>
+            <img
+              src="public/img/billeder/gronte.svg"
+              alt="gronte"
+              width="80%"
+            />
           </div>
         </div>
       </section>
@@ -102,10 +102,7 @@ import "../styles/global.css";
       </div>
     </section>
     <section class="monstergulte">
-      <div class="div_2">
-        <div>
-          <img src="public/img/billeder/gulte.svg" alt="gulte" width="80%" />
-        </div>
+      <div class="div_1 div_2">
         <div class="text">
           <h2>Gul te</h2><p class="body1">
             Gul the er nok den mest sjældne og niche type af the, da der er
@@ -118,6 +115,9 @@ import "../styles/global.css";
             ud for overlevelsen af gul the, da de themestre der stadig kan
             producere theen, ikke altid lærer kunsten videre til deres lærlinge.
           </p>
+        </div>
+        <div>
+          <img src="public/img/billeder/gulte.svg" alt="gulte" width="80%" />
         </div>
       </div>
     </section>
@@ -148,10 +148,7 @@ import "../styles/global.css";
       </div>
     </section>
     <section class="monsterurtete">
-      <div class="div_2">
-        <div>
-          <img src="public/img/billeder/urtete.svg" alt="urtete" width="80%" />
-        </div>
+      <div class="div_1 div_2">
         <div class="text">
           <h2>Urte te</h2><p class="body1">
             Urtethe har i den klassiske forstand intet med the at gøre, da
@@ -167,6 +164,9 @@ import "../styles/global.css";
             indenfor urtethe er den populære Kamillethe og den smagfulde Lakrids
             The.
           </p>
+        </div>
+        <div>
+          <img src="public/img/billeder/urtete.svg" alt="urtete" width="80%" />
         </div>
       </div>
     </section>
@@ -195,9 +195,6 @@ import "../styles/global.css";
     </section>
     <section class="monsterchaite">
       <div class="div_2">
-        <div>
-          <img src="public/img/billeder/chaite.svg" alt="chaite" width="80%" />
-        </div>
         <div class="text">
           <h2>Chai te</h2><p class="body1">
             Navnet ’chai’ er ganske enkelt det indiske ord for ’the’, som er
@@ -210,6 +207,9 @@ import "../styles/global.css";
             mere stærke krydderier. Traditionelt nydes theblandingen derefter
             med mælk, samt honning eller sukker.
           </p>
+        </div>
+        <div>
+          <img src="public/img/billeder/chaite.svg" alt="chaite" width="80%" />
         </div>
       </div>
     </section>
@@ -251,6 +251,8 @@ import "../styles/global.css";
   h1 {
     grid-column: 2/3;
     padding-bottom: 100px;
+    padding-left: 36px;
+    padding-right: 36px;
   }
   /* desktop */
   @media (min-width: 600px) {
@@ -259,9 +261,8 @@ import "../styles/global.css";
       grid-template-columns: 2fr 1fr;
       gap: 30px;
     }
-    .div_2 {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
+    .div_2 .textlang {
+      order: 2;
       gap: 5px;
     }
 
