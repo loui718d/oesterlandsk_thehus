@@ -25,7 +25,7 @@ import "../styles/global.css";
     <a href="/laesOm_te.html">Læs om kaffe</a>
 
     <div>
-      <div>
+      <div id="flex">
         <a href=""><img src="/img/ikoner_logo/profil.svg" alt="" /></a><a
           href="/kurv.astro"
           ><img src="/img/ikoner_logo/indkobskurv.svg" alt="" />
@@ -113,7 +113,8 @@ import "../styles/global.css";
 
   .logo {
     position: absolute;
-    top: 4px;
+    top: 16px;
+    left: 16px;
   }
 
   ul {
@@ -133,7 +134,7 @@ import "../styles/global.css";
     right: 0;
     background-color: var(--color-creme); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 80px; /* Place content 60px from the top */
+    padding-top: 120px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
     display: block;
   }
@@ -161,8 +162,8 @@ import "../styles/global.css";
   /* Position and style the close button (top right corner) */
   .sidepanel .closebtn {
     position: absolute;
-    top: 20px;
-    right: 25px;
+    top: 30px;
+    right: 16px;
 
     margin-left: 50px;
   }
@@ -171,8 +172,8 @@ import "../styles/global.css";
   .openbtn {
     position: absolute; /* Stay in place */
     /* Stay on top */
-    top: 20px;
-    right: 10px;
+    top: 30px;
+    right: 16px;
     font-size: 20px;
     cursor: pointer;
     background-color: var(--color-creme);
@@ -180,6 +181,18 @@ import "../styles/global.css";
     border: none;
     place-self: end end;
     display: block;
+  }
+
+  #flex {
+    display: flex;
+    margin-top: 100px;
+  }
+  #flex a {
+    padding-left: 10px;
+  }
+
+  #flex:first-child {
+    padding-left: 40px;
   }
 
   .openbtn img {
