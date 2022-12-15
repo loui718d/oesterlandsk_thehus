@@ -16,9 +16,10 @@ const { href, title, oko, pris, src, vaegt } = Astro.props;
       }
     </div>
     <div class="textfelt">
-      <h4>{pris}</h4><p class="label">{vaegt}</p><button
-        >Se produkt<img src="/img/ikoner_logo/pil_creme.svg" alt="" />
-      </button>
+      <h5>{pris}</h5><p class="label">{vaegt}</p><img
+        src="/img/ikoner_logo/pil_creme.svg"
+        alt=""
+      />
     </div>
   </a>
 </article>
@@ -29,6 +30,11 @@ const { href, title, oko, pris, src, vaegt } = Astro.props;
     width: 230px;
     background-color: var(--color-mork-gron-110);
     border-radius: 20px;
+    border: none;
+  }
+  a:link {
+    background-color: transparent;
+    text-decoration: none;
   }
   #produktbillede {
     display: grid;
@@ -47,29 +53,31 @@ const { href, title, oko, pris, src, vaegt } = Astro.props;
   .omrode {
     grid-area: 1/1;
   }
-  h5 {
+  #produktbillede h5 {
     z-index: 1;
     text-align: center;
     text-decoration: none;
+    margin-top: 10px;
   }
-  h4 {
+  .textfelt h5 {
     color: var(--color-creme);
   }
-  p {
+  .textfelt p {
     color: var(--color-creme);
+    margin-left: 10px;
   }
   .textfelt {
     display: flex;
-    gap: 2px;
+    gap: 4px;
+    text-decoration: none;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
   }
-  button {
-    background: none;
-    border: none;
-    font-family: "EB Garamond", serif;
-    font-size: var(--font-size-mob-body1-label);
-    color: var(--color-oliven);
-    line-height: var(--line-height-mob-body2-label-button);
-    letter-spacing: var(--letter-spacing-label-button);
-    font-weight: var(--font-weight-label);
+  .textfelt img {
+    margin-left: 60px;
+  }
+  article:hover {
+    background-color: var(--color-rodbrun);
   }
 </style>
