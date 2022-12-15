@@ -1,4 +1,5 @@
 ---
+import Card from "../components/Card.astro";
 import Filter from "../components/Filter.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
@@ -69,7 +70,7 @@ import "../styles/global.css";
           </div>
           <div class="card_grid">
             <!-- cards indsættes her -->
-            <article></article>
+            <Card title="Te" />
             <article></article>
             <article></article>
             <article></article>
@@ -92,6 +93,7 @@ import "../styles/global.css";
     }
     .brodkrumme {
       display: flex;
+      align-items: center;
     }
     .brodkrumme img {
       height: 16px;

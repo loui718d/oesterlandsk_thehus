@@ -1,3 +1,24 @@
 ---
 import "../styles/global.css";
+const { href, title } = Astro.props;
 ---
+
+<article>
+  <a href={href}>
+    <div>
+      <img src="" alt="" />
+      <h5>{title}</h5>
+      <img src="/img/ikoner_logo/profil.svg" alt="" />
+    </div>
+    <div></div>
+  </a>
+</article>
+
+<style>
+  article {
+    height: 280px;
+    width: 230px;
+    background-color: var(--color-creme-70);
+    border-radius: 20px;
+  }
+</style>
