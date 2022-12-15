@@ -216,16 +216,75 @@ h5 {
 button {
   font-family: "EB Garamond", serif;
   font-size: var(--font-size-mob-body1-label-button);
-  color: var(--color-oliven);
   line-height: var(--line-height-mob-body2-label-button);
   letter-spacing: var(--letter-spacing-label-button);
   font-weight: var(--font-weight-button-mob);
   text-transform: uppercase;
 }
 
-.maincarousel{
+.maincarousel {
   width: 100vw;
   overflow: hidden;
+}
+
+/*knapper mobile primary */
+
+.primary_sm {
+  background: var(--color-lys-gron);
+  border-radius: 8px;
+  width: 170px;
+  height: 60px;
+  border: none;
+  color: var(--color-mork-gron);
+}
+
+.primary_sm:hover {
+  background: var(--color-mork-gron);
+  color: var(--color-lys-gron);
+}
+
+.primary_lg {
+  background: var(--color-lys-gron);
+  border-radius: 8px;
+  width: 320px;
+  height: 60px;
+  border: none;
+  color: var(--color-mork-gron);
+}
+
+.primary_lg:hover {
+  background: var(--color-mork-gron);
+  color: var(--color-lys-gron);
+}
+
+/*knapper mobile secondary */
+
+.secondary_sm {
+  background: var(--color-rodbrun);
+  color: var(--color-gul);
+  border-radius: 8px;
+  width: 170px;
+  height: 60px;
+  border: none;
+}
+
+.secondary_sm:hover {
+  background: var(--color-gul);
+  color: var(--color-rodbrun);
+}
+
+.secondary_lg {
+  background: var(--color-rodbrun);
+  color: var(--color-gul);
+  border-radius: 8px;
+  width: 320px;
+  height: 60px;
+  border: none;
+}
+
+.secondary_lg:hover {
+  background: var(--color-gul);
+  color: var(--color-rodbrun);
 }
 /* Desktop font styling */
 @media (min-width: 600px) {
@@ -332,5 +391,93 @@ button {
   }
   footer {
     grid-column: 2/3;
+  }
+
+  /*knapper desktop primary */
+
+  .primary_sm {
+    background: var(--color-lys-gron);
+    border-radius: 8px;
+    width: 200px;
+    height: 60px;
+    border: none;
+    color: var(--color-mork-gron);
+  }
+
+  .primary_sm:hover {
+    background: var(--color-mork-gron);
+    color: var(--color-lys-gron);
+  }
+
+  .primary_lg {
+    background: var(--color-lys-gron);
+    border-radius: 8px;
+    width: 360px;
+    height: 60px;
+    border: none;
+    color: var(--color-mork-gron);
+  }
+
+  .primary_lg:hover {
+    background: var(--color-mork-gron);
+    color: var(--color-lys-gron);
+  }
+
+  .primary_xl {
+    background: var(--color-lys-gron);
+    border-radius: 8px;
+    width: 520px;
+    height: 60px;
+    border: none;
+    color: var(--color-mork-gron);
+  }
+
+  .primary_xl:hover {
+    background: var(--color-mork-gron);
+    color: var(--color-lys-gron);
+  }
+
+  /*knapper desktop secondary */
+
+  .secondary_sm {
+    background: var(--color-rodbrun);
+    color: var(--color-gul);
+    border-radius: 8px;
+    width: 170px;
+    height: 60px;
+    border: none;
+  }
+
+  .secondary_sm:hover {
+    background: var(--color-gul);
+    color: var(--color-rodbrun);
+  }
+
+  .secondary_lg {
+    background: var(--color-rodbrun);
+    color: var(--color-gul);
+    border-radius: 8px;
+    width: 320px;
+    height: 60px;
+    border: none;
+  }
+
+  .secondary_lg:hover {
+    background: var(--color-gul);
+    color: var(--color-rodbrun);
+  }
+
+  .secondary_xl {
+    background: var(--color-rodbrun);
+    color: var(--color-gul);
+    border-radius: 8px;
+    width: 320px;
+    height: 60px;
+    border: none;
+  }
+
+  .secondary_xl:hover {
+    background: var(--color-gul);
+    color: var(--color-rodbrun);
   }
 }
