@@ -71,20 +71,60 @@ import "../styles/global.css";
           <div class="card_grid">
             <!-- cards indsættes her -->
             <Card
-              title="Te"
+              title="Cool Mint Te"
+              oko={false}
+              pris="149,-"
+              vaegt="En dåse"
+              src="/img/billeder/coolmint.svg"
+            />
+            <Card
+              title="Grøn Valnød Te"
+              oko={false}
+              pris="52,-"
+              vaegt="Pr. 100g"
+              src="/img/billeder/grønvalnødte.svg"
+            />
+            <Card
+              title="Viking-Organic"
+              oko={true}
+              pris="85,-"
+              vaegt="12 stk."
+              src="/img/billeder/vikingorganic.svg"
+            />
+            <Card
+              title="Jule te (Christmas te)"
+              oko={false}
+              pris="52,-"
+              vaegt="Pr. 100g"
+              src="/img/billeder/julete.svg"
+            />
+            <Card
+              title="Ingefær Te"
               oko={true}
               pris="54,-"
               vaegt="Pr. 100g"
-              src="/img/billeder/lakridste.svg"
+              src="/img/billeder/ingefærte.svg"
             />
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
+            <Card
+              title="Mermaid Te"
+              oko={false}
+              pris="85,-"
+              vaegt="12 stk"
+              src="/img/billeder/mermaidte.svg"
+            />
           </div>
-          <div>
-            <!-- liste her -->
+          <div class="end">
+            <div class="liste">
+              <div id="pilvenstre">
+                <img src="/img/ikoner_logo/pil_venstre.svg" alt="" />
+              </div>
+              <div><h5>1</h5></div>
+              <div><h5>2</h5></div>
+              <div><h5>...</h5></div><div><h5>6</h5></div>
+              <div id="pilhojre">
+                <img src="/img/ikoner_logo/pil_hojre.svg" alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -148,13 +188,39 @@ import "../styles/global.css";
     .filter2 {
       margin-top: 46px;
     }
-
-    article {
-      height: 280px;
-      width: 230px;
-      background-color: var(--color-creme-70);
-      border-radius: 20px;
+    .liste {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      align-self: baseline;
+      gap: 0px;
     }
+    .liste div {
+      width: 40px;
+      height: 36px;
+      background-color: var(--color-creme-70);
+      border-width: 1px;
+      border-style: solid;
+      border-color: var(--color-oliven-90);
+      text-align: center;
+    }
+
+    #pilvenstre {
+      background-color: var(--color-creme-110);
+      border-bottom-left-radius: 3px;
+      border-top-left-radius: 3px;
+    }
+    #pilhojre {
+      background-color: var(--color-creme-110);
+      border-bottom-right-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+    .end {
+      display: grid;
+      justify-content: end;
+      margin-bottom: 40px;
+    }
+
     /* desktop */
     @media (min-width: 600px) {
       .brodkrumme {
