@@ -32,46 +32,71 @@ import "../styles/global.css";
           <img src="public/img/billeder/forside_billede.svg" alt="" />
         </div>
       </section>
-      <section class="main">
-        <div>
-          <div class="div_1">
-            <div class="div_2">
-              <img
-                src="public/img/ikoner_logo/stjerner.svg"
-                alt="stjerner"
-                width="122"
-                height="40"
-              />
-            </div>
-            <h2>Topsellers</h2>
+      <div>
+        <div class="div_1">
+          <div class="div_2">
+            <img
+              src="public/img/ikoner_logo/stjerner.svg"
+              alt="stjerner"
+              width="122"
+              height="40"
+            />
           </div>
-
-          <div class="topsellers">
+          <h2>Topsellers</h2>
+        </div>
+      <section class="main">
+        <section id="testimonial" class="max-width">
+          <article class="testimonial-container" data-index="1">
+            
             <div>
               <h3>Dragon Mint</h3>
               <img
                 src="public/img/billeder/top_dragon.svg"
-                alt="dragonmint"
+                alt="dragonmint" width="80%"
               /><div><h3>58 ,-</h3><h5>pr. 100 g</h5></div><button></button>
             </div>
+          </article>
+          <article class="testimonial-container" data-index="2">
             <div>
               <h3>English Breakfast Organic</h3>
               <img
                 src="public/img/billeder/top_english.svg"
-                alt="english"
+                alt="english" width="80%"
               /><div>
-                <h3>52 ,-</h3><h5>pr. 100 g</h5>
-              </div><button></button>
+                <h3>52 ,-</h3><h5>pr. 100 g</h5><button></button>
             </div>
+          </article>
+          <article class="testimonial-container" data-index="3">
+          
             <div>
               <h3>Green Apple Chai</h3>
-              <img src="public/img/billeder/top_chai.svg" alt="chai" /><div>
-                <h3>54 ,-</h3><h5>pr. 100 g</h5>
-              </div><button></button>
+              <img src="public/img/billeder/top_chai.svg" alt="chai" width="80%"/><div>
+                <h3>54 ,-</h3><h5>pr. 100 g</h5></div><button></button>
             </div>
-          </div>
-        </div>
-      </section>
+          </article>
+          <article class="testimonial-container" data-index="4">
+            
+            <div>
+              <h3>Dragon Mint</h3>
+              <img
+                src="public/img/billeder/top_dragon.svg"
+                alt="dragonmint" width="80%"
+              /><div><h3>58 ,-</h3><h5>pr. 100 g</h5></div><button></button>
+            </div>
+          </article>
+          <article class="testimonial-container" data-index="5">
+            <div>
+              <h3>Dragon Mint</h3>
+              <img
+                src="public/img/billeder/top_dragon.svg"
+                alt="dragonmint" width="80%"
+              /><div><h3>58 ,-</h3><h5>pr. 100 g</h5></div><button></button>
+            </div>
+          </article>
+          <button class="carousel-btn previous">←</button>
+          <button class="carousel-btn next">→</button>
+        </section>
+        </section>
       <div class="main">
         <section class="section2">
           <div>
@@ -165,14 +190,133 @@ import "../styles/global.css";
     background-image: url(public/img/monstre/monster_forside_historie.svg);
     grid-column: 1/4;
     max-width: 100%;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 200px;
+    padding-bottom: 150px;
   }
   #stortbillede img {
     max-width: 450px;
   }
   #stortbillede {
     padding: 0px;
+  }
+
+  h2{
+    padding-bottom: 10px;
+  }
+  
+
+/* ignorer det der er ovenover */
+
+#testimonial {
+  position: relative;
+  padding-inline: 24px;
+  margin-block: 100px 400px;
+  height: 17.5rem;
+}
+
+.testimonial-container {
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    width: clamp(100px, 25vw, 320px);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transform: translateX(-50%);
+    transition: left 0.75s ease-out, opacity 0.375s ease-in-out;
+  } 
+
+  .quote {
+    font-size: 1rem;
+  }
+
+  [data-index="1"] {
+    left: -20%;
+    opacity: 0;
+  }
+
+  [data-index="2"] {
+    left: 15%;
+    opacity: 1;
+  }
+
+  [data-index="3"] {
+    left: 50%;
+    opacity: 1;
+  }
+
+  [data-index="4"] {
+    left: 85%;
+    opacity: 1;
+  }
+
+  [data-index="5"] {
+    left: 120%;
+    opacity: 0;
+  }
+
+  /* viser 1 i stedet for 3 på mobil */
+  @media (max-width: 678px) {
+    .testimonial-container {
+      width: 80%;
+    }
+
+    [data-index="1"], [data-index="2"] {
+      left: -50%;
+      opacity: 0;
+    }
+
+    [data-index="3"] {
+      left: 50%;
+      opacity: 1;
+    }
+
+    [data-index="4"], [data-index="5"] {
+      left: 150%;
+      opacity: 0;
+    }
+  }
+
+  .carousel-btn {
+    position: absolute;
+    padding: 16px 8px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: background-color 0.3s, opacity 0.15s, transform 0.3s ease-in-out;
+    z-index: 10;
+    top: 80%;
+    transform: translateY(-50%);
+  }
+
+  /* knapperne er altid synlige på mobil */
+  @media (hover: none) {
+    .carousel-btn {
+      opacity: 1;
+    }
+  }
+
+  #testimonial:hover .carousel-btn {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .previous {
+    left: 8px;
+    transform: translateX(-6px);
+  }
+
+  .next {
+    right: 8px;
+    transform: translateX(6px);
+  }
+
+  .testimonial-container > * {
+    margin: 0;
   }
 
   /* desktop */
@@ -195,6 +339,7 @@ import "../styles/global.css";
       display: grid;
       grid-template-columns: 2fr 1fr;
       min-width: 100%;
+      gap: 20px;
     }
     .section3:nth-child(1) {
       min-width: 100%;
@@ -223,4 +368,65 @@ import "../styles/global.css";
     }
   }
 </style>
-<script></script>
+<script>
+  /* konfigurer nedestående variabler efter behov */
+//antallet af anmeldelser
+const maxRatingsIndex = 5;
+/* ^------------------------------------------^ */
+
+//laver en array af elementer med klassen .testimonial-container
+const ratings = document.querySelectorAll(".testimonial-container");
+
+const carousel = document.getElementById("testimonial");
+
+//bladre frem knap
+const next = document.querySelector(".next");
+next.addEventListener("click", () => {
+  //hvis karrousellen IKKE har klassen .animating
+  if (!carousel.classList.contains("animating")) {
+    //tilføj klassen .animating og sætter knapperne på pause indtil animationen er færdig
+    carousel.classList.add("animating");
+    ratings.forEach((rating) => {
+      //hvis data-index værdien er lig med eller mindre end 1
+      if (rating.dataset.index <= 1) {
+        //sæt data-index værdien til antallet af produkter
+        rating.dataset.index = maxRatingsIndex;
+      } else {
+        //ellers træk 1 fra data-index værdien
+        rating.dataset.index--;
+      }
+    });
+
+    //fjerner klassen .animating når animationen er færdig efter 750ms og gør knapperne klikbart igen
+    setTimeout(() => {
+      carousel.classList.remove("animating");
+    }, "750"); //750 millisekunder
+  }
+});
+
+//bladre tilbage knap
+const previous = document.querySelector(".previous");
+previous.addEventListener("click", () => {
+  //hvis karrousellen IKKE har klassen .animating
+  if (!carousel.classList.contains("animating")) {
+    //tilføj klassen .animating og sætter knapperne på pause indtil animationen er færdig
+    carousel.classList.add("animating");
+    ratings.forEach((rating) => {
+      //hvis data-index værdien er lig med eller større end antallet af produkter
+      if (rating.dataset.index >= maxRatingsIndex) {
+        //sæt data-index værdien til 1
+        rating.dataset.index = 1;
+      } else {
+        //ellers læg 1 til data-index værdien
+        rating.dataset.index++;
+      }
+    });
+
+    //fjerner klassen .animating når animationen er færdig efter 750ms og gør knapperne klikbart igen
+    setTimeout(() => {
+      carousel.classList.remove("animating");
+    }, "750"); //750 millisekunder
+  }
+});
+
+</script>
