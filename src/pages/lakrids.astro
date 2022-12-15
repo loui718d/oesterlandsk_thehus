@@ -16,42 +16,100 @@ import "../styles/global.css";
 
   <body>
     <Header />
+   
+    <main class="main">
+    
+      <section class="produktkategoricontainer">
+        <div class="brodkrumme">
+          <a href="index.html">Hjem</a><img src="/img/ikoner_logo/pil_hojre.svg" alt="" /> <a href="">Te</a><img src="/img/ikoner_logo/pil_hojre.svg" alt="" /><a href="">Frugt- og Urte Te</a><img src="/img/ikoner_logo/pil_hojre.svg" alt="" /> <p>Lakrids Te</p>
+  </div>
 
-    <main>
-      <a href=""></a>
-      <section>
-        <h1></h1>
+
+        <h1 class="h1mobil">Lakrids Te</h1>
         <!--  skal vises i mobil -->
+        <div class="grid">
         <div>
-          <div><img src="" alt="" /></div>
-          <div><img src="" alt="" /><img src="" alt="" /></div>
+          <div><img class="imgprodukt" src="public/img/billeder/lakridste_stortbillede.svg" alt="stort" /></div>
+          <div class="smabilleder"><img src="public/img/billeder/lakrids_lille_billede.svg" alt="lille1" /><img src="public/img/billeder/lakrids_kopte_lille.svg" alt="lille2" /></div>
         </div>
+
         <div>
-          <h1></h1>
+          <h1 class="h1desktop">Lakrids Te</h1>
           <!--  skal vises i desktop -->
-          <h3></h3>
-          <div>
-            <div><h4></h4></div>
-            <div>
-              <input type="text" />
-              lidt usikker her
+          <h3>Pris: 56,00 DKK</h3>
+          <div class="valgvagt">
+            <div><h4 class="h4valg">Vælg vægt:</h4></div>
+            <div class="label">
+              <div class="container1">
+                <label for="" class="body2">100g </label>
+              <label class="container"> 
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="container1">
+            <label for="" class="body2">250g </label>
+              <label class="container">
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+              <div class="container1">
+              <label for="" class="body2">500g </label>
+              <label class="container">
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+              <div class="container1">
+              <label for="" class="body2">100g </label>
+              <label class="container">
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+              </label>
+            </div>
             </div>
           </div>
-          <div>
-            <h4></h4><img src="" alt="" /><h3></h3><img src="" alt="" />
+          <div class="antal">
+            <h4 class="h4antal">Antal:</h4><img src="public/img/ikoner_logo/knap_minus.svg" alt="minus" /><h3>1</h3><img src="public/img/ikoner_logo/knap_plus.svg" alt="plus" />
           </div>
           <button></button>
-          <h4></h4>
-          <div>
-            <div><img src="" alt="" /><p></p></div><div>
-              <img src="" alt="" /><p></p>
-            </div><div><img src="" alt="" /><p></p></div>
+          <h4>Produktegenskaber:</h4>
+          <div class="produktegenskaber">
+            <div class="temp body2"><img src="public/img/ikoner_logo/temp.svg" alt="temp" /><p>Vandtemperatur: <b>100 °C</b </p></div>
+            <div class="ur body2"><img src="public/img/ikoner_logo/ur.svg" alt="ur" /><p>Bryggetid: <b>8 - 10 minutter</b> </p></div>
+            <div class="ske body2"><img src="public/img/ikoner_logo/ske.svg" alt="ske" /><p>Dosering: <b>10 g/l</b></p></div>
           </div>
-        </div>
+          <div>
+            <h4 class="h4beskrivelse">Beskrivelse</h4>
+            <div >
+              <button type="button" class="collapsible">hvad er lakrids te <img class="plus" src="public/img/ikoner_logo/plus.svg" alt="plus"></button>
+    
+                <div class="content">
+                 <p>Lakrids te er en af Østerlandsk Thehus' opskrifter. Det der gør hele forskellen er, at der ikke anvendes te som vi kender det fra teplanten Camilia Sinensis, til gengæld er teen en ren urtete som består af kun de aller bedste råvarer som lakridsrod, stjerneanis, anisfrø, fennikel, orangeskal, kanel og chili, en sammensætning der i den grad giver smag og kant.</p>
+                </div>
+    
+                <button type="button" class="collapsible">Smag <img class="plus1" src="public/img/ikoner_logo/plus.svg" alt="plus"></button>
+                <div class="content">
+                 <p>For at få den helt rigtige smag af klassisk lakrids frem, som danskerne kender og holder af, har vi tilsat chili i stedet for salmiak.
+                  Teen har både stærke lakrids og chili toner men også sødlige undertoner, så er du på jagt efter en te der virkelig smager af noget, så tøv ikke med at prøve vores revolutionerende lakridste.</p>
+                </div>
+    
+                <button type="button" class="collapsible">Brygning <img class="plus2" src="public/img/ikoner_logo/plus.svg" alt="plus"></button>
+                <div class="content">
+                 <p>Vores lakrids te er en ren urtete og kan derfor trække nærmest uendeligt, smagen bliver kun kraftigere og de forskellige smagsnoter træder tydeligere frem, jo længere den trækker. Den mest optimale trækketid er 8-10 min. og 100 grader varmt vand.</p>
+                </div>
+    
+                <button type="button" class="collapsible">Mere te fra samme hylde <img class="plus3" src="public/img/ikoner_logo/plus.svg" alt="plus"></button>
+                <div class="content">
+                 <p>Lakrids te er en af Østerlandsk Thehus’ egen populære blandinger og er i familie med Cool Mint, Dragon Mint, Sweet Lemon og Tiger Mint. Den fås både i løs vægt, løs vægt i 125 g. dåse, og som tebreve i dåse.</p>
+                </div>
+            </div></div>
+        </div></div>
+
       </section>
       <section>
-        <h4></h4>
-        <div>Forms eller knap</div>
+        
       </section>
       <section>
         <h3></h3><div>
@@ -69,8 +127,254 @@ import "../styles/global.css";
     <Footer />
   </body>
   <style>
+    .brodkrumme {
+      display: flex;
+      align-items: center;
+    }
+    .brodkrumme img {
+      height: 16px;
+    }
+
+    .brodkrumme a {
+      font-family: "EB Garamond", serif;
+      font-size: var(--font-size-web-body1-label);
+      color: var(--color-oliven);
+      line-height: var(--line-height-web-body1);
+      font-weight: var(--font-weight-body-bold);
+      /* text-decoration: none; */
+    }
+    .h1desktop{
+        display: none;
+      }
+      .h1mobil{
+        display: block;
+        
+      }
+  
+    
+      
+      /* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.label{
+  display: flex;
+  gap: 5px;
+}
+.container1{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+}
+.knap{
+  grid-row: 2;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: #413C1C;
+  border-style: solid;
+  border-width: 1px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ffffff;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #ffffff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 4px;
+	left: 4px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: #413C1C;
+}
+.antal{
+  display: flex;
+  gap: 30px;
+  padding-top: 20px;
+}
+.h4antal{
+  padding-top: 5px;
+}
+
+.temp{
+  display: flex;
+  align-items: center;
+ 
+}
+.ur{
+  display: flex;
+  align-items: center;
+
+}
+.ske{
+  display: flex;
+  align-items: center;
+
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: rgba(238, 238, 238, 0);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border-color: #413C1C;
+  border: 1px solid;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 10 18px;
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f100;
+  border-color: #413C1C;
+  border: 1px solid;
+}
+.plus{
+  padding-left: 30%;
+}
+.plus1{
+  padding-left: 68%;
+}
+.plus2{
+  padding-left: 56%;
+}
+.plus3{
+  padding-left: 10%;
+}
+.smabilleder{
+  display: flex;
+  gap: 10px;
+}
+.imgprodukt{
+  width: 100%;
+}
     /* desktop */
     @media (min-width: 600px) {
+      .h1desktop{
+        display: block;
+      }
+      .h1mobil{
+        display: none;
+
+      }
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 10px;
+  }
+      .valgvagt{
+ display: flex;
+ gap: 50px;
+}
+.h4valg{
+  padding-top: 30px;
+}
+.h4beskrivelse{
+  padding-top: 30px;
+}
+.produktegenskaber{
+  display: flex;
+  padding-top: 20px;
+  gap: 10px;
+}
+.collapsible {
+  background-color: rgba(238, 238, 238, 0);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border-color: #413C1C;
+  border: 1px solid;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.content {
+  padding: 10 18px;
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f100;
+  border-color: #413C1C;
+  border: 1px solid;
+}
+.plus{
+  padding-left: 50%;
+}
+.plus1{
+  padding-left: 78%;
+}
+.plus2{
+  padding-left: 69%;
+}
+.plus3{
+  padding-left: 36%;
+}
     }
   </style>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+  </script>
 </html>
