@@ -101,7 +101,7 @@
   --letter-spacing-double: 2px;
   --line-height-web-body2-label-button: 20px;
   --line-height-web-button: 25px;
-  --line-height-web-body1: 16px;
+  --line-height-web-body1: 33px;
   --line-height-web-h4-h5: 31px;
   --line-height-web-h3: 44px;
   --line-height-web-h2: 57px;
@@ -311,7 +311,7 @@ button {
     font-weight: var(--font-weight-button-web);
   }
 
-  .main {
+  main {
     display: grid;
     grid-template-columns: 1fr minmax(0, 1100px) 1fr;
   }
