@@ -18,8 +18,8 @@ import "../styles/global.css";
     <Header />
 
     <main>
-      <h1>BLIV KLOGERE PÅ TEVARIANTER</h1>
       <section class="main">
+        <h1>BLIV KLOGERE PÅ TEVARIANTER</h1>
         <div class="div_1">
           <div class="text">
             <h2>Sort te</h2><p class="body1">
@@ -286,9 +286,15 @@ import "../styles/global.css";
 <style>
   h1 {
     grid-column: 2/3;
-    padding-bottom: 100px;
-    padding-left: 36px;
-    padding-right: 36px;
+    padding-bottom: 50px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  section {
+    padding-bottom: 50px;
   }
 
   /* desktop */
@@ -298,12 +304,21 @@ import "../styles/global.css";
       grid-template-columns: 2fr 1fr;
       gap: 30px;
       grid-column: 2/3;
+      align-content: center;
+    }
+
+    .div_1 img {
+      padding-top: 60px;
     }
     .div_2 {
       display: grid;
       grid-template-columns: 1fr 2fr;
       gap: 30px;
       grid-column: 2/3;
+    }
+
+    .div_2 img {
+      padding-top: 60px;
     }
 
     .div_2 .billede_forst {

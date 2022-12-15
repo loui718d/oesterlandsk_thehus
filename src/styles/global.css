@@ -215,6 +215,17 @@ button {
   font-weight: var(--font-weight-button-mob);
   text-transform: uppercase;
 }
+.a {
+  font-family: "EB Garamond", serif;
+  font-size: var(--font-size-mob-body1-label-button);
+  line-height: var(--line-height-mob-body2-label-button);
+  letter-spacing: var(--letter-spacing-label-button);
+  font-weight: var(--font-weight-button-mob);
+  text-transform: uppercase;
+}
+.a:link {
+  text-decoration: none;
+}
 
 .maincarousel {
   width: 100vw;
@@ -237,6 +248,15 @@ button {
   color: var(--color-lys-gron);
 }
 
+/* .primary_lg {
+  background: var(--color-lys-gron);
+  border-radius: 8px;
+  width: 320px;
+  height: 60px;
+  border: none;
+  color: var(--color-mork-gron);
+} */
+
 .primary_lg {
   background: var(--color-lys-gron);
   border-radius: 8px;
@@ -244,6 +264,8 @@ button {
   height: 60px;
   border: none;
   color: var(--color-mork-gron);
+  display: grid;
+  place-content: center;
 }
 
 .primary_lg:hover {
@@ -267,6 +289,15 @@ button {
   color: var(--color-rodbrun);
 }
 
+/* .secondary_lg {
+  background: var(--color-rodbrun);
+  color: var(--color-gul);
+  border-radius: 8px;
+  width: 320px;
+  height: 60px;
+  border: none;
+
+} */
 .secondary_lg {
   background: var(--color-rodbrun);
   color: var(--color-gul);
@@ -274,6 +305,8 @@ button {
   width: 320px;
   height: 60px;
   border: none;
+  display: grid;
+  place-content: center;
 }
 
 .secondary_lg:hover {
@@ -362,6 +395,16 @@ button {
     font-weight: var(--font-weight-label);
   }
   button {
+    font-family: "EB Garamond", serif;
+    font-size: var(--font-size-web-button);
+    color: var(--color-oliven);
+    line-height: var(--line-height-web-button);
+    letter-spacing: var(--letter-spacing-label-button);
+    font-weight: var(--font-weight-button-web);
+    text-transform: uppercase;
+  }
+
+  .a {
     font-family: "EB Garamond", serif;
     font-size: var(--font-size-web-button);
     color: var(--color-oliven);

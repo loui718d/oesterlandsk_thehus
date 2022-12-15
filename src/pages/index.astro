@@ -26,9 +26,8 @@ import "../styles/global.css";
             Så er vores julete det perfekte valg! Denne lækre blanding er lavet
             på sort Keemun te kombineret med alle de klassiske julekrydderier,
             perfekt til at nyde ved pejsen eller dele med venner og familie.
-          </h4><h4>Køb den i dag og spar 20%</h4><button class="secondary_lg"
-            >Køb nu</button
-          >
+          </h4><h4>Køb den i dag og spar 20%</h4>
+          <a class="secondary_lg a" href="">Køb nu</a>
         </div>
         <div class="splash">
           <img src="public/img/billeder/forside_billede.svg" alt="" />
@@ -140,7 +139,7 @@ import "../styles/global.css";
               til sort te, grøn te, oolong te eller den milde hvide te afhænger
               af personlig smag og temperament. Overordnet set har de hver især
               nogle helt særlige karakteristika.
-            </p><button class="primary_lg">Tag testen</button>
+            </p><a class="primary_lg a" href="">Tag testen</a>
           </div>
           <div>
             <img src="public/img/billeder/kenddinte.svg" alt="mandibutik" />
@@ -168,8 +167,8 @@ import "../styles/global.css";
                 vidunderlige the med sig hjem til Danmark og grundlagde
                 Østerlandsk Thehus, da han 20. april 1889 åbnede forretning i
                 det indre København.
-              </p><button class="secondary_lg"
-                >Læs mere om vores historie</button
+              </p><a class="secondary_lg secondary_xl a" href=""
+                >Læs mere om vores historie</a
               >
             </div>
             <div>
@@ -189,6 +188,10 @@ import "../styles/global.css";
   .section_1 {
     background-image: url(public/img/monstre/herounitmonster.svg);
     background-size: contain;
+    text-align: center;
+    padding-bottom: 24px;
+    display: grid;
+    place-content: center center;
   }
 
   .splash {
@@ -218,12 +221,15 @@ import "../styles/global.css";
   .section3 {
     grid-column: 2/3;
   }
+  .section2 {
+    margin-bottom: 50px;
+  }
   .monster {
     background-image: url(public/img/monstre/monster_forside_historie.svg);
     grid-column: 1/4;
     max-width: 100%;
-    padding-top: 200px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 50px;
   }
   #stortbillede img {
     max-width: 450px;
@@ -233,9 +239,28 @@ import "../styles/global.css";
   }
 
   h2 {
-    padding-bottom: 10px;
+    padding-bottom: 12px;
   }
 
+  h1 {
+    padding-bottom: 18px;
+  }
+
+  h4 {
+    padding-bottom: 14px;
+  }
+
+  h3 {
+    padding-bottom: 20px;
+  }
+
+  p {
+    padding-bottom: 26px;
+  }
+
+  a {
+    margin-bottom: 26px;
+  }
   /* --------------------------- topseller carousel ---------------------------*/
   /* ignorer det der er ovenover */
 
@@ -353,6 +378,14 @@ import "../styles/global.css";
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-column: 1/4;
+      text-align: left;
+      padding-left: 30px;
+    }
+    .section_1 h4 {
+      padding-bottom: 26px;
+    }
+    .section_1 h2 {
+      padding-bottom: 26px;
     }
 
     .section2 {
@@ -393,6 +426,10 @@ import "../styles/global.css";
     }
     #stortbillede img {
       max-width: 100%;
+    }
+    .monster {
+      padding-top: 200px;
+      padding-bottom: 150px;
     }
   }
 </style>
