@@ -314,7 +314,6 @@ button {
   main {
     display: grid;
     grid-template-columns: 1fr minmax(0, 1100px) 1fr;
-    margin: 1rem;
   }
 
   section {
