@@ -187,13 +187,13 @@ h5 {
 }
 .body2 {
   font-family: "EB Garamond", serif;
-  font-size: var(--line-height-mob-body2-label-button);
+  font-size: var(--font-size-mob-body2);
   color: var(--color-oliven);
   line-height: var(--line-height-mob-body2-label-button);
 }
 .body2b {
   font-family: "EB Garamond", serif;
-  font-size: var(--font-size-mob-body2-label-button);
+  font-size: var(--font-size-mob-body2);
   color: var(--color-oliven);
   line-height: var(--line-height-mob-body2-label-button);
   font-weight: var(--font-weight-body-bold);
@@ -201,7 +201,7 @@ h5 {
 .body2i {
   font-family: "EB Garamond", serif;
   font-style: italic;
-  font-size: var(--font-size-mob-body2-label-button);
+  font-size: var(--font-size-mob-body2);
   color: var(--color-oliven);
   line-height: var(--line-height-mob-body2-label-button);
 }
