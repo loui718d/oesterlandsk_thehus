@@ -222,6 +222,10 @@ button {
   font-weight: var(--font-weight-button-mob);
 }
 
+.maincarousel{
+  width: 100vw;
+  overflow: hidden;
+}
 /* Desktop font styling */
 @media (min-width: 600px) {
   h1 {
