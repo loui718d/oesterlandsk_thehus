@@ -311,7 +311,7 @@ button {
     font-weight: var(--font-weight-button-web);
   }
 
-  main {
+  .main {
     display: grid;
     grid-template-columns: 1fr minmax(0, 1100px) 1fr;
   }
