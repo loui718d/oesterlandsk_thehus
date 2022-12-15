@@ -1,14 +1,19 @@
 ---
 import "../styles/global.css";
-const { href, title } = Astro.props;
+const { href, title, oko } = Astro.props;
 ---
 
-<article>
-  <a href={href}>
-    <div>
-      <img src="" alt="" />
-      <h5>{title}</h5>
-      <img src="/img/ikoner_logo/profil.svg" alt="" />
+<article class={oko == true && "øko"}>
+  <a href="lakrids.html">
+    <div id="produktbillede">
+      <img class="omrode billede1" src="/img/billeder/lakridste.svg" alt="" />
+      <h5 class="omrode">{title}</h5>
+
+      {
+        oko == true && (
+          <img class="omrode billede2" src="/img/ikoner_logo/oko.svg" alt="" />
+        )
+      }
     </div>
     <div></div>
   </a>
@@ -18,7 +23,28 @@ const { href, title } = Astro.props;
   article {
     height: 280px;
     width: 230px;
-    background-color: var(--color-creme-70);
+    background-color: var(--color-mork-gron-110);
     border-radius: 20px;
+  }
+  #produktbillede {
+    display: grid;
+    width: 230px;
+  }
+
+  .billede1 {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .billede2 {
+    padding-top: 180px;
+  }
+
+  .omrode {
+    grid-area: 1/1;
+  }
+  h5 {
+    z-index: 1;
+    text-align: center;
   }
 </style>
