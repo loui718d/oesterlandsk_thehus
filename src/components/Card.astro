@@ -1,12 +1,12 @@
 ---
 import "../styles/global.css";
-const { href, title, oko } = Astro.props;
+const { href, title, oko, pris, src, vaegt } = Astro.props;
 ---
 
 <article class={oko == true && "øko"}>
   <a href="lakrids.html">
     <div id="produktbillede">
-      <img class="omrode billede1" src="/img/billeder/lakridste.svg" alt="" />
+      <img class="omrode billede1" src={src} alt="" />
       <h5 class="omrode">{title}</h5>
 
       {
@@ -15,7 +15,11 @@ const { href, title, oko } = Astro.props;
         )
       }
     </div>
-    <div></div>
+    <div>
+      <h4>{pris}</h4><p class="label">{vaegt}</p><button
+        ><img src="" alt="" />
+      </button>
+    </div>
   </a>
 </article>
 
@@ -46,5 +50,12 @@ const { href, title, oko } = Astro.props;
   h5 {
     z-index: 1;
     text-align: center;
+    text-decoration: none;
+  }
+  h4 {
+    color: var(--color-creme);
+  }
+  p {
+    color: var(--color-creme);
   }
 </style>
