@@ -17,82 +17,94 @@ import "../styles/global.css";
   <body>
     <Header />
 
-    <main class="main">
-      <div class="brodkrumme">
-        <a href="">Hjem</a><img src="/img/ikoner_logo/pil_hojre.svg" alt="" /><p
-        >
-          Kurv
-        </p>
+    <main>
+      <div class="main">
+        <div class="brodkrumme">
+          <a href="">Hjem</a><img
+            src="/img/ikoner_logo/pil_hojre.svg"
+            alt=""
+          /><p>Kurv</p>
+        </div>
       </div>
-      <a href=""></a>
-      <h1>Kurv</h1>
-      <section>
-        <div class="testimonials">
-          <div class="kreditkort body1b">
-            <img
-              src="public/img/ikoner_logo/kreditkort.svg"
-              alt="kreditkort"
-            /><p>Gratis fragt fra 400kr</p>
-          </div>
-          <div class="transport body1b">
-            <img src="public/img/ikoner_logo/transport.svg" alt="transport" /><p
-            >
-              Levering 1-3 dage
-            </p>
-          </div>
-        </div>
-        <div class="titler">
-          <div class="flex">
-            <h4>Produktnavn</h4>
 
-            <h4>Mængde</h4>
-            <h4>Totalpris</h4>
-          </div>
-        </div>
-        <div class="container_mobile1">
-          <div class="billede_lakrids">
-            <img
-              src="public/img/billeder/lakrids_lille_billede.svg"
-              alt="lakrids"
-            />
-          </div>
-          <div>
-            <div class="kategorier">
+      <h1>Kurv</h1>
+
+      <div class="baggrund">
+        <div class="main">
+          <section>
+            <div class="testimonials">
+              <div class="kreditkort body1b">
+                <img
+                  src="public/img/ikoner_logo/kreditkort.svg"
+                  alt="kreditkort"
+                /><p>Gratis fragt fra 400kr</p>
+              </div>
+              <div class="transport body1b">
+                <img
+                  src="public/img/ikoner_logo/transport.svg"
+                  alt="transport"
+                /><p>Levering 1-3 dage</p>
+              </div>
+            </div>
+            <div class="titler">
+              <div class="flex">
+                <h4>Produktnavn</h4>
+
+                <h4>Mængde</h4>
+                <h4>Totalpris</h4>
+              </div>
+            </div>
+            <div class="container_mobile1">
+              <div class="billede_lakrids">
+                <img
+                  src="public/img/billeder/lakrids_lille_billede.svg"
+                  alt="lakrids"
+                />
+              </div>
               <div>
-                <p class="body1">Lakrids Te</p><p class="body1">
-                  Størrelse: 100g
+                <div class="kategorier">
+                  <div>
+                    <p class="body1">Lakrids Te</p><p class="body1">
+                      Størrelse: 100g
+                    </p>
+                  </div>
+
+                  <div class="antal">
+                    <img src="public/img/ikoner_logo/plus.svg" alt="plus" /><p>
+                      1
+                    </p><img
+                      src="public/img/ikoner_logo/minus.svg"
+                      alt="minus"
+                    />
+                  </div>
+                  <p>56,00 DK</p>
+                </div>
+              </div>
+            </div>
+            <div class="container2">
+              <div class="subtotal1">
+                <div class="subtotal2">
+                  <p class="body1">Subtotal</p><h4>149,00 DK</h4>
+                </div><p class="body1i">
+                  Moms er inkluderet, fragt udregnes ved betaling
                 </p>
               </div>
-
-              <div class="antal">
-                <img src="public/img/ikoner_logo/plus.svg" alt="plus" /><p>
-                  1
-                </p><img src="public/img/ikoner_logo/minus.svg" alt="minus" />
+              <div class="">
+                <div>
+                  <h4>Tilbagevendende kunde?</h4><h5>
+                    Klik her for at logge ind
+                  </h5>
+                </div><div>
+                  <h4>Har de en gavekode?</h4><h5>
+                    Klik her for at indtaste deres kode
+                  </h5>
+                </div>
               </div>
-              <p>56,00 DK</p>
             </div>
-          </div>
+            <div><div><a href=""></a></div><div><a href=""></a></div></div>
+          </section>
         </div>
-        <div class="container2">
-          <div class="subtotal1">
-            <div class="subtotal2">
-              <p class="body1">Subtotal</p><h4>149,00 DK</h4>
-            </div><p class="body1i">
-              Moms er inkluderet, fragt udregnes ved betaling
-            </p>
-          </div>
-          <div class="">
-            <div>
-              <h4>Tilbagevendende kunde?</h4><h5>Klik her for at logge ind</h5>
-            </div><div>
-              <h4>Har de en gavekode?</h4><h5>
-                Klik her for at indtaste deres kode
-              </h5>
-            </div>
-          </div>
-        </div>
-        <div><div><a href=""></a></div><div><a href=""></a></div></div>
-      </section>
+      </div>
     </main>
 
     <Footer />
@@ -197,6 +209,9 @@ import "../styles/global.css";
           display: flex;
           align-items: center;
           justify-content: space-around;
+        }
+        .baggrund {
+          background-image: url(public/img/monstre/monster_betalingsflow.svg);
         }
       }
     </style>
