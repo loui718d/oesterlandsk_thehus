@@ -49,7 +49,7 @@ import "../styles/global.css";
               type="text"
               id="lname"
               name="lastname"
-              placeholder="eks. anders@andersen.com"
+              placeholder="Emailadresse"
             />
 
             <label class="body1b" for="fname">Leveringsadresse</label>
@@ -70,13 +70,33 @@ import "../styles/global.css";
                 placeholder="Fornavn"
               />
 
+              <input
+                class="body2"
+                type="text"
+                id="lname"
+                name="firstname"
+                placeholder="Efternavn"
+              />
+</div>
+        <input  class="body2"
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Firma (valgfri)"
+        />
+        <input  class="body2"
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Adresse"
+        />
         <input  class="body2"
           type="text"
           id="lname"
           name="lastname"
           placeholder="Lejlighed, etage osv. (valgfri)"
         />
-        </div>
+      
         <div class="postby">
         <input  class="body2"
           type="text"
@@ -166,7 +186,11 @@ import "../styles/global.css";
       .section_1{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding-left: 50px;
       }
+    .container{
+      width: 80%;
+    }
     }
   </style>
 </html>
