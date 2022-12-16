@@ -17,13 +17,165 @@ import "../styles/global.css";
   <body>
     <Header />
     <main>
-      <h1></h1>
+      <div class="main">
+        <div class="brodkrumme">
+          <a href="">Hjem</a><img
+            src="/img/ikoner_logo/pil_hojre.svg"
+            alt=""
+          />
+          <a href="">kurv</a><img
+            src="/img/ikoner_logo/pil_hojre.svg"
+            alt=""
+          /><p>Oplysninger</p>
+        </div>
+      </div>
+
+      <h1>Oplysninger</h1>
+      <section>
+      <div class="container">
+        <form>
+          <label class="body1b" for="fname"
+          >Kundetype</label
+        >
+        <select  class="body2" id="privat/webshop" name="privat/webshop">
+          <option value="vælg">Vælg</option>
+          <option value="privatkunde">Privatkunde</option>
+          <option value="webshop">Webshop henvendelser</option>
+        </select>
+
+        <label class="body1b" for="lname">Kontaktinformation</label>
+        <input class="body2"
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="eks. anders@andersen.com"
+        />
+
+        <label class="body1b" for="fname"
+        >Leveringsadresse</label
+      >
+      <select  class="body2" id="privat/webshop" name="privat/webshop">
+        <option value="vælg">Land/område</option>
+        <option value="privatkunde">Danmark</option>
+        <option value="webshop">Norge</option>
+        <option value="webshop">Sverige</option>
+        <option value="webshop">Findland</option>
+      </select>
+
+        <div class="forefter">
+          <input  class="body2"
+          type="text"
+          id="lname"
+          name="firstname"
+          placeholder="Fornavn"
+        />
+         
+          <input  class="body2"
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Efternavn"
+          />
+        </div>
+          <input  class="body2"
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Firma(valgfri)"
+        />
+        <input  class="body2"
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Adresse"
+        />
+
+        <input  class="body2"
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Lejlighed, etage osv. (valgfri)"
+        />
+        <div class="postby">
+        <input  class="body2"
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Postnummer"
+        />
+        <input  class="body2"
+        type="text"
+        id="lname"
+        name="lastname"
+        placeholder="By"
+      />
+    </div>
+    <input  class="body2"
+    type="text"
+    id="lname"
+    name="lastname"
+    placeholder="Telefon"
+  />
+
+          <label class="body1b" for="lname">Yderligere information</label>
+          <textarea class="body2"
+            id="subject"
+            name="subject"
+            placeholder="Notater vedrørende deres ordre (valgfri) "
+            style="height:200px"></textarea>
+        </form>
+      <button class="primary_sm">Send</button>
+    </section>
+    </div>
+
+
+
       <a href=""></a>
       <section><div><h4></h4></div><div></div></section>
     </main>
     <Footer />
   </body>
   <style>
+    .brodkrumme {
+        display: flex;
+        align-items: center;
+        padding-left: 36px;
+        padding-right: 36px;
+      }
+      .brodkrumme img {
+        height: 16px;
+      }
+      .brodkrumme a {
+        font-family: "EB Garamond", serif;
+        font-size: var(--font-size-web-body1-label);
+        color: var(--color-oliven);
+        line-height: var(--line-height-web-body1);
+        font-weight: var(--font-weight-body-bold);
+      }
+      input[type="text"],
+  select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #413c1c;
+      border-radius: 12px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    .container {
+      border-radius: 10px;
+    }
+
+    .forefter{
+      display: flex;
+      gap: 20px;
+    }
+    .postby{
+      display: flex;
+      gap: 20px;
+    }
     /* desktop */
     @media (min-width: 600px) {
     }
