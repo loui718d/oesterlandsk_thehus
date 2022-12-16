@@ -1,6 +1,7 @@
 ---
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import Oversigt from "../components/Oversigt.astro";
 import "../styles/global.css";
 ---
 
@@ -17,6 +18,7 @@ import "../styles/global.css";
   <body>
     <Header />
     <main>
+    
       <div class="main">
         <div class="brodkrumme">
           <a href="">Hjem</a><img
@@ -31,7 +33,8 @@ import "../styles/global.css";
       </div>
 
       <h1>Oplysninger</h1>
-      <section>
+    
+      <section class="section_1">
       <div class="container">
         <form>
           <label class="body1b" for="fname"
@@ -125,16 +128,20 @@ import "../styles/global.css";
             style="height:200px"></textarea>
         </form>
       <button class="primary_sm">Send</button>
-    </section>
     </div>
 
-
-
-      <a href=""></a>
-      <section><div><h4></h4></div><div></div></section>
+    <div>
+    <Oversigt />
+    <h1></h1>
+    <a href=""></a>
+</div>
+</section>
     </main>
     <Footer />
   </body>
+
+
+
   <style>
     .brodkrumme {
         display: flex;
@@ -178,6 +185,10 @@ import "../styles/global.css";
     }
     /* desktop */
     @media (min-width: 600px) {
+      .section_1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
     }
   </style>
 </html>
