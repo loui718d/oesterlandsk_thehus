@@ -1,0 +1,33 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Oversigt from "../components/Oversigt.astro";
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Østerlandsk Tehus</title>
+    <link rel="stylesheet" href="https://use.typekit.net/jxo6nhv.css" />
+  </head>
+
+  <body>
+    <Header />
+    <main>
+      <Oversigt />
+      <h1></h1>
+      <a href=""></a>
+      <section><div><h4></h4></div><div></div></section>
+    </main>
+    <Footer />
+  </body>
+  <style>
+    /* desktop */
+    @media (min-width: 600px) {
+    }
+  </style>
+</html>
