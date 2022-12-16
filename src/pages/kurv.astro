@@ -18,7 +18,7 @@ import "../styles/global.css";
     <Header />
 
     <main class="main">
-         <div class="brodkrumme">
+      <div class="brodkrumme">
         <a href="">Hjem</a><img src="/img/ikoner_logo/pil_hojre.svg" alt="" /><p
         >
           Kurv
@@ -28,33 +28,68 @@ import "../styles/global.css";
       <h1>Kurv</h1>
       <section>
         <div class="testimonials">
-          <div class="kreditkort body1b"><img src="public/img/ikoner_logo/kreditkort.svg" alt="kreditkort" /><p>Gratis fragt fra 400kr</p></div>
-          <div class="transport body1b"><img src="public/img/ikoner_logo/transport.svg" alt="transport" /><p>Levering 1-3 dage</p></div>
+          <div class="kreditkort body1b">
+            <img
+              src="public/img/ikoner_logo/kreditkort.svg"
+              alt="kreditkort"
+            /><p>Gratis fragt fra 400kr</p>
+          </div>
+          <div class="transport body1b">
+            <img src="public/img/ikoner_logo/transport.svg" alt="transport" /><p
+            >
+              Levering 1-3 dage
+            </p>
+          </div>
         </div>
         <div class="titler">
-          <!-- vises kun i desk -->
-          <h4>Produktnavn</h4>
-          <h4>Pris</h4>
-          <h4>Mængde</h4>
-          <h4>Titel</h4>
-          <h4>Fjern produkt</h4>
+          <div class="flex">
+            <h4>Produktnavn</h4>
+
+            <h4>Mængde</h4>
+            <h4>Total</h4>
+          </div>
         </div>
         <div class="container_mobile1">
-          <div class="billede_lakrids"><img src="public/img/billeder/lakrids_lille_billede.svg" alt="lakrids" /></div>
+          <div class="billede_lakrids">
+            <img
+              src="public/img/billeder/lakrids_lille_billede.svg"
+              alt="lakrids"
+            />
+          </div>
           <div>
-            <div>
-              <p class="body1">Lakrids Te</p><p class="body1">Størrelse: 100g</p>
-              <p class="body1i">Fjern</p>
+            <div class="kategorier">
               <div>
-                <img src="public/img/ikoner_logo/plus.svg" alt="plus" /><p>1</p><img src="public/img/ikoner_logo/minus.svg" alt="minus" />
+                <p class="body1">Lakrids Te</p><p class="body1">
+                  Størrelse: 100g
+                </p>
+              </div>
+
+              <div class="antal">
+                <img src="public/img/ikoner_logo/plus.svg" alt="plus" /><p>
+                  1
+                </p><img src="public/img/ikoner_logo/minus.svg" alt="minus" />
               </div>
               <p>56,00 DK</p>
             </div>
           </div>
         </div>
-        <div class="container_mobile2">
-          <div><div><h4>Tilbagevendende kunde?</h4><h5>Klik her for at logge ind</h5></div><div><h4>Har de en gavekode?</h4><h5>Klik her for at indtaste deres kode </h5></div></div>
-          <div><div><p class="body1">Subtotal</p><h4>149,00 DK</h4></div><p class="body1i">Moms er inkluderet, fragt udregnes ved betaling</p></div>
+        <div class="container2">
+          <div class="subtotal1">
+            <div class="subtotal2">
+              <p class="body1">Subtotal</p><h4>149,00 DK</h4>
+            </div><p class="body1i">
+              Moms er inkluderet, fragt udregnes ved betaling
+            </p>
+          </div>
+          <div class="">
+            <div>
+              <h4>Tilbagevendende kunde?</h4><h5>Klik her for at logge ind</h5>
+            </div><div>
+              <h4>Har de en gavekode?</h4><h5>
+                Klik her for at indtaste deres kode
+              </h5>
+            </div>
+          </div>
         </div>
         <div><div><a href=""></a></div><div><a href=""></a></div></div>
       </section>
@@ -63,83 +98,106 @@ import "../styles/global.css";
     <Footer />
 
     <style>
+      .container_mobile1 {
+        border-top: 1px solid var(--color-oliven);
+        border-bottom: 1px solid var(--color-oliven);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
 
-.container_mobile1{
-    border-top: 1px solid var(--color-oliven);
-    border-bottom: 1px solid var(--color-oliven);
-    display: flex;
-    flex-direction: row;
-    
-}
-
-.container_mobile2{
-    border-top: 1px solid var(--color-oliven);
-    border-bottom: 1px solid var(--color-oliven);
-    display: flex;
-    flex-direction: row;
-}
+      .container2 {
+        margin-top: 12px;
+      }
       h1 {
-      margin-top: 36px;
-      grid-column: 2/3;
-      margin-bottom: 72px;
-      text-align: center;
-    }
+        margin-top: 36px;
+        grid-column: 2/3;
+        margin-bottom: 72px;
+        text-align: center;
+      }
 
-    .brodkrumme {
-      display: flex;
-      align-items: center;
-      padding-left: 36px;
-      padding-right: 36px;
-    }
-    .brodkrumme img {
-      height: 16px;
-    }
+      .brodkrumme {
+        display: flex;
+        align-items: center;
+        padding-left: 36px;
+        padding-right: 36px;
+      }
+      .brodkrumme img {
+        height: 16px;
+      }
 
-    .brodkrumme a {
-      font-family: "EB Garamond", serif;
-      font-size: var(--font-size-web-body1-label);
-      color: var(--color-oliven);
-      line-height: var(--line-height-web-body1);
-      font-weight: var(--font-weight-body-bold);
-    }
+      .brodkrumme a {
+        font-family: "EB Garamond", serif;
+        font-size: var(--font-size-web-body1-label);
+        color: var(--color-oliven);
+        line-height: var(--line-height-web-body1);
+        font-weight: var(--font-weight-body-bold);
+      }
 
-   
+      .subtotal2 {
+        display: flex;
+        place-content: end;
+      }
+      .subtotal1 {
+        text-align: right;
+        margin-bottom: 12px;
+        margin-top: 12px;
+      }
 
-    .kreditkort{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 6px;
-    }
+      .kreditkort {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+      }
 
-     .transport{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 6px;
-    }
+      .transport {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+      }
 
-    .titler{
-      display: none;
-    }
+      .titler {
+        display: none;
+        border-bottom: 1px solid var(--color-oliven);
+      }
+
+      .antal {
+        display: flex;
+        align-items: center;
+      }
 
       /* desktop */
       @media (min-width: 600px) {
-         .brodkrumme {
-        grid-column: 2/3;
-      }
+        .brodkrumme {
+          grid-column: 2/3;
+        }
 
-    .testimonials{
-display: flex;
-flex-direction: row;
-  }
+        .testimonials {
+          display: flex;
+          flex-direction: row;
+          gap: 16px;
+        }
+        .container_mobile1 {
+          border-top: none;
+        }
 
+        .titler {
+          display: block;
 
-   .titler{
-      display: block;
-      border-bottom: 1px solid var(--color-oliven);
-    }
+          border-bottom: 1px solid var(--color-oliven);
+        }
+        .flex {
+          display: flex;
+          gap: 120px;
+          justify-content: space-between;
+        }
 
+        .kategorier {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+        }
       }
     </style>
   </body>
