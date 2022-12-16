@@ -234,6 +234,15 @@ button {
 
 /*knapper mobile primary */
 
+/* .primary_sm {
+  background: var(--color-lys-gron);
+  border-radius: 8px;
+  width: 170px;
+  height: 60px;
+  border: none;
+  color: var(--color-mork-gron);
+} */
+
 .primary_sm {
   background: var(--color-lys-gron);
   border-radius: 8px;
@@ -241,6 +250,8 @@ button {
   height: 60px;
   border: none;
   color: var(--color-mork-gron);
+  display: grid;
+  place-content: center;
 }
 
 .primary_sm:hover {
@@ -275,6 +286,15 @@ button {
 
 /*knapper mobile secondary */
 
+/* .secondary_sm {
+  background: var(--color-rodbrun);
+  color: var(--color-gul);
+  border-radius: 8px;
+  width: 170px;
+  height: 60px;
+  border: none;
+} */
+
 .secondary_sm {
   background: var(--color-rodbrun);
   color: var(--color-gul);
@@ -282,6 +302,8 @@ button {
   width: 170px;
   height: 60px;
   border: none;
+  display: grid;
+  place-content: center;
 }
 
 .secondary_sm:hover {
