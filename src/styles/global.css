@@ -469,6 +469,15 @@ button {
     color: var(--color-lys-gron);
   }
 
+  /* .primary_lg {
+    background: var(--color-lys-gron);
+    border-radius: 8px;
+    width: 360px;
+    height: 60px;
+    border: none;
+    color: var(--color-mork-gron);
+  } */
+
   .primary_lg {
     background: var(--color-lys-gron);
     border-radius: 8px;
@@ -476,6 +485,8 @@ button {
     height: 60px;
     border: none;
     color: var(--color-mork-gron);
+    display: grid;
+    place-content: center;
   }
 
   .primary_lg:hover {
@@ -513,13 +524,24 @@ button {
     color: var(--color-rodbrun);
   }
 
-  .secondary_lg {
+  /* .secondary_lg {
     background: var(--color-rodbrun);
     color: var(--color-gul);
     border-radius: 8px;
     width: 320px;
     height: 60px;
     border: none;
+  } */
+
+  .secondary_lg {
+    background: var(--color-rodbrun);
+    color: var(--color-gul);
+    border-radius: 8px;
+    width: 360px;
+    height: 60px;
+    border: none;
+    display: grid;
+    place-content: center;
   }
 
   .secondary_lg:hover {
