@@ -65,7 +65,14 @@ import "../styles/global.css";
               />
             </div>
             <div>
-              <button>Sortering</button>
+              <div class="dropdown">
+                <button class="dropbtn">Sortering <img class="droptrekant" src="public/img/ikoner_logo/trkant_ned.svg" alt=""></button>
+                <div class="dropdown-content">
+                <a href="#">Populært</a>
+                <a href="#">Pris faldende</a>
+                <a href="#">Pris stigende</a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="card_grid">
@@ -224,7 +231,53 @@ import "../styles/global.css";
       justify-content: end;
       margin-bottom: 40px;
     }
+    .dropbtn {
+  background-color: #faf9f3;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  border: 1px black;
+  border-radius: 12px;
+  cursor: pointer;
+}
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+ 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 12px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #00000000;
+}
+
+.droptrekant{
+  padding-left: 40px;
+}
     /* desktop */
     @media (min-width: 600px) {
       .brodkrumme {
@@ -249,6 +302,7 @@ import "../styles/global.css";
         gap: 30px;
         margin-top: 60px;
       }
+   
     }
   </style>
 </html>
