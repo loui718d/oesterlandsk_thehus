@@ -18,7 +18,17 @@ import "../styles/global.css";
   <body>
     <Header />
     <main>
-      <Oversigt />
+      <div class="brodkrumme">
+        <a href="index.html">Hjem</a><img
+          src="/img/ikoner_logo/pil_hojre.svg"
+          alt=""
+        />
+        <a href="">Te</a><img src="/img/ikoner_logo/pil_hojre.svg" alt="" /><a
+          href="">Frugt- og Urte Te</a
+        ><img src="/img/ikoner_logo/pil_hojre.svg" alt="" />
+        <p>Lakrids Te</p>
+      </div>
+      <Oversigt levering="Beregner..." pris="56,00 DKK" />
       <h1></h1>
       <a href=""></a>
       <section><div><h4></h4></div><div></div></section>
@@ -26,6 +36,22 @@ import "../styles/global.css";
     <Footer />
   </body>
   <style>
+    .brodkrumme {
+      display: flex;
+      align-items: center;
+    }
+    .brodkrumme img {
+      height: 16px;
+    }
+
+    .brodkrumme a {
+      font-family: "EB Garamond", serif;
+      font-size: var(--font-size-web-body1-label);
+      color: var(--color-oliven);
+      line-height: var(--line-height-web-body1);
+      font-weight: var(--font-weight-body-bold);
+      /* text-decoration: none; */
+    }
     /* desktop */
     @media (min-width: 600px) {
     }
