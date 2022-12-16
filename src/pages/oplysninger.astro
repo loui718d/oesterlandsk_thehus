@@ -1,6 +1,7 @@
 ---
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import Oversigt from "../components/Oversigt.astro";
 import "../styles/global.css";
 ---
 
@@ -17,6 +18,7 @@ import "../styles/global.css";
   <body>
     <Header />
     <main>
+    
       <div class="main">
         <div class="brodkrumme">
           <a href="">Hjem</a><img src="/img/ikoner_logo/pil_hojre.svg" alt="" />
@@ -28,15 +30,18 @@ import "../styles/global.css";
       </div>
 
       <h1>Oplysninger</h1>
-      <section>
-        <div class="container">
-          <form>
-            <label class="body1b" for="fname">Kundetype</label>
-            <select class="body2" id="privat/webshop" name="privat/webshop">
-              <option value="vælg">Vælg</option>
-              <option value="privatkunde">Privatkunde</option>
-              <option value="webshop">Webshop henvendelser</option>
-            </select>
+    
+      <section class="section_1">
+      <div class="container">
+        <form>
+          <label class="body1b" for="fname"
+          >Kundetype</label
+        >
+        <select  class="body2" id="privat/webshop" name="privat/webshop">
+          <option value="vælg">Vælg</option>
+          <option value="privatkunde">Privatkunde</option>
+          <option value="webshop">Webshop henvendelser</option>
+        </select>
 
             <label class="body1b" for="lname">Kontaktinformation</label>
             <input
@@ -44,7 +49,7 @@ import "../styles/global.css";
               type="text"
               id="lname"
               name="lastname"
-              placeholder="eks. anders@andersen.com"
+              placeholder="Emailadresse"
             />
 
             <label class="body1b" for="fname">Leveringsadresse</label>
@@ -69,73 +74,72 @@ import "../styles/global.css";
                 class="body2"
                 type="text"
                 id="lname"
-                name="lastname"
+                name="firstname"
                 placeholder="Efternavn"
               />
-            </div>
-            <input
-              class="body2"
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Firma(valgfri)"
-            />
-            <input
-              class="body2"
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Adresse"
-            />
+</div>
+        <input  class="body2"
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Firma (valgfri)"
+        />
+        <input  class="body2"
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Adresse"
+        />
+        <input  class="body2"
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Lejlighed, etage osv. (valgfri)"
+        />
+      
+        <div class="postby">
+        <input  class="body2"
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Postnummer"
+        />
+        <input  class="body2"
+        type="text"
+        id="lname"
+        name="lastname"
+        placeholder="By"
+      />
+    </div>
+    <input  class="body2"
+    type="text"
+    id="lname"
+    name="lastname"
+    placeholder="Telefon"
+  />
 
-            <input
-              class="body2"
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Lejlighed, etage osv. (valgfri)"
-            />
-            <div class="postby">
-              <input
-                class="body2"
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Postnummer"
-              />
-              <input
-                class="body2"
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="By"
-              />
-            </div>
-            <input
-              class="body2"
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Telefon"
-            />
+          <label class="body1b" for="lname">Yderligere information</label>
+          <textarea class="body2"
+            id="subject"
+            name="subject"
+            placeholder="Notater vedrørende deres ordre (valgfri) "
+            style="height:200px"></textarea>
+        </form>
+      <button class="primary_sm">Send</button>
+    </div>
 
-            <label class="body1b" for="lname">Yderligere information</label>
-            <textarea
-              class="body2"
-              id="subject"
-              name="subject"
-              placeholder="Notater vedrørende deres ordre (valgfri) "
-              style="height:200px"></textarea>
-          </form>
-          <button class="primary_sm">Send</button>
-        </div>
-      </section>
-
-      <a href=""></a>
-      <section><div><h4></h4></div><div></div></section>
+    <div>
+    <Oversigt />
+    <h1></h1>
+    <a href=""></a>
+</div>
+</section>
     </main>
     <Footer />
   </body>
+
+
+
   <style>
     .brodkrumme {
       display: flex;
@@ -179,6 +183,14 @@ import "../styles/global.css";
     }
     /* desktop */
     @media (min-width: 600px) {
+      .section_1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 50px;
+      }
+    .container{
+      width: 80%;
+    }
     }
   </style>
 </html>
