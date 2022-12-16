@@ -63,6 +63,9 @@ import "../styles/global.css";
               </div>
               <div>
                 <div class="kategorier">
+                  <div class="kryds">
+                    <img src="public/img/ikoner_logo/X.svg" alt="" />
+                  </div>
                   <div class="produktnavn">
                     <p class="body1">Lakrids Te</p><p class="body1">
                       Størrelse: 100g
@@ -202,7 +205,16 @@ import "../styles/global.css";
         border-bottom: 1px solid var(--color-oliven);
       }
 
+      .kryds {
+        position: absolute;
+        right: 30px;
+        top: 430px;
+      }
+
       .total {
+        place-self: end;
+        margin-top: 10px;
+        font-weight: 600;
       }
 
       .antal {
@@ -215,6 +227,12 @@ import "../styles/global.css";
       }
 
       .billede_lakrids {
+      }
+      .kategorier {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
       }
 
       /* desktop */
@@ -249,6 +267,11 @@ import "../styles/global.css";
 
           border-bottom: 1px solid var(--color-oliven);
         }
+        .kryds {
+          position: absolute;
+          right: 170px;
+          top: 520px;
+        }
 
         .flex {
           display: flex;
@@ -258,8 +281,10 @@ import "../styles/global.css";
 
         .kategorier {
           display: flex;
+          flex-direction: row;
           align-items: center;
           justify-content: space-between;
+          margin-top: 20px;
         }
         .baggrund {
           background-image: url(public/img/monstre/monster_betalingsflow.svg);
