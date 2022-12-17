@@ -92,8 +92,8 @@
   --font-family-headings: "BuenaParkJF", serif;
   --font-size-web-body2: 12.8px;
   --font-size-web-body1-label: 16px;
-  --font-size-web-h5: 19.20px;
-  --font-size-web-button: 19.20px;
+  --font-size-web-h5: 19.2px;
+  --font-size-web-button: 19.2px;
   --font-size-web-h4: 23.04px;
   --font-size-web-h3: 27.65px;
   --font-size-web-h2: 33.18px;
@@ -455,6 +455,14 @@ button {
 
   /*knapper desktop primary */
 
+  /* .primary_sm {
+    background: var(--color-lys-gron);
+    border-radius: 8px;
+    width: 200px;
+    height: 60px;
+    border: none;
+    color: var(--color-mork-gron);
+  } */
   .primary_sm {
     background: var(--color-lys-gron);
     border-radius: 8px;
@@ -462,6 +470,8 @@ button {
     height: 60px;
     border: none;
     color: var(--color-mork-gron);
+    display: grid;
+    place-content: center;
   }
 
   .primary_sm:hover {
