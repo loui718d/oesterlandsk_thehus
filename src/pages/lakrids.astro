@@ -196,62 +196,48 @@ import "../styles/global.css";
           </div>
         </div>
       </section>
-
-      
+     
       <section class="monster">
-        
         <div class="main">
-          <h3>Andre købte også:</h3>
-          <div>
-            <div class="andrekobte">
-              <article>
-                <Card
-                  title="Solskins Te"
-                  oko={false}
-                  pris="52,-"
-                  vaegt="Pr. 100g"
-                  src="/img/billeder/solskinste.svg"
-                />
-              </article>
-              <article>
-                <Card
-                  title="Jule te (Christmas te)"
-                  oko={false}
-                  pris="52,-"
-                  vaegt="Pr. 100g"
-                  src="/img/billeder/julete.svg"
-                />
-              </article>
-              <article>
-                <Card
-                  title="Ingefær Te"
-                  oko={true}
-                  pris="54,-"
-                  vaegt="Pr. 100g"
-                  src="/img/billeder/ingefærte.svg"
-                />
-              </article>
-              <article>
-                <Card
-                  title="Solskins Te"
-                  oko={false}
-                  pris="52,-"
-                  vaegt="Pr. 100g"
-                  src="/img/billeder/solskinste.svg"
-                />
-              </article>
-            </div>
+        <h3>Andre købte også:</h3><div>
+          <div class="andrekobte">
+            <article><Card
+              title="Solskins Te"
+              oko={false}
+              pris="52,-"
+              vaegt="Pr. 100g"
+              src="/img/billeder/solskinste.svg"
+            /></article>
+            <article><Card
+              title="Jule te (Christmas te)"
+              oko={false}
+              pris="52,-"
+              vaegt="Pr. 100g"
+              src="/img/billeder/julete.svg"
+            /></article>
+            <article><Card
+              title="Ingefær Te"
+              oko={true}
+              pris="54,-"
+              vaegt="Pr. 100g"
+              src="/img/billeder/ingefærte.svg"
+            /></article>
+            <article><Card
+              title="Solskins Te"
+              oko={false}
+              pris="52,-"
+              vaegt="Pr. 100g"
+              src="/img/billeder/solskinste.svg"
+            /></article>
           </div>
         </div>
-        
+      </div>
       </section>
       <!-- popup indsættes her -->
     </main>
 
     <Footer />
   </body>
-
-  
   <style>
     .brodkrumme {
       display: flex;
@@ -416,13 +402,6 @@ import "../styles/global.css";
     .imgprodukt {
       width: 100%;
     }
-    .monster {
-      background-image: url(public/img/monstre/monster_forside_historie.svg);
-      grid-column: 1/4;
-      max-width: 100%;
-      padding-top: 100px;
-      padding-bottom: 50px;
-    }
     /* desktop */
     @media (min-width: 600px) {
       .h1desktop {
@@ -434,7 +413,8 @@ import "../styles/global.css";
       .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 50px;s
+        gap: 50px;
+        padding: 10px;
       }
       .valgvagt {
         display: flex;
@@ -483,7 +463,7 @@ import "../styles/global.css";
       .plus3 {
         padding-left: 36%;
       }
-      .andrekobte {
+      .andrekobte{
         display: flex;
         gap: 20px;
         justify-content: center;
@@ -493,8 +473,7 @@ import "../styles/global.css";
 
     }
   </style>
-
-  <!-- <script>
+  <script>
     var coll = document.getElementsByClassName("collapsible");
     var i;
 
@@ -509,6 +488,5 @@ import "../styles/global.css";
         }
       });
     }
-     </script> -->
-
+  </script>
 </html>
