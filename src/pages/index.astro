@@ -19,16 +19,16 @@ import "../styles/global.css";
     <div id="cookiePopup" class="hide">
       <h2 class="cookieh2">Cookieboks</h2>
       <p>
-        Vores hjemmeside bruger cookies til at give dig en god browsingoplevelse og
-         relevant information. Før du fortsætter med at bruge vores hjemmeside, accepterer du
-         vores <a href="#">Cookie Policy & Privacy.</a>
+        Vores hjemmeside bruger cookies til at give dig en god browsingoplevelse
+        og relevant information. Før du fortsætter med at bruge vores
+        hjemmeside, accepterer du vores <a href="#">Cookie Policy & Privacy.</a>
       </p>
       <div class="knapper">
-      <button class="primary_sm" id="acceptCookie">Accept</button>
-      <button class="secondary_sm" id="afvisCookie">Afvis</button>
+        <button class="primary_sm" id="acceptCookie">Accept</button>
+        <button class="secondary_sm" id="afvisCookie">Afvis</button>
+      </div>
     </div>
-    </div>
-   
+
     <main>
       <section class="section_1">
         <div class="center">
@@ -202,60 +202,61 @@ import "../styles/global.css";
   <Footer />
 </html>
 <style>
- #cookiePopup {
-  background-color: #f8f5ec;
-  position: absolute;
-  width: 60vw;
-  max-width: 25em;
-  box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
-  text-align: justify;
-  padding: 2em 1.4em;
-  border-radius: 12px;
-  transition: all 0.5s ease-in;
-}
-.cookieh2{
-  text-align: center;
-}
-#cookiePopup p {
-  text-align: center;
-  margin: 1.4em 0;
-}
-#cookiePopup button {
-  display: block;
-  position: relative;
-  margin: auto;
-}
-#cookiePopup a {
-  color: #6859fe;
-}
-.hide {
-  visibility: hidden;
-  bottom: 0;
-  right: 2em;
-}
-.show {
-  visibility: visible;
-  bottom: 2em;
-  right: 2em;
-}
-.knapper{
-  display: flex;
-  gap: 10px;
-}
-@media only screen and (max-width: 37.5em) {
   #cookiePopup {
-    width: 100%;
+    background-color: #f8f5ec;
+    position: fixed;
+    width: 60vw;
+    max-width: 25em;
+    box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+    text-align: justify;
+    padding: 2em 1.4em;
+    border-radius: 12px;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+  }
+  .cookieh2 {
+    text-align: center;
+  }
+  #cookiePopup p {
+    text-align: center;
+    margin: 1.4em 0;
+  }
+  #cookiePopup button {
+    display: block;
+    position: relative;
+    margin: auto;
+  }
+  #cookiePopup a {
+    color: #6859fe;
   }
   .hide {
-    bottom: 2em;
-    right: 0;
+    visibility: hidden;
+    bottom: 0;
+    right: 2em;
   }
   .show {
-    right: 0;
-    bottom: 0;
+    visibility: visible;
+    bottom: 2em;
+    right: 2em;
   }
-}
- 
+  .knapper {
+    display: flex;
+    gap: 10px;
+  }
+  @media only screen and (max-width: 37.5em) {
+    #cookiePopup {
+      width: 100%;
+    }
+    .hide {
+      bottom: 2em;
+      right: 0;
+    }
+    .show {
+      right: 0;
+      bottom: 0;
+    }
+  }
+
   .section_1 {
     background-image: url(public/img/monstre/herounitmonster.svg);
     background-size: contain;
@@ -404,7 +405,6 @@ import "../styles/global.css";
 
   /* viser 1 i stedet for 3 på mobil */
   @media (max-width: 678px) {
-    
     .testimonial-container {
       width: 80%;
     }
@@ -595,49 +595,48 @@ import "../styles/global.css";
     }
   });
   let popUp = document.getElementById("cookiePopup");
-//When user clicks the accept button
-document.getElementById("acceptCookie").addEventListener("click", () => {
-  //Create date object
-  let d = new Date();
-  //Increment the current time by 1 minute (cookie will expire after 1 minute)
-  d.setMinutes(2 + d.getMinutes());
-  //Create Cookie withname = myCookieName, value = thisIsMyCookie and expiry time=1 minute
-  document.cookie = "myCookieName=thisIsMyCookie; expires = " + d + ";";
-  //Hide the popup
-  popUp.classList.add("hide");
-  popUp.classList.remove("show");
-});
-document.getElementById("afvisCookie").addEventListener("click", () => {
-  //Create date object
-  let d = new Date();
-  //Increment the current time by 1 minute (cookie will expire after 1 minute)
-  d.setMinutes(2 + d.getMinutes());
-  //Create Cookie withname = myCookieName, value = thisIsMyCookie and expiry time=1 minute
-  document.cookie = "myCookieName=thisIsMyCookie; expires = " + d + ";";
-  //Hide the popup
-  popUp.classList.add("hide");
-  popUp.classList.remove("show");
-});
-//Check if cookie is already present
-const checkCookie = () => {
-  //Read the cookie and split on "="
-  let input = document.cookie.split("=");
-  //Check for our cookie
-  if (input[0] == "myCookieName") {
+  //When user clicks the accept button
+  document.getElementById("acceptCookie").addEventListener("click", () => {
+    //Create date object
+    let d = new Date();
+    //Increment the current time by 1 minute (cookie will expire after 1 minute)
+    d.setMinutes(2 + d.getMinutes());
+    //Create Cookie withname = myCookieName, value = thisIsMyCookie and expiry time=1 minute
+    document.cookie = "myCookieName=thisIsMyCookie; expires = " + d + ";";
     //Hide the popup
     popUp.classList.add("hide");
     popUp.classList.remove("show");
-  } else {
-    //Show the popup
-    popUp.classList.add("show");
-    popUp.classList.remove("hide");
-  }
-};
-//Check if cookie exists when page loads
-window.onload = () => {
-  setTimeout(() => {
-    checkCookie();
-  }, 2000);
-};
+  });
+  document.getElementById("afvisCookie").addEventListener("click", () => {
+    //Create date object
+    let d = new Date();
+    //Increment the current time by 1 minute (cookie will expire after 1 minute)
+    d.setMinutes(2 + d.getMinutes());
+    //Create Cookie withname = myCookieName, value = thisIsMyCookie and expiry time=1 minute
+    document.cookie = "myCookieName=thisIsMyCookie; expires = " + d + ";";
+    //Hide the popup
+    popUp.classList.add("hide");
+    popUp.classList.remove("show");
+  });
+  //Check if cookie is already present
+  const checkCookie = () => {
+    //Read the cookie and split on "="
+    let input = document.cookie.split("=");
+    //Check for our cookie
+    if (input[0] == "myCookieName") {
+      //Hide the popup
+      popUp.classList.add("hide");
+      popUp.classList.remove("show");
+    } else {
+      //Show the popup
+      popUp.classList.add("show");
+      popUp.classList.remove("hide");
+    }
+  };
+  //Check if cookie exists when page loads
+  window.onload = () => {
+    setTimeout(() => {
+      checkCookie();
+    }, 2000);
+  };
 </script>
- 
