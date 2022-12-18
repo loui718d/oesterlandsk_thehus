@@ -51,16 +51,18 @@ import "../styles/global.css";
 <style>
   .filter {
     width: 320px;
-    height: 579px;
+    height: 568px;
     background: var(--color-creme-70);
     border-radius: 12px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 15px;
+    margin-top: 20px;
   }
   .tesort {
     display: flex;
+    align-items: center;
   }
   .checkbox {
     border: 1px solid var(--color-oliven);
@@ -75,5 +77,19 @@ import "../styles/global.css";
   }
   p {
     color: var(--color-oliven-80);
+  }
+
+  @media (min-width: 800px) {
+    .filter {
+      width: 320px;
+      height: 579px;
+      background: var(--color-creme-70);
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      margin-top: 20px;
+    }
   }
 </style>
