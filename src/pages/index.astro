@@ -171,6 +171,26 @@ import "../styles/global.css";
           <img src="public/img/billeder/stort_billede.svg" alt="stortbillede" />
         </div>
       </section>
+      <section id="testimonial1" class="max-width">
+       
+        <article class="testimonial-container1" data-index="2">
+         <img src="public/img/ikoner_logo/trustpilot.svg" alt="">
+          <p class="quote1"><i>"Let at bestille og hurtig ekspedition. Virkeligt gode produkter, der lever helt op til forventningerne."</i></p>
+          <p class="quote_author1"><b>Michelle</b></p>
+        </article>
+        <article class="testimonial-container1" data-index="3">
+          <img src="public/img/ikoner_logo/trustpilot.svg" alt="">
+          <p class="quote1"><i>"Virkelig en rigtig god oplevelse. Placerede orden fredag ved middagstid og leverancen blev afleveret på hjemadressen, allerede lørdag morgen.</i></p>
+          <p class="quote_author1"><b>Mikael</b></p>
+        </article>
+        <article class="testimonial-container1" data-index="4">
+          <img src="public/img/ikoner_logo/trustpilot.svg" alt="">
+          <p class="quote1"><i>"Rigtig dejlig kvalitetste og -kaffe, nænsomt pakket og hurtigt leveret. Endda til rimelige priser!"</i></p>
+          <p class="quote_author1"><b>Søren</b></p>
+        </article>
+    
+
+      </section>
       <section class="monster">
         <div class="main">
           <div class="section3">
@@ -466,6 +486,28 @@ import "../styles/global.css";
     margin: 0;
   }
   /* --------------------------- topseller carousel  slut---------------------------*/
+  /* ignorer det der er ovenover */
+
+#testimonial1 {
+  position: relative;
+  padding-inline: 24px;
+  margin-block: 80px 40px;
+  height: 17.5rem;
+}
+
+.testimonial-container1 {
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    width: clamp(100px, 25vw, 320px);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transform: translateX(-50%);
+    transition: left 0.75s ease-out, opacity 0.375s ease-in-out;
+  }   
+
+  
   /* desktop */
   @media (min-width: 600px) {
     .section_1 {
@@ -664,4 +706,6 @@ import "../styles/global.css";
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
+
+
 </script>
