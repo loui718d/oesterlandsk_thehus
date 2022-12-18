@@ -76,12 +76,14 @@ import "../styles/global.css";
   <nav id="nav_desktop" class="">
     <div class="nav1">
       <ul class="">
-        <li><a class="text-lilla" href="/te.html">TE</a></li>
+        <li><a class="hover-underline-animation" href="/te.html">TE</a></li>
         <li>
-          <a class="text-lilla" href="/te.html">KAFFE</a>
+          <a class="hover-underline-animation" href="/te.html">KAFFE</a>
         </li>
         <li>
-          <a class="text-lilla" href="/te.html">ANDRE PRODUKTER</a>
+          <a class="hover-underline-animation" href="/te.html"
+            >ANDRE PRODUKTER</a
+          >
         </li>
       </ul>
     </div>
@@ -92,19 +94,25 @@ import "../styles/global.css";
     </div>
     <div class="nav3">
       <div class="subnav mr-3 flex flex-wrap">
-        <button class="subnavbtn peer text-lilla">LÆS OM</button>
+        <button class="subnavbtn peer">LÆS OM</button>
         <img src="/img/ikoner_logo/trkant_ned.svg" alt="" />
         <div class="subnav-content">
-          <a href="/laesOm_te.html">Læs om te</a>
-          <a href="/laesOm_te.html">Læs om kaffe</a>
+          <a class="hover-underline-animation2" href="/laesOm_te.html"
+            >Læs om te</a
+          >
+          <a class="hover-underline-animation2" href="/laesOm_te.html"
+            >Læs om kaffe</a
+          >
         </div>
       </div>
       <div class="subnav mr-3 flex flex-wrap">
-        <button class="subnavbtn peer text-lilla">OM OS</button>
+        <button class="subnavbtn peer">OM OS</button>
         <img src="/img/ikoner_logo/trkant_ned.svg" alt="" />
         <div class="subnav-content">
-          <a href="/historie.html">Vores historie</a>
-          <a href="/kontakt.html">Kontakt</a>
+          <a class="hover-underline-animation2" href="/historie.html"
+            >Vores historie</a
+          >
+          <a class="hover-underline-animation2" href="/kontakt.html">Kontakt</a>
         </div>
       </div>
       <div>
@@ -271,6 +279,7 @@ import "../styles/global.css";
   .subnav-content a {
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 10px;
 
     color: var(--color-creme);
   }
@@ -374,6 +383,54 @@ import "../styles/global.css";
     }
     .testimonial1 img {
       height: 18px;
+    }
+
+    .hover-underline-animation {
+      display: inline-block;
+      position: relative;
+      color: var(--color-oliven);
+    }
+
+    .hover-underline-animation::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--color-oliven);
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    .hover-underline-animation:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    .hover-underline-animation2 {
+      display: inline-block;
+      position: relative;
+      color: var(--color-creme);
+    }
+
+    .hover-underline-animation2::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--color-creme);
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    .hover-underline-animation2:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
     }
   }
 </style>
