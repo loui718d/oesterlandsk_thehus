@@ -20,7 +20,7 @@ import "../styles/global.css";
     <main>
       <section class="main">
         <h1>BLIV KLOGERE PÅ TEVARIANTER</h1>
-        <div class="div_1">
+        <div class="div_1 inview1">
           <div class="text">
             <h2>Sort te</h2><p class="body1">
               Forskellen mellem grøn, hvid, gul, oolong og sort the, findes i
@@ -47,7 +47,7 @@ import "../styles/global.css";
         </div>
       </section>
       <section class="monstergronte">
-        <div class="main">
+        <div class="main inview2">
           <div class="div_2">
             <div class="text">
               <h2>Grøn te</h2><p class="body1">
@@ -79,7 +79,7 @@ import "../styles/global.css";
         </div>
       </section>
 
-      <section class="main">
+      <section class="main inview3">
         <div class="div_1">
           <div class="text">
             <h2>Hvid te</h2><p class="body1">
@@ -108,7 +108,7 @@ import "../styles/global.css";
         </div>
       </section>
       <section class="monstergulte">
-        <div class="main">
+        <div class="main inview4">
           <div class="div_2">
             <div class="text">
               <h2>Gul te</h2><p class="body1">
@@ -134,7 +134,7 @@ import "../styles/global.css";
           </div>
         </div>
       </section>
-      <section class="main">
+      <section class="main inview5">
         <div class="div_1">
           <div class="text">
             <h2>Rooibos og honeybush te</h2><p class="body1">
@@ -165,7 +165,7 @@ import "../styles/global.css";
         </div>
       </section>
       <section class="monsterurtete">
-        <div class="main">
+        <div class="main inview6">
           <div class="div_2">
             <div class="text">
               <h2>Urte te</h2><p class="body1">
@@ -193,7 +193,7 @@ import "../styles/global.css";
           </div>
         </div>
       </section>
-      <section class="main">
+      <section class="main inview7">
         <div class="div_1">
           <div class="text">
             <h2>Frugt te</h2><p class="body1">
@@ -217,7 +217,7 @@ import "../styles/global.css";
         </div>
       </section>
       <section class="monsterchaite">
-        <div class="main">
+        <div class="main inview8">
           <div class="div_2">
             <div class="text">
               <h2>Chai te</h2><p class="body1">
@@ -243,7 +243,7 @@ import "../styles/global.css";
           </div>
         </div>
       </section>
-      <section class="main">
+      <section class="main inview9">
         <div class="div_1">
           <div class="textlang">
             <h2>Oolong te</h2><p class="body1">
@@ -360,3 +360,36 @@ import "../styles/global.css";
     }
   }
 </style>
+
+<script>
+  import { animate, stagger, inView, scroll, timeline } from "motion";
+
+  inView(".inview1", () => {
+    animate(".inview1", { x: [-2000, 0] }, { duration: 3 });
+  });
+  inView(".inview2", () => {
+    animate(".inview2", { x: [+2000, 0] }, { duration: 3 });
+  });
+
+  inView(".inview3", () => {
+    animate(".inview3", { x: [-2000, 0] }, { duration: 3 });
+  });
+  inView(".inview4", () => {
+    animate(".inview4", { x: [+2000, 0] }, { duration: 3 });
+  });
+  inView(".inview5", () => {
+    animate(".inview5", { x: [-2000, 0] }, { duration: 3 });
+  });
+  inView(".inview6", () => {
+    animate(".inview6", { x: [+2000, 0] }, { duration: 3 });
+  });
+  inView(".inview7", () => {
+    animate(".inview7", { x: [-2000, 0] }, { duration: 3 });
+  });
+  inView(".inview8", () => {
+    animate(".inview8", { x: [+2000, 0] }, { duration: 3 });
+  });
+  inView(".inview9", () => {
+    animate(".inview9", { x: [-2000, 0] }, { duration: 3 });
+  });
+</script>
