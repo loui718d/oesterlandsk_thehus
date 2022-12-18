@@ -4,9 +4,35 @@ import "../styles/global.css";
 
 <header class="">
   <div id="stickyhead" class=""></div>
-  <!-- <div class="fixed top-0 md:visible">
-        <img class="h-20" src="/img/logo_beige1.svg" alt="" />
-      </div> -->
+  <div class="testimonials">
+    <div class="testimonial1">
+      <img src="/img/ikoner_logo/transport_gul.svg" alt="transport" /><p
+        class="body2"
+      >
+        Hurtig levering
+      </p>
+    </div>
+    <div class="testimonial1">
+      <img src="/img/ikoner_logo/laas_gul.svg" alt="lås" /><p class="body2">
+        Sikker shopping (SSL)
+      </p>
+    </div>
+    <div class="testimonial1">
+      <img src="/img/ikoner_logo/blad_gul.svg" alt="blad" /><p class="body2">
+        Garanti for friskhed
+      </p>
+    </div>
+    <div class="testimonial1">
+      <img src="/img/ikoner_logo/kort.svg" alt="" /><p class="body2">
+        Nem betaling
+      </p>
+    </div>
+    <div class="testimonial1">
+      <img src="/img/ikoner_logo/penge_gul.svg" alt="" /><p class="body2">
+        Gratis fragt fra 400 kr
+      </p>
+    </div>
+  </div>
   <div class="logo">
     <a href="index.html">
       <img class="" src="/img/ikoner_logo/Logo_gron.svg" alt="" />
@@ -97,7 +123,7 @@ import "../styles/global.css";
   header {
     top: 0;
     background-color: var(--color-creme);
-    height: 160px;
+    height: 150px;
   }
   #nav_desktop {
     display: none;
@@ -115,6 +141,10 @@ import "../styles/global.css";
     position: absolute;
     top: 16px;
     left: 16px;
+  }
+
+  .testimonials {
+    display: none;
   }
 
   ul {
@@ -280,7 +310,7 @@ import "../styles/global.css";
       display: grid;
       grid-template-columns: 2fr 1fr 2fr;
       position: absolute;
-      top: 3px;
+      top: 20px;
       gap: 16px;
       background-color: var(--color-creme);
       width: 100%;
@@ -319,6 +349,31 @@ import "../styles/global.css";
       color: var(--color-oliven);
       line-height: var(--line-height-web-h4-h5);
       font-weight: 400;
+    }
+    .testimonials {
+      display: block;
+      display: flex;
+      z-index: 10;
+      height: 34px;
+      background-color: var(--color-mork-gron);
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      justify-content: space-evenly;
+      gap: 20px;
+    }
+    .testimonial1 {
+      justify-content: center;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      gap: 6px;
+    }
+    .testimonial1 p {
+      color: var(--color-gul-90);
+    }
+    .testimonial1 img {
+      height: 18px;
     }
   }
 </style>
