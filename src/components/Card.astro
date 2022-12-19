@@ -58,7 +58,7 @@ const { href, title, oko, pris, src, vaegt } = Astro.props;
     z-index: 1;
     text-align: center;
     text-decoration: none;
-    margin-top: 10px;
+    margin-top: 25px;
   }
   .textfelt h5 {
     color: var(--color-creme);
@@ -87,6 +87,10 @@ const { href, title, oko, pris, src, vaegt } = Astro.props;
       height: 280px;
       width: 230px;
     }
+    .textfelt h5 {
+      color: var(--color-creme);
+      margin-top: 10px;
+    }
 
     #produktbillede {
       display: grid;
@@ -97,6 +101,9 @@ const { href, title, oko, pris, src, vaegt } = Astro.props;
     }
     .billede2 {
       padding-top: 180px;
+    }
+    #produktbillede h5 {
+      margin-top: 10px;
     }
   }
 </style>

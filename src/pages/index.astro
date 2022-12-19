@@ -147,7 +147,7 @@ import "../styles/global.css";
 
       <div class="main">
         <section class="section2">
-          <div class="center">
+          <div class="">
             <h2>KEND DIN TE-TYPE</h2><h3>
               Hvilken te passer til din personlig smag?
             </h3><p class="body1">
@@ -158,7 +158,7 @@ import "../styles/global.css";
               til sort te, grøn te, oolong te eller den milde hvide te afhænger
               af personlig smag og temperament. Overordnet set har de hver især
               nogle helt særlige karakteristika.
-            </p><a class="primary_lg a" href="">Tag testen</a>
+            </p><a class="primary_lg a center" href="">Tag testen</a>
           </div>
           <div class="center">
             <img src="public/img/billeder/kenddinte.svg" alt="mandibutik" />
@@ -171,30 +171,45 @@ import "../styles/global.css";
           <img src="public/img/billeder/stort_billede.svg" alt="stortbillede" />
         </div>
       </section>
-      <section id="testimonial1" class="max-width">
-       
-        <article class="testimonial-container1" data-index="2">
-         <img src="public/img/ikoner_logo/trustpilot.svg" alt="">
-          <p class="quote1"><i>"Let at bestille og hurtig ekspedition. Virkeligt gode produkter, der lever helt op til forventningerne."</i></p>
-          <p class="quote_author1"><b>Michelle</b></p>
-        </article>
-        <article class="testimonial-container1" data-index="3">
-          <img src="public/img/ikoner_logo/trustpilot.svg" alt="">
-          <p class="quote1"><i>"Virkelig en rigtig god oplevelse. Placerede orden fredag ved middagstid og leverancen blev afleveret på hjemadressen, allerede lørdag morgen.</i></p>
-          <p class="quote_author1"><b>Mikael</b></p>
-        </article>
-        <article class="testimonial-container1" data-index="4">
-          <img src="public/img/ikoner_logo/trustpilot.svg" alt="">
-          <p class="quote1"><i>"Rigtig dejlig kvalitetste og -kaffe, nænsomt pakket og hurtigt leveret. Endda til rimelige priser!"</i></p>
-          <p class="quote_author1"><b>Søren</b></p>
-        </article>
-    
-
-      </section>
+      <div class="main">
+        <section id="trustpilot" class="max-width">
+          <article class="trustpilot1">
+            <img src="public/img/ikoner_logo/trustpilot.svg" alt="" />
+            <p class="quote1">
+              <i
+                >"Let at bestille og hurtig ekspedition. Virkeligt gode
+                produkter, der lever helt op til forventningerne."</i
+              >
+            </p>
+            <p class="quote_author1"><b>Michelle</b></p>
+          </article>
+          <article class="trustpilot1">
+            <img src="public/img/ikoner_logo/trustpilot.svg" alt="" />
+            <p class="quote1">
+              <i
+                >"Virkelig en rigtig god oplevelse. Placerede orden fredag ved
+                middagstid og leverancen blev afleveret på hjemadressen,
+                allerede lørdag morgen.</i
+              >
+            </p>
+            <p class="quote_author1"><b>Mikael</b></p>
+          </article>
+          <article class="trustpilot1">
+            <img src="public/img/ikoner_logo/trustpilot.svg" alt="" />
+            <p class="quote1">
+              <i
+                >"Rigtig dejlig kvalitetste og -kaffe, nænsomt pakket og hurtigt
+                leveret. Endda til rimelige priser!"</i
+              >
+            </p>
+            <p class="quote_author1"><b>Søren</b></p>
+          </article>
+        </section>
+      </div>
       <section class="monster">
         <div class="main">
           <div class="section3">
-            <div class="center">
+            <div class="">
               <h2>
                 Kvalitets produkter siden 1889 - En historie om traditioner
               </h2><p class="body1">
@@ -287,11 +302,19 @@ import "../styles/global.css";
     place-content: center center;
   }
 
+  .section_1 h5 {
+    margin-bottom: 16px;
+  }
+  .section_1 a {
+    margin-bottom: 116px;
+    margin-top: 56px;
+  }
+
   .splash {
     display: none;
   }
   .div_1 {
-    padding-top: 20px;
+    padding-top: 50px;
     display: grid;
     justify-content: center;
     text-align: center;
@@ -303,6 +326,10 @@ import "../styles/global.css";
   }
   * {
     box-sizing: border-box;
+  }
+  p {
+    text-align: justify;
+    word-break: normal;
   }
 
   .section2 img {
@@ -332,27 +359,28 @@ import "../styles/global.css";
     padding-bottom: 50px;
   }
   #stortbillede img {
-    max-width: 500px;
+    max-width: 100%;
   }
   #stortbillede {
     padding: 0px;
   }
 
   h2 {
-    padding-bottom: 12px;
+    padding-bottom: 18px;
   }
 
   h1 {
     padding-bottom: 18px;
     color: #763e32;
+    margin-top: 40px;
   }
 
   h4 {
-    padding-bottom: 14px;
+    padding-bottom: 12px;
   }
 
   h3 {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   p {
@@ -488,24 +516,21 @@ import "../styles/global.css";
   /* --------------------------- topseller carousel  slut---------------------------*/
   /* ignorer det der er ovenover */
 
-#testimonial1 {
-  position: relative;
-  padding-inline: 10px;
-  margin-block: 80px 40px;
-  height: 17.5rem;
-}
-
-.testimonial-container1 {
-    position: absolute;
-    top: 10%;
-    text-align: center;
-    width: clamp(100px, 25vw, 320px);
+  #trustpilot {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    transform: translateX(-50%);
-    transition: left 0.75s ease-out, opacity 0.375s ease-in-out;
-  }   
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .trustpilot1 {
+    display: grid;
+    justify-items: center;
+  }
+  .trustpilot1 img {
+    justify-self: center;
+  }
 
   @media (max-width: 678px) {
     .testimonial-container1 {
@@ -521,6 +546,18 @@ import "../styles/global.css";
       text-align: left;
       padding-left: 30px;
       padding-bottom: 0px;
+    }
+    h1 {
+      margin-top: 80px;
+    }
+    p {
+      text-align: left;
+      word-break: normal;
+    }
+
+    .section_1 a {
+      margin-bottom: 0px;
+      margin-top: 30px;
     }
     .section_1 h4 {
       padding-bottom: 26px;
@@ -577,6 +614,26 @@ import "../styles/global.css";
     .monster {
       padding-top: 200px;
       padding-bottom: 150px;
+    }
+    .testimonial-container1 {
+      position: absolute;
+      top: 10%;
+      text-align: center;
+      width: clamp(100px, 25vw, 320px);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transform: translateX(-50%);
+      transition: left 0.75s ease-out, opacity 0.375s ease-in-out;
+    }
+
+    #trustpilot {
+      display: flex;
+      flex-direction: row;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      gap: 20px;
+      justify-content: space-between;
     }
   }
 </style>
@@ -710,6 +767,4 @@ import "../styles/global.css";
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
-
-
 </script>
