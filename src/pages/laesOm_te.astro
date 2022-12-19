@@ -38,12 +38,8 @@ import "../styles/global.css";
               overbevisning, er sort the ikke fermenteret.
             </p>
           </div>
-          <div>
-            <img
-              src="public/img/billeder/sortte.svg"
-              alt="sortte"
-              width="80%"
-            />
+          <div class="billede">
+            <img src="public/img/billeder/sortte.svg" alt="sortte" />
           </div>
         </div>
       </section>
@@ -127,11 +123,7 @@ import "../styles/global.css";
               </p>
             </div>
             <div class="billede_forst">
-              <img
-                src="public/img/billeder/gulte.svg"
-                alt="gulte"
-                width="80%"
-              />
+              <img src="public/img/billeder/gulte.svg" alt="gulte" />
             </div>
           </div>
         </div>
@@ -158,11 +150,7 @@ import "../styles/global.css";
             </p>
           </div>
           <div>
-            <img
-              src="public/img/billeder/RogHte.svg"
-              alt="roghte"
-              width="80%"
-            />
+            <img src="public/img/billeder/RogHte.svg" alt="roghte" />
           </div>
         </div>
       </section>
@@ -186,11 +174,7 @@ import "../styles/global.css";
               </p>
             </div>
             <div class="billede_forst">
-              <img
-                src="public/img/billeder/urtete.svg"
-                alt="urtete"
-                width="80%"
-              />
+              <img src="public/img/billeder/urtete.svg" alt="urtete" />
             </div>
           </div>
         </div>
@@ -210,11 +194,7 @@ import "../styles/global.css";
             </p>
           </div>
           <div>
-            <img
-              src="public/img/billeder/frugtte.svg"
-              alt="frugtte"
-              width="80%"
-            />
+            <img src="public/img/billeder/frugtte.svg" alt="frugtte" />
           </div>
         </div>
       </section>
@@ -236,11 +216,7 @@ import "../styles/global.css";
               </p>
             </div>
             <div class="billede_forst">
-              <img
-                src="public/img/billeder/chaite.svg"
-                alt="chaite"
-                width="80%"
-              />
+              <img src="public/img/billeder/chaite.svg" alt="chaite" />
             </div>
           </div>
         </div>
@@ -273,11 +249,7 @@ import "../styles/global.css";
             </p>
           </div>
           <div>
-            <img
-              src="public/img/billeder/oolong.svg"
-              alt="Oolong"
-              width="80%"
-            />
+            <img src="public/img/billeder/oolong.svg" alt="Oolong" />
           </div>
         </div>
       </section>
@@ -288,8 +260,9 @@ import "../styles/global.css";
 <style>
   h1 {
     grid-column: 2/3;
-    padding-bottom: 50px;
+    padding-bottom: 36px;
     text-align: center;
+    padding-top: 56px;
   }
 
   h2 {
@@ -302,19 +275,10 @@ import "../styles/global.css";
 
   img {
     margin-top: 20px;
+    width: 100%;
   }
-
-  .div_1 {
-    display: flex;
-
-    flex-direction: column;
-  }
-
-  .div_1:first-child {
-    place-self: center;
-  }
-  .div_2 {
-    display: grid;
+  p {
+    text-align: justify;
   }
 
   /* desktop */
@@ -353,6 +317,10 @@ import "../styles/global.css";
       padding-left: 0;
       padding-right: 0;
       text-align: center;
+    }
+
+    p {
+      text-align: left;
     }
 
     .text {

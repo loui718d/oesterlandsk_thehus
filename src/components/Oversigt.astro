@@ -20,8 +20,8 @@ const { levering, pris } = Astro.props;
       <div><p class="body1">Levering</p></div>
     </div>
     <div>
-      <div><p class="body1b">56,00 DKK</p></div>
-      <div><p class="body1">{levering}</p></div>
+      <div><p class="body1b text">56,00 DKK</p></div>
+      <div><p class="body1 text">{levering}</p></div>
     </div>
   </div>
   <div class="div3">
@@ -55,7 +55,9 @@ const { levering, pris } = Astro.props;
     padding-top: 16px;
     padding-bottom: 16px;
   }
-
+  .text {
+    text-align: end;
+  }
   .div3 {
     display: flex;
     align-items: top;

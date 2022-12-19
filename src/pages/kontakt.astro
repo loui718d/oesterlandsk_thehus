@@ -73,47 +73,51 @@ import "../styles/global.css";
             <p class="body1">sales@osterlandsk.dk</p>
           </div>
         </div>
-          <div class="container">
-            <h3>KONTAKTFORM</h3>
-            <form>
-              <label class="body1b" for="fname">Fulde navn</label>
-              <input class="body2"
-                type="text"
-                id="fname"
-                name="firstname"
-                placeholder="eks. Anders Andersen"
-              />
+        <div class="container">
+          <h3>KONTAKTFORM</h3>
+          <form>
+            <label class="body1b" for="fname">Fulde navn</label>
+            <input
+              class="body2"
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="eks. Anders Andersen"
+            />
 
-              <label class="body1b" for="lname">Email</label>
-              <input class="body2"
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="eks. anders@andersen.com"
-              />
+            <label class="body1b" for="lname">Email</label>
+            <input
+              class="body2"
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="eks. anders@andersen.com"
+            />
 
-              <label class="body1b" for="lname">Emne</label>
-              <input  class="body2"
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="eks. returnering"
-              />
+            <label class="body1b" for="lname">Emne</label>
+            <input
+              class="body2"
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="eks. returnering"
+            />
 
-              <label class="body1b" for="fname"
-                >Privatkunde/webshop henvendelser</label
-              >
-              <select  class="body2" id="privat/webshop" name="privat/webshop">
-                <option value="vælg">Vælg</option>
-                <option value="privatkunde">Privatkunde</option>
-                <option value="webshop">Webshop henvendelser</option>
-              </select>
-              <textarea class="body2"
-                id="subject"
-                name="subject"
-                placeholder="Skriv din besked her.."
-                style="height:200px"></textarea>
-            </form>
+            <label class="body1b" for="fname"
+              >Privatkunde/webshop henvendelser</label
+            >
+            <select class="body2" id="privat/webshop" name="privat/webshop">
+              <option value="vælg">Vælg</option>
+              <option value="privatkunde">Privatkunde</option>
+              <option value="webshop">Webshop henvendelser</option>
+            </select>
+            <textarea
+              class="body2"
+              id="subject"
+              name="subject"
+              placeholder="Skriv din besked her.."
+              style="height:200px"></textarea>
+          </form>
           <button class="primary_sm">Send</button>
         </div>
       </section>
@@ -124,16 +128,16 @@ import "../styles/global.css";
   <style>
     /* mobil */
 
-.primary_sm{
-margin-bottom: 92px;
+    .primary_sm {
+      margin-bottom: 92px;
     }
 
-.body1b{
-  color: var(  --color-oliven-90);
-}
+    .body1b {
+      color: var(--color-oliven-90);
+    }
 
-  input[type="text"],
-  select,
+    input[type="text"],
+    select,
     textarea {
       width: 100%;
       padding: 12px;
@@ -154,9 +158,15 @@ margin-bottom: 92px;
 
     h1 {
       grid-column: 2/3;
-      margin-bottom: 24px;
+
       padding-left: 36px;
       padding-right: 36px;
+      padding-bottom: 36px;
+      text-align: center;
+      padding-top: 56px;
+    }
+    h1 {
+      grid-column: 2/3;
     }
 
     p {
