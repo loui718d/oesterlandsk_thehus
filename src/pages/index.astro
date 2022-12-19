@@ -490,7 +490,7 @@ import "../styles/global.css";
 
 #testimonial1 {
   position: relative;
-  padding-inline: 24px;
+  padding-inline: 10px;
   margin-block: 80px 40px;
   height: 17.5rem;
 }
@@ -507,7 +507,11 @@ import "../styles/global.css";
     transition: left 0.75s ease-out, opacity 0.375s ease-in-out;
   }   
 
-  
+  @media (max-width: 678px) {
+    .testimonial-container1 {
+      width: 80%;
+    }
+  }
   /* desktop */
   @media (min-width: 600px) {
     .section_1 {
