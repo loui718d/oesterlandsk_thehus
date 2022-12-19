@@ -54,11 +54,12 @@ import "../styles/global.css";
           </div>
 
           <div>
+            <div class="indhold">
             <h1 class="h1desktop">Lakrids Te</h1>
             <!--  skal vises i desktop -->
-            <h3>Pris: 56,00 DKK</h3>
+            <h4>Pris: 56,00 DKK</h4>
             <div class="valgvagt">
-              <div><h4 class="h4valg">Vælg vægt:</h4></div>
+              <div><h5 class="h4valg">Vælg vægt:</h5></div>
               <div class="label">
                 <div class="container1">
                   <label for="" class="body2">100g</label>
@@ -91,16 +92,21 @@ import "../styles/global.css";
               </div>
             </div>
             <div class="antal">
-              <h4 class="h4antal">Antal:</h4><img
+              <h5 class="h4antal">Antal:</h5><img
                 src="public/img/ikoner_logo/knap_minus.svg"
-                alt="minus"
-              /><h3>1</h3><img
+                alt="minus" width="4%"
+              /><h4 class="h4antal">1</h4><img
                 src="public/img/ikoner_logo/knap_plus.svg"
-                alt="plus"
+                alt="plus" width="4%"
               />
             </div>
+          </div>
+            <div class="knap">
+              <a class="secondary_lg a" href="kurv.html">Tilføj til kurv</a
+                >
+              </div>
             <button></button>
-            <h4>Produktegenskaber:</h4>
+            <h4 class="h4produktegenskaber">Produktegenskaber:</h4>
             <div class="produktegenskaber">
               <div class="temp body2">
                 <img src="public/img/ikoner_logo/temp.svg" alt="temp" /><p>
@@ -118,8 +124,7 @@ import "../styles/global.css";
                 </p>
               </div>
             </div>
-            <a class="secondary_lg a" href="betaling.html">Tilføj til kurv</a
-              >
+      
             <div>
               <h4 class="h4beskrivelse">Beskrivelse</h4>
               <div>
@@ -287,6 +292,7 @@ import "../styles/global.css";
     }
     .knap {
       grid-row: 2;
+      padding-top: 50px;
     }
 
     /* Hide the browser's default radio button */
@@ -403,6 +409,16 @@ import "../styles/global.css";
     .imgprodukt {
       width: 100%;
     }
+    .produktegenskaber {
+        display: block;
+        padding-top: 10px;
+        gap: 10px;
+        padding-bottom: 20px;
+      }
+      .h4produktegenskaber{
+        padding-top: 40px;
+      }
+ 
     /* desktop */
     @media (min-width: 600px) {
       .h1desktop {
@@ -417,20 +433,25 @@ import "../styles/global.css";
         gap: 50px;
         padding: 10px;
       }
+     
       .valgvagt {
         display: flex;
         gap: 50px;
+        padding-top: 20px;
       }
       .h4valg {
         padding-top: 30px;
       }
       .h4beskrivelse {
-        padding-top: 30px;
+        padding-top: 90px;
       }
       .produktegenskaber {
         display: flex;
-        padding-top: 20px;
+        padding-top: 10px;
         gap: 10px;
+      }
+      .h4produktegenskaber{
+        padding-top: 40px;
       }
       .collapsible {
         background-color: rgba(238, 238, 238, 0);
@@ -471,7 +492,9 @@ import "../styles/global.css";
         padding-bottom: 50px;
         padding-top: 30px;
       }
-
+.knap{
+  padding-top: 50px;
+}
     }
   </style>
   <script>
