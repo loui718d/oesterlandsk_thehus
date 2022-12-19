@@ -55,57 +55,58 @@ import "../styles/global.css";
 
           <div>
             <div class="indhold">
-            <h1 class="h1desktop">Lakrids Te</h1>
-            <!--  skal vises i desktop -->
-            <h4 class="h4pris">Pris: 56,00 DKK</h4>
-            <div class="valgvagt">
-              <div><h5 class="h4valg">Vælg vægt:</h5></div>
-              <div class="label">
-                <div class="container1">
-                  <label for="" class="body2">100g</label>
-                  <label class="container">
-                    <input type="radio" checked="checked" name="radio" />
-                    <span class="checkmark"></span>
-                  </label>
-                </div>
-                <div class="container1">
-                  <label for="" class="body2">250g</label>
-                  <label class="container">
-                    <input type="radio" name="radio" />
-                    <span class="checkmark"></span>
-                  </label>
-                </div>
-                <div class="container1">
-                  <label for="" class="body2">500g</label>
-                  <label class="container">
-                    <input type="radio" name="radio" />
-                    <span class="checkmark"></span>
-                  </label>
-                </div>
-                <div class="container1">
-                  <label for="" class="body2">1000g</label>
-                  <label class="container">
-                    <input type="radio" name="radio" />
-                    <span class="checkmark"></span>
-                  </label>
+              <h1 class="h1desktop">Lakrids Te</h1>
+              <!--  skal vises i desktop -->
+              <h4 class="h4pris">Pris: 56,00 DKK</h4>
+              <div class="valgvagt">
+                <div><h5 class="h4valg">Vælg vægt:</h5></div>
+                <div class="label">
+                  <div class="container1">
+                    <label for="" class="body2">100g</label>
+                    <label class="container">
+                      <input type="radio" checked="checked" name="radio" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="container1">
+                    <label for="" class="body2">250g</label>
+                    <label class="container">
+                      <input type="radio" name="radio" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="container1">
+                    <label for="" class="body2">500g</label>
+                    <label class="container">
+                      <input type="radio" name="radio" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="container1">
+                    <label for="" class="body2">1000g</label>
+                    <label class="container">
+                      <input type="radio" name="radio" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
                 </div>
               </div>
+              <div class="antal">
+                <h5 class="h4antal">Antal:</h5><img
+                  src="public/img/ikoner_logo/knap_minus.svg"
+                  alt="minus"
+                  width="4%"
+                /><h4 class="h4antal">1</h4><img
+                  src="public/img/ikoner_logo/knap_plus.svg"
+                  alt="plus"
+                  width="4%"
+                />
+              </div>
             </div>
-            <div class="antal">
-              <h5 class="h4antal">Antal:</h5><img
-                src="public/img/ikoner_logo/knap_minus.svg"
-                alt="minus" width="4%"
-              /><h4 class="h4antal">1</h4><img
-                src="public/img/ikoner_logo/knap_plus.svg"
-                alt="plus" width="4%"
-              />
-            </div>
-          </div>
             <div class="knap">
-              <a class="secondary_lg a" href="kurv.html">Tilføj til kurv</a
-                >
-              </div>
-            <button></button>
+              <a class="secondary_lg a" href="kurv.html">Tilføj til kurv</a>
+            </div>
+
             <h4 class="h4produktegenskaber">Produktegenskaber:</h4>
             <div class="produktegenskaber">
               <div class="temp body2">
@@ -124,17 +125,17 @@ import "../styles/global.css";
                 </p>
               </div>
             </div>
-      
-            <div>
+
+            <div class="beskrivelse">
               <h4 class="h4beskrivelse">Beskrivelse</h4>
               <div>
-                <button type="button" class="collapsible"
-                  >hvad er lakrids te <img
+                <div class="knap_collaps collapsible">
+                  <button type="button" class="">hvad er lakrids te</button><img
                     class="plus"
                     src="public/img/ikoner_logo/plus.svg"
                     alt="plus"
                   />
-                </button>
+                </div>
                 <div class="content">
                   <p>
                     Lakrids te er en af Østerlandsk Thehus' opskrifter. Det der
@@ -146,14 +147,13 @@ import "../styles/global.css";
                     og kant.
                   </p>
                 </div>
-
-                <button type="button" class="collapsible"
-                  >Smag <img
+                <div class="knap_collaps collapsible">
+                  <button type="button" class="">Smag</button><img
                     class="plus"
                     src="public/img/ikoner_logo/plus.svg"
                     alt="plus"
                   />
-                </button>
+                </div>
                 <div class="content">
                   <p>
                     For at få den helt rigtige smag af klassisk lakrids frem,
@@ -165,13 +165,13 @@ import "../styles/global.css";
                   </p>
                 </div>
 
-                <button type="button" class="collapsible"
-                  >Brygning <img
+                <div class="knap_collaps collapsible">
+                  <button type="button" class="">Brygning</button><img
                     class="plus"
                     src="public/img/ikoner_logo/plus.svg"
                     alt="plus"
                   />
-                </button>
+                </div>
                 <div class="content">
                   <p>
                     Vores lakrids te er en ren urtete og kan derfor trække
@@ -182,13 +182,14 @@ import "../styles/global.css";
                   </p>
                 </div>
 
-                <button type="button" class="collapsible"
-                  >Mere te fra samme hylde <img
+                <div class="knap_collaps collapsible">
+                  <button type="button" class="">Mere te fra samme hylde</button
+                  ><img
                     class="plus"
                     src="public/img/ikoner_logo/plus.svg"
                     alt="plus"
                   />
-                </button>
+                </div>
                 <div class="content">
                   <p>
                     Lakrids te er en af Østerlandsk Thehus’ egen populære
@@ -202,43 +203,51 @@ import "../styles/global.css";
           </div>
         </div>
       </section>
-     
+
       <section class="monster">
         <div class="main">
-         <div class="divandre">
-          <h3>Andre købte også:</h3>
-          <div class="andrekobte">
-            <article><Card
-              title="Solskins Te"
-              oko={false}
-              pris="52,-"
-              vaegt="Pr. 100g"
-              src="/img/billeder/solskinste.svg"
-            /></article>
-            <article><Card
-              title="Jule te (Christmas te)"
-              oko={false}
-              pris="52,-"
-              vaegt="Pr. 100g"
-              src="/img/billeder/julete.svg"
-            /></article>
-            <article><Card
-              title="Ingefær Te"
-              oko={true}
-              pris="54,-"
-              vaegt="Pr. 100g"
-              src="/img/billeder/ingefærte.svg"
-            /></article>
-            <article><Card
-              title="Solskins Te"
-              oko={false}
-              pris="52,-"
-              vaegt="Pr. 100g"
-              src="/img/billeder/solskinste.svg"
-            /></article>
+          <div class="divandre">
+            <h3>Andre købte også:</h3>
+            <div class="andrekobte">
+              <article>
+                <Card
+                  title="Solskins Te"
+                  oko={false}
+                  pris="52,-"
+                  vaegt="Pr. 100g"
+                  src="/img/billeder/solskinste.svg"
+                />
+              </article>
+              <article>
+                <Card
+                  title="Jule te (Christmas te)"
+                  oko={false}
+                  pris="52,-"
+                  vaegt="Pr. 100g"
+                  src="/img/billeder/julete.svg"
+                />
+              </article>
+              <article>
+                <Card
+                  title="Ingefær Te"
+                  oko={true}
+                  pris="54,-"
+                  vaegt="Pr. 100g"
+                  src="/img/billeder/ingefærte.svg"
+                />
+              </article>
+              <article>
+                <Card
+                  title="Solskins Te"
+                  oko={false}
+                  pris="52,-"
+                  vaegt="Pr. 100g"
+                  src="/img/billeder/solskinste.svg"
+                />
+              </article>
+            </div>
           </div>
         </div>
-      </div>
       </section>
       <!-- popup indsættes her -->
     </main>
@@ -349,10 +358,10 @@ import "../styles/global.css";
       background: #413c1c;
     }
     .valgvagt {
-        display: flex;
-        gap: 20px;
-        padding-top: 20px;
-      }
+      display: flex;
+      gap: 20px;
+      padding-top: 20px;
+    }
     .antal {
       display: flex;
       gap: 30px;
@@ -361,18 +370,27 @@ import "../styles/global.css";
     .h4antal {
       padding-top: 5px;
     }
+    .beskrivelse {
+      padding-bottom: 36px;
+    }
 
     .temp {
       display: flex;
       align-items: center;
+      gap: 4px;
+      margin-bottom: 8px;
     }
     .ur {
       display: flex;
       align-items: center;
+      gap: 4px;
+      margin-bottom: 8px;
     }
     .ske {
       display: flex;
       align-items: center;
+      gap: 4px;
+      margin-bottom: 8px;
     }
     /* Style the button that is used to open and close the collapsible content */
     .collapsible {
@@ -388,7 +406,7 @@ import "../styles/global.css";
     }
     /* Style the collapsible content. Note: hidden by default */
     .content {
-      padding: 10 18px;
+      padding: 18px;
       width: 100%;
       display: none;
       overflow: hidden;
@@ -397,8 +415,8 @@ import "../styles/global.css";
       border: 1px solid;
     }
     .plus {
-        text-align: right;
-      }
+      text-align: right;
+    }
     .smabilleder {
       display: flex;
       gap: 10px;
@@ -407,27 +425,44 @@ import "../styles/global.css";
       width: 100%;
     }
     .produktegenskaber {
-        display: block;
-       justify-content: left;
-        padding-top: 10px;
-        padding-bottom: 20px;
-      }
-      .h4produktegenskaber{
-        padding-top: 40px;
-      }
-      .h4valg {
-        padding-top: 30px;
-      }
-      .h4pris{
-        padding-top: 30px;
-      }
+      display: block;
+      justify-content: left;
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
 
-      .monster{
-        background-image: url(public/img/monstre/andre_kobte_ogsaa.svg);
-    grid-column: 1/4;
-    max-width: 100%;
-      }
- 
+    .h4beskrivelse {
+      padding-top: 40px;
+      margin-bottom: 12px;
+    }
+    .produktegenskaber img {
+      height: 26px;
+    }
+    .h4produktegenskaber {
+      padding-top: 40px;
+    }
+    .h4valg {
+      padding-top: 30px;
+    }
+    .h4pris {
+      padding-top: 30px;
+    }
+
+    .monster {
+      background-image: url(public/img/monstre/andre_kobte_ogsaa.svg);
+      grid-column: 1/4;
+      max-width: 100%;
+    }
+    .knap_collaps {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .knap_collaps button {
+      background-color: transparent;
+      border: none;
+    }
+
     /* desktop */
     @media (min-width: 600px) {
       .h1desktop {
@@ -442,7 +477,7 @@ import "../styles/global.css";
         gap: 50px;
         padding: 10px;
       }
-     
+
       .valgvagt {
         display: flex;
         gap: 50px;
@@ -453,13 +488,14 @@ import "../styles/global.css";
       }
       .h4beskrivelse {
         padding-top: 90px;
+        margin-bottom: 12px;
       }
       .produktegenskaber {
         display: flex;
         padding-top: 10px;
         gap: 10px;
       }
-      .h4produktegenskaber{
+      .h4produktegenskaber {
         padding-top: 40px;
       }
       .collapsible {
@@ -482,23 +518,22 @@ import "../styles/global.css";
         border-color: #413c1c;
         border: 1px solid;
       }
-      .plus {
-     
-      }
-      .andrekobte{
+
+      .andrekobte {
         display: flex;
         gap: 20px;
         justify-content: center;
         padding-bottom: 50px;
         padding-top: 30px;
+        place-content: space-between;
       }
-.knap{
-  padding-top: 50px;
-}
-.h4pris{
+      .knap {
+        padding-top: 50px;
+      }
+      .h4pris {
         padding-top: 1px;
       }
-      .divandre{
+      .divandre {
         display: grid;
         grid-column: 2/3;
         padding-top: 60px;
