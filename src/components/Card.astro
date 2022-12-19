@@ -26,8 +26,8 @@ const { href, title, oko, pris, src, vaegt } = Astro.props;
 
 <style>
   article {
-    height: 280px;
-    width: 230px;
+    height: 400px;
+    width: 360px;
     background-color: var(--color-mork-gron-110);
     border-radius: 20px;
     border: none;
@@ -39,7 +39,7 @@ const { href, title, oko, pris, src, vaegt } = Astro.props;
   }
   #produktbillede {
     display: grid;
-    width: 230px;
+    width: 360px;
   }
 
   .billede1 {
@@ -48,7 +48,7 @@ const { href, title, oko, pris, src, vaegt } = Astro.props;
     border-top-right-radius: 20px;
   }
   .billede2 {
-    padding-top: 180px;
+    padding-top: 300px;
   }
 
   .omrode {
@@ -76,9 +76,27 @@ const { href, title, oko, pris, src, vaegt } = Astro.props;
     margin-left: 20px;
   }
   .textfelt img {
-    margin-left: 60px;
+    margin-left: 190px;
   }
   article:hover {
     background-color: var(--color-rodbrun);
+  }
+
+  @media (min-width: 800px) {
+    article {
+      height: 280px;
+      width: 230px;
+    }
+
+    #produktbillede {
+      display: grid;
+      width: 230px;
+    }
+    .textfelt img {
+      margin-left: 60px;
+    }
+    .billede2 {
+      padding-top: 180px;
+    }
   }
 </style>
