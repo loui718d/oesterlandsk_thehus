@@ -57,7 +57,7 @@ import "../styles/global.css";
             <div class="indhold">
             <h1 class="h1desktop">Lakrids Te</h1>
             <!--  skal vises i desktop -->
-            <h4>Pris: 56,00 DKK</h4>
+            <h4 class="h4pris">Pris: 56,00 DKK</h4>
             <div class="valgvagt">
               <div><h5 class="h4valg">Vælg vægt:</h5></div>
               <div class="label">
@@ -83,7 +83,7 @@ import "../styles/global.css";
                   </label>
                 </div>
                 <div class="container1">
-                  <label for="" class="body2">100g</label>
+                  <label for="" class="body2">1000g</label>
                   <label class="container">
                     <input type="radio" name="radio" />
                     <span class="checkmark"></span>
@@ -149,7 +149,7 @@ import "../styles/global.css";
 
                 <button type="button" class="collapsible"
                   >Smag <img
-                    class="plus1"
+                    class="plus"
                     src="public/img/ikoner_logo/plus.svg"
                     alt="plus"
                   />
@@ -167,7 +167,7 @@ import "../styles/global.css";
 
                 <button type="button" class="collapsible"
                   >Brygning <img
-                    class="plus2"
+                    class="plus"
                     src="public/img/ikoner_logo/plus.svg"
                     alt="plus"
                   />
@@ -184,7 +184,7 @@ import "../styles/global.css";
 
                 <button type="button" class="collapsible"
                   >Mere te fra samme hylde <img
-                    class="plus3"
+                    class="plus"
                     src="public/img/ikoner_logo/plus.svg"
                     alt="plus"
                   />
@@ -205,7 +205,8 @@ import "../styles/global.css";
      
       <section class="monster">
         <div class="main">
-        <h3>Andre købte også:</h3><div>
+         <div class="divandre">
+          <h3>Andre købte også:</h3>
           <div class="andrekobte">
             <article><Card
               title="Solskins Te"
@@ -347,6 +348,11 @@ import "../styles/global.css";
       border-radius: 50%;
       background: #413c1c;
     }
+    .valgvagt {
+        display: flex;
+        gap: 20px;
+        padding-top: 20px;
+      }
     .antal {
       display: flex;
       gap: 30px;
@@ -391,17 +397,8 @@ import "../styles/global.css";
       border: 1px solid;
     }
     .plus {
-      padding-left: 30%;
-    }
-    .plus1 {
-      padding-left: 68%;
-    }
-    .plus2 {
-      padding-left: 56%;
-    }
-    .plus3 {
-      padding-left: 10%;
-    }
+        text-align: right;
+      }
     .smabilleder {
       display: flex;
       gap: 10px;
@@ -411,12 +408,24 @@ import "../styles/global.css";
     }
     .produktegenskaber {
         display: block;
+       justify-content: left;
         padding-top: 10px;
-        gap: 10px;
         padding-bottom: 20px;
       }
       .h4produktegenskaber{
         padding-top: 40px;
+      }
+      .h4valg {
+        padding-top: 30px;
+      }
+      .h4pris{
+        padding-top: 30px;
+      }
+
+      .monster{
+        background-image: url(public/img/monstre/andre_kobte_ogsaa.svg);
+    grid-column: 1/4;
+    max-width: 100%;
       }
  
     /* desktop */
@@ -474,16 +483,7 @@ import "../styles/global.css";
         border: 1px solid;
       }
       .plus {
-        padding-left: 50%;
-      }
-      .plus1 {
-        padding-left: 78%;
-      }
-      .plus2 {
-        padding-left: 69%;
-      }
-      .plus3 {
-        padding-left: 36%;
+     
       }
       .andrekobte{
         display: flex;
@@ -495,6 +495,15 @@ import "../styles/global.css";
 .knap{
   padding-top: 50px;
 }
+.h4pris{
+        padding-top: 1px;
+      }
+      .divandre{
+        display: grid;
+        grid-column: 2/3;
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
     }
   </style>
   <script>
