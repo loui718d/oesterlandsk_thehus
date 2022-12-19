@@ -103,8 +103,15 @@ import "../styles/global.css";
                 />
               </div>
             </div>
-            <div class="knap">
+            <div id="myBtn" class="knap">
               <a class="secondary_lg a" href="kurv.html">Tilføj til kurv</a>
+            </div>
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+              </div>
             </div>
 
             <h4 class="h4produktegenskaber">Produktegenskaber:</h4>
@@ -462,6 +469,8 @@ import "../styles/global.css";
       background-color: transparent;
       border: none;
     }
+
+    /* pop-up */
 
     /* desktop */
     @media (min-width: 600px) {
