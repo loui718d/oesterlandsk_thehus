@@ -74,200 +74,200 @@ import "../styles/global.css";
     </main>
     <Footer />
   </body>
-  <style>
-    .brodkrumme {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      grid-column: 2/3;
-      padding-left: 36px;
-      padding-right: 36px;
-      gap: 4px;
-    }
-    .brodkrumme img,
-    .tilbage img {
-      height: 16px;
-    }
-    .brodkrumme a,
-    .tilbage a {
-      font-family: "EB Garamond", serif;
-      font-size: var(--font-size-web-body1-label);
-      color: var(--color-oliven);
-      line-height: var(--line-height-web-body1);
-      font-weight: var(--font-weight-body-bold);
-    }
-    /* frem og tilbage knapper */
-    .knapper {
-      display: flex;
-      gap: 26px;
-      place-content: center;
-      grid-column: 2/3;
-      margin-bottom: 46px;
-    }
-    .tilbage {
-      display: flex;
-      align-items: center;
-    }
+</html>
+<style>
+  .brodkrumme {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-column: 2/3;
+    padding-left: 36px;
+    padding-right: 36px;
+    gap: 4px;
+  }
+  .brodkrumme img,
+  .tilbage img {
+    height: 16px;
+  }
+  .brodkrumme a,
+  .tilbage a {
+    font-family: "EB Garamond", serif;
+    font-size: var(--font-size-web-body1-label);
+    color: var(--color-oliven);
+    line-height: var(--line-height-web-body1);
+    font-weight: var(--font-weight-body-bold);
+  }
+  /* frem og tilbage knapper */
+  .knapper {
+    display: flex;
+    gap: 26px;
+    place-content: center;
+    grid-column: 2/3;
+    margin-bottom: 46px;
+  }
+  .tilbage {
+    display: flex;
+    align-items: center;
+  }
 
+  h1 {
+    margin-top: 36px;
+    grid-column: 2/3;
+    margin-bottom: 20px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  h4 {
+    margin-top: 40px;
+  }
+  .bekraeft1 {
+    display: block;
+    margin-top: 40px;
+  }
+  .bekraeft1 img {
+    max-width: 350px;
+  }
+  .bekraeft2 {
+    display: none;
+  }
+
+  .levering_info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+    margin-top: 16px;
+  }
+
+  .section1 {
+    margin-bottom: 40px;
+  }
+  .levering_info img {
+    height: 22px;
+  }
+  .dit_koeb {
+    margin-top: 40px;
+  }
+
+  /* The container */
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    place-items: baseline;
+  }
+
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: #413c1c;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ffffff;
+  }
+
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #ffffff;
+  }
+
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #413c1c;
+  }
+  .label {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  /* desktop */
+  @media (min-width: 600px) {
     h1 {
       margin-top: 36px;
       grid-column: 2/3;
       margin-bottom: 20px;
-      padding-left: 36px;
-      padding-right: 36px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .brodkrumme {
+      padding-left: 0px;
+    }
+    .baggrund {
+      background-image: url(public/img/monstre/monster_betalingsflow.svg);
     }
     h4 {
-      margin-top: 40px;
-    }
-    .bekraeft1 {
-      display: block;
-      margin-top: 40px;
-    }
-    .bekraeft1 img {
-      max-width: 350px;
-    }
-    .bekraeft2 {
-      display: none;
-    }
-
-    .levering_info {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 4px;
-      margin-top: 16px;
+      margin-top: 0px;
     }
 
     .section1 {
-      margin-bottom: 40px;
-    }
-    .levering_info img {
-      height: 22px;
-    }
-    .dit_koeb {
-      margin-top: 40px;
-    }
-
-    /* The container */
-    .container {
-      display: block;
-      position: relative;
-      padding-left: 35px;
-      margin-bottom: 12px;
-      cursor: pointer;
-      font-size: 22px;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    .container1 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 25px;
-      place-items: baseline;
+      grid-column: 2/3;
+      margin-top: 20px;
+      margin-bottom: 40px;
     }
 
-    /* Hide the browser's default radio button */
-    .container input {
-      position: absolute;
-      opacity: 0;
-      cursor: pointer;
+    main {
+      margin: 60px;
+      margin-top: 0px;
     }
-
-    /* Create a custom radio button */
-    .checkmark {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 25px;
-      width: 25px;
-      background-color: #eee;
-      border-radius: 50%;
-      border: #413c1c;
-      border-style: solid;
-      border-width: 1px;
+  }
+  @media (min-width: 1200px) {
+    main {
+      margin: 0px;
     }
-
-    /* On mouse-over, add a grey background color */
-    .container:hover input ~ .checkmark {
-      background-color: #ffffff;
-    }
-
-    /* When the radio button is checked, add a blue background */
-    .container input:checked ~ .checkmark {
-      background-color: #ffffff;
-    }
-
-    /* Create the indicator (the dot/circle - hidden when not checked) */
-    .checkmark:after {
-      content: "";
-      position: absolute;
+    .bekraeft1 {
       display: none;
     }
-
-    /* Show the indicator (dot/circle) when checked */
-    .container input:checked ~ .checkmark:after {
+    .bekraeft2 {
       display: block;
     }
-
-    /* Style the indicator (dot/circle) */
-    .container .checkmark:after {
-      top: 4px;
-      left: 4px;
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      background: #413c1c;
-    }
-    .label {
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
-
-    /* desktop */
-    @media (min-width: 600px) {
-      h1 {
-        margin-top: 36px;
-        grid-column: 2/3;
-        margin-bottom: 20px;
-        padding-left: 0px;
-        padding-right: 0px;
-      }
-      .brodkrumme {
-        padding-left: 0px;
-      }
-      .baggrund {
-        background-image: url(public/img/monstre/monster_betalingsflow.svg);
-      }
-      h4 {
-        margin-top: 0px;
-      }
-
-      .section1 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column: 2/3;
-        margin-top: 20px;
-        margin-bottom: 40px;
-      }
-
-      main {
-        margin: 60px;
-        margin-top: 0px;
-      }
-    }
-    @media (min-width: 1200px) {
-      main {
-        margin: 0px;
-      }
-      .bekraeft1 {
-        display: none;
-      }
-      .bekraeft2 {
-        display: block;
-      }
-    }
-  </style>
-</html>
+  }
+</style>
