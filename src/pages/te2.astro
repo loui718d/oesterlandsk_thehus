@@ -43,15 +43,13 @@ import "../styles/global.css";
           </div>
           <div>
             <a href="te2.html">
-            <img src="/img/Billeder/daaser_valg.svg" alt="dåser te" /></a><h5>
-              Dåser
-            </h5>
+              <img src="/img/Billeder/daaser_valg.svg" alt="dåser te" />
+            </a><h5>Dåser</h5>
           </div>
           <div>
             <a href="te3.html">
-            <img src="/img/Billeder/tebreve_valg.svg" alt="Tebreve" /></a><h5>
-              Tebreve
-            </h5>
+              <img src="/img/Billeder/tebreve_valg.svg" alt="Tebreve" />
+            </a><h5>Tebreve</h5>
           </div>
         </div>
       </section>
@@ -95,62 +93,61 @@ import "../styles/global.css";
               src="/img/billeder/coolmint.svg"
             />
             <Card
-            title="Lakrids Te"
-            oko={false}
-            pris="149,-"
-            vaegt="En dåse"
-            src="/img/billeder/ladridsd.svg"
-          />
-          <Card
-            title="Sweet Lemon Te"
-            oko={false}
-            pris="149,-"
-            vaegt="En dåse"
-            src="/img/billeder/sweetlemond.svg"
-          />
-          <Card
-            title="Grøn Ingefær Te"
-            oko={false}
-            pris="149,-"
-            vaegt="En dåse"
-            src="/img/billeder/groningefaerd.svg"
-          />
-          <Card
-          title="HC Andersen Te Blend"
-          oko={false}
-          pris="149,-"
-          vaegt="En dåse"
-          src="/img/billeder/hcandersend.svg"
-        />
-        <Card
-          title="Lady Grey Te"
-          oko={false}
-          pris="149,-"
-          vaegt="En dåse"
-          src="/img/billeder/ladygreyd.svg"
-        />
-        <Card
-        title="Strawberry Cream"
-        oko={false}
-        pris="149,-"
-        vaegt="En dåse"
-        src="/img/billeder/strawberrycreamd.svg"
-      />
-      <Card
-      title="Solskins Te"
-      oko={false}
-      pris="149,-"
-      vaegt="En dåse"
-      src="/img/billeder/solskinsted.svg"
-    />
-    <Card
-    title="Harlekin Te"
-    oko={false}
-    pris="149,-"
-    vaegt="En dåse"
-    src="/img/billeder/harlekind.svg"
-  />
-        
+              title="Lakrids Te"
+              oko={false}
+              pris="149,-"
+              vaegt="En dåse"
+              src="/img/billeder/ladridsd.svg"
+            />
+            <Card
+              title="Sweet Lemon Te"
+              oko={false}
+              pris="149,-"
+              vaegt="En dåse"
+              src="/img/billeder/sweetlemond.svg"
+            />
+            <Card
+              title="Grøn Ingefær Te"
+              oko={false}
+              pris="149,-"
+              vaegt="En dåse"
+              src="/img/billeder/groningefaerd.svg"
+            />
+            <Card
+              title="HC Andersen Te Blend"
+              oko={false}
+              pris="149,-"
+              vaegt="En dåse"
+              src="/img/billeder/hcandersend.svg"
+            />
+            <Card
+              title="Lady Grey Te"
+              oko={false}
+              pris="149,-"
+              vaegt="En dåse"
+              src="/img/billeder/ladygreyd.svg"
+            />
+            <Card
+              title="Strawberry Cream"
+              oko={false}
+              pris="149,-"
+              vaegt="En dåse"
+              src="/img/billeder/strawberrycreamd.svg"
+            />
+            <Card
+              title="Solskins Te"
+              oko={false}
+              pris="149,-"
+              vaegt="En dåse"
+              src="/img/billeder/solskinsted.svg"
+            />
+            <Card
+              title="Harlekin Te"
+              oko={false}
+              pris="149,-"
+              vaegt="En dåse"
+              src="/img/billeder/harlekind.svg"
+            />
           </div>
           <div class="end">
             <div class="liste">
@@ -357,7 +354,7 @@ import "../styles/global.css";
       padding-left: 40px;
     }
     /* desktop */
-    @media (min-width: 600px) {
+    @media (min-width: 700px) {
       .brodkrumme {
         grid-column: 2/3;
       }
@@ -376,8 +373,9 @@ import "../styles/global.css";
         grid-template-columns: 1fr 3fr;
       }
       .filter2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        place-content: space-between;
       }
 
       .card_grid {
@@ -387,13 +385,15 @@ import "../styles/global.css";
         gap: 30px;
         margin-top: 60px;
       }
-      .dropdown {
-        margin-top: 0px;
-        margin-left: 180px;
-      }
 
       .liste h5 {
         padding-top: 0px;
+      }
+    }
+
+    @media (min-width: 1000px) {
+      .dropdown {
+        margin-top: 0px;
       }
     }
   </style>

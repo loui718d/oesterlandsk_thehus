@@ -43,15 +43,13 @@ import "../styles/global.css";
           </div>
           <div>
             <a href="te2.html">
-            <img src="/img/Billeder/daaser_valg.svg" alt="dåser te" /></a><h5>
-              Dåser
-            </h5>
+              <img src="/img/Billeder/daaser_valg.svg" alt="dåser te" />
+            </a><h5>Dåser</h5>
           </div>
           <div>
             <a href="te3.html">
-            <img src="/img/Billeder/tebreve_valg.svg" alt="Tebreve" /></a><h5>
-              Tebreve
-            </h5>
+              <img src="/img/Billeder/tebreve_valg.svg" alt="Tebreve" />
+            </a><h5>Tebreve</h5>
           </div>
         </div>
       </section>
@@ -95,7 +93,7 @@ import "../styles/global.css";
               vaegt="Pr. 100g"
               src="/img/billeder/lakridste.svg"
             />
-        
+
             <Card
               title="Cool Mint Te"
               oko={false}
@@ -111,49 +109,47 @@ import "../styles/global.css";
               src="/img/billeder/sweetlemon.svg"
             />
             <Card
-            title="Dragon Mint Te"
-            oko={true}
-            pris="58,-"
-            vaegt="Pr. 100g"
-            src="/img/billeder/loes_te_valg.svg"
-          />
-          <Card
-            title="Tiger Mint Te"
-            oko={false}
-            pris="54,-"
-            vaegt="Pr. 100g"
-            src="/img/billeder/tigermint.svg"
-          />
-          <Card
-            title="Caribien Dream Te"
-            oko={true}
-            pris="54,-"
-            vaegt="Pr. 100g"
-            src="/img/billeder/caribien.svg"
-          />
-          <Card
-            title="Godnat Te"
-            oko={false}
-            pris="54,-"
-            vaegt="Pr. 100g"
-            src="/img/billeder/godnat.svg"
-          />
-          <Card
-            title="Double Ginger Happiness Te"
-            oko={true}
-            pris="59,-"
-            vaegt="Pr. 100g"
-            src="/img/billeder/dginger.svg"
-          />
-          <Card
-          title="Kamille Blomst Te"
-          oko={true}
-          pris="52,-"
-          vaegt="Pr. 100g"
-          src="/img/billeder/kamille.svg"
-        />
-          
-           
+              title="Dragon Mint Te"
+              oko={true}
+              pris="58,-"
+              vaegt="Pr. 100g"
+              src="/img/billeder/loes_te_valg.svg"
+            />
+            <Card
+              title="Tiger Mint Te"
+              oko={false}
+              pris="54,-"
+              vaegt="Pr. 100g"
+              src="/img/billeder/tigermint.svg"
+            />
+            <Card
+              title="Caribien Dream Te"
+              oko={true}
+              pris="54,-"
+              vaegt="Pr. 100g"
+              src="/img/billeder/caribien.svg"
+            />
+            <Card
+              title="Godnat Te"
+              oko={false}
+              pris="54,-"
+              vaegt="Pr. 100g"
+              src="/img/billeder/godnat.svg"
+            />
+            <Card
+              title="Double Ginger Happiness Te"
+              oko={true}
+              pris="59,-"
+              vaegt="Pr. 100g"
+              src="/img/billeder/dginger.svg"
+            />
+            <Card
+              title="Kamille Blomst Te"
+              oko={true}
+              pris="52,-"
+              vaegt="Pr. 100g"
+              src="/img/billeder/kamille.svg"
+            />
           </div>
           <div class="end">
             <div class="liste">
@@ -360,7 +356,7 @@ import "../styles/global.css";
       padding-left: 40px;
     }
     /* desktop */
-    @media (min-width: 600px) {
+    @media (min-width: 700px) {
       .brodkrumme {
         grid-column: 2/3;
       }
@@ -379,8 +375,9 @@ import "../styles/global.css";
         grid-template-columns: 1fr 3fr;
       }
       .filter2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        place-content: space-between;
       }
 
       .card_grid {
@@ -390,13 +387,15 @@ import "../styles/global.css";
         gap: 30px;
         margin-top: 60px;
       }
-      .dropdown {
-        margin-top: 0px;
-        margin-left: 180px;
-      }
 
       .liste h5 {
         padding-top: 0px;
+      }
+    }
+
+    @media (min-width: 1000px) {
+      .dropdown {
+        margin-top: 0px;
       }
     }
   </style>
