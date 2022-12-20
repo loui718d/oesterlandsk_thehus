@@ -29,7 +29,9 @@ import "../styles/global.css";
     <div class="checkbox"></div><h5>Rooibos & Honeybush</h5><p>(11)</p>
   </div>
   <div class="tesort">
-    <div class="checkbox"></div><h5>Urte- og frugtte</h5><p>(23)</p>
+    <a class="urtete" href="urtete.html">
+      <div class="checkbox"></div><h5>Urte- og frugtte</h5>
+    </a><p>(23)</p>
   </div>
   <div class="tesort">
     <div class="checkbox"></div><h5>Chai</h5><p>(4)</p>
@@ -77,6 +79,11 @@ import "../styles/global.css";
   }
   p {
     color: var(--color-oliven-80);
+  }
+  .urtete {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
   }
 
   @media (min-width: 800px) {

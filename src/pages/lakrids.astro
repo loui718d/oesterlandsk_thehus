@@ -108,16 +108,17 @@ import "../styles/global.css";
             <div id="myModal" class="modal">
               <!-- Modal content -->
               <div class="modal-content">
-                <div>
+                <div class="overskrift">
                   <h3>Inkøbskurv</h3>
                   <img
                     class="close"
                     src="public/img/ikoner_logo/X.svg"
                     alt=""
                   />
-                </div><div>
+                </div>
+                <div>
                   <div>
-                    <div>
+                    <div class="oversigt">
                       <img
                         src="public/img/billeder/lakrids_lille_billede.svg"
                         alt=""
@@ -128,9 +129,11 @@ import "../styles/global.css";
                   </div>
                   <div><img src="" alt="" /></div>
                 </div>
-                <div>
-                  <div><h3></h3><h4></h4></div>
-                  <div><a href=""></a></div>
+                <div class="oversigt2">
+                  <div class="subtotal">
+                    <h3>Subtotal</h3><h4>56,00 DKK</h4>
+                  </div>
+                  <div><a class="primary_lg a">Se kurv</a></div>
                 </div>
               </div>
             </div>
@@ -507,10 +510,9 @@ import "../styles/global.css";
 
     /* Modal Content/Box */
     .modal-content {
-      background-color: #fefefe;
+      background-color: var(--color-creme-70);
       z-index: 20;
       padding: 20px;
-      border: 1px solid #888;
       width: 450px; /* Full width */
       height: 800px; /* Full height */
     }
