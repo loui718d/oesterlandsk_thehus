@@ -2,6 +2,7 @@
 import Backtotop from "../components/backtotop.astro";
 import Card from "../components/Card.astro";
 import Filter from "../components/Filter.astro";
+import Filter2 from "../components/Filter2.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import "../styles/global.css";
@@ -38,7 +39,7 @@ import "../styles/global.css";
       <Backtotop />
       <section class="filter">
         <div class="">
-          <Filter />
+          <Filter2 />
         </div>
         <div>
           <div class="filter2">
@@ -69,69 +70,48 @@ import "../styles/global.css";
             <!-- cards indsættes her -->
 
             <Card
-              title="Grøn Valnød Te"
+              title="Colombia Golden Huila"
               oko={false}
-              pris="52,-"
-              vaegt="Pr. 100g"
-              src="/img/billeder/grønvalnødte.svg"
+              pris="85,-"
+              vaegt="Pr. 250g"
+              src="/img/billeder/colombia.svg"
             />
 
             <Card
-              title="Lakrids Te"
+              title="Black Stash Specialty"
               oko={false}
-              pris="149,-"
-              vaegt="En dåse"
-              src="/img/billeder/ladridsd.svg"
+              pris="89,-"
+              vaegt="Pr. 250g"
+              src="/img/billeder/black_stash.svg"
             />
 
             <Card
-              title="Ingefær Te"
+              title="Dragonelli Superiore"
+              oko={false}
+              pris="99,-"
+              vaegt="Pr. 250g"
+              src="/img/billeder/dragonelli.svg"
+            />
+            <Card
+              title="Peru Chanchamayo"
               oko={true}
-              pris="54,-"
-              vaegt="Pr. 100g"
-              src="/img/billeder/ingefærte.svg"
+              pris="75,-"
+              vaegt="Pr. 250g"
+              src="/img/billeder/peru.svg"
             />
             <Card
-              title="Kiss Me Quick"
+              title="Roasters Espresso"
               oko={false}
-              pris="85,-"
-              vaegt="12 stk."
-              src="/img/billeder/brevkiss.svg"
+              pris="79,-"
+              vaegt="Pr. 250g"
+              src="/img/billeder/roasters.svg"
             />
             <Card
-              title="Prins Wlademir Te"
-              oko={false}
-              pris="56,-"
-              vaegt="Pr. 100g"
-              src="/img/billeder/prinswlademirte.svg"
-            />
-            <Card
-              title="HC Andersen Te Blend"
-              oko={false}
-              pris="149,-"
-              vaegt="En dåse"
-              src="/img/billeder/hcandersend.svg"
-            />
-            <Card
-              title="Sweet lemon"
-              oko={false}
-              pris="54,-"
-              vaegt="Pr. 100g"
-              src="/img/billeder/sweetlemon.svg"
-            />
-            <Card
-              title="Colombine Te"
-              oko={false}
-              pris="85,-"
-              vaegt="12 stk."
-              src="/img/billeder/brevcolombine.svg"
-            />
-            <Card
-              title="HC Andersen blend"
-              oko={false}
-              pris="54,-"
-              vaegt="Pr. 100g"
-              src="/img/billeder/hcandersen.svg"
+              title="Indonesia Coffcak"
+              oko={true}
+              pris="80,-"
+              vaegt="Pr. 250g"
+              src="/img/billeder/indonesia.svg"
             />
           </div>
           <div class="end">
@@ -338,6 +318,9 @@ import "../styles/global.css";
     .droptrekant {
       padding-left: 40px;
     }
+    .filter {
+      margin-top: 30px;
+    }
     /* desktop */
     @media (min-width: 700px) {
       .brodkrumme {
@@ -356,6 +339,7 @@ import "../styles/global.css";
       .filter {
         display: grid;
         grid-template-columns: 1fr 3fr;
+        margin-top: 60px;
       }
       .filter2 {
         display: flex;
