@@ -85,36 +85,39 @@ import "../styles/global.css";
               placeholder="eks. Anders Andersen"
             />
 
-            <label class="body1b" for="lname">Email</label>
+            <label class="body1b" for="email">Email</label>
             <input
               class="body2"
               type="text"
-              id="lname"
-              name="lastname"
+              id="email"
+              name="email"
               placeholder="eks. anders@andersen.com"
             />
 
-            <label class="body1b" for="lname">Emne</label>
+            <label class="body1b" for="emne">Emne</label>
             <input
               class="body2"
               type="text"
-              id="lname"
-              name="lastname"
+              id="emne"
+              name="emne"
               placeholder="eks. returnering"
             />
 
-            <label class="body1b" for="fname"
+            <label class="body1b" for="valg"
               >Privatkunde/webshop henvendelser</label
             >
             <select class="body2" id="privat/webshop" name="privat/webshop">
-              <option value="vælg">Vælg</option>
+              <option value="valg">Vælg</option>
               <option value="privatkunde">Privatkunde</option>
               <option value="webshop">Webshop henvendelser</option>
             </select>
+            <label class="body1b" for="besked"
+            >Skriv her hvad din henvendelse drejer sig om</label
+          >
             <textarea
               class="body2"
-              id="subject"
-              name="subject"
+              id="besked"
+              name="besked"
               placeholder="Skriv din besked her.."
               style="height:200px"></textarea>
           </form>
@@ -219,6 +222,15 @@ import "../styles/global.css";
       h1 {
         margin-bottom: 46px;
         text-align: center;
+      }
+      main {
+        margin: 60px;
+        margin-top: 0px;
+      }
+    }
+    @media (min-width: 1200px) {
+      main {
+        margin: 0px;
       }
     }
   </style>
