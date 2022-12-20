@@ -54,10 +54,10 @@ const { href, title, oko, pris, src, vaegt } = Astro.props;
     z-index: 4;
   }
 
-  /* .produktbillede2 {
+  .produktbillede2 {
     display: grid;
-    justify-items: start;
-  } */
+    grid-template-columns: 1fr;
+  }
 
   .billede1 {
     border-top-left-radius: 20px;
@@ -67,7 +67,7 @@ const { href, title, oko, pris, src, vaegt } = Astro.props;
     position: absolute;
     left: 0px;
     top: 0px;
-    z-index: -1;
+    z-index: 0;
   }
   .billede2 {
     padding-top: 100px;
@@ -77,10 +77,11 @@ const { href, title, oko, pris, src, vaegt } = Astro.props;
     grid-area: 1/1;
   }
   #produktbillede h5 {
-    z-index: 1;
+    z-index: 2;
     text-align: center;
     text-decoration: none;
     padding-top: 20px;
+    position: relative;
   }
   .textfelt h5 {
     color: var(--color-creme);
@@ -133,7 +134,7 @@ const { href, title, oko, pris, src, vaegt } = Astro.props;
       position: absolute;
       left: 0px;
       top: 0px;
-      z-index: -1;
+      z-index: 0;
     }
     .billede2 {
       position: absolute;
@@ -143,6 +144,7 @@ const { href, title, oko, pris, src, vaegt } = Astro.props;
     }
     #produktbillede h5 {
       margin-top: 20px;
+      z-index: 2;
     }
 
     .textfelt {

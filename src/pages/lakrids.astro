@@ -108,32 +108,36 @@ import "../styles/global.css";
             <div id="myModal" class="modal">
               <!-- Modal content -->
               <div class="modal-content">
-                <div class="overskrift">
-                  <h3>Inkøbskurv</h3>
-                  <img
-                    class="close"
-                    src="public/img/ikoner_logo/X.svg"
-                    alt=""
-                  />
-                </div>
                 <div>
+                  <div class="overskrift">
+                    <h3>Inkøbskurv</h3>
+                    <img
+                      class="close"
+                      src="public/img/ikoner_logo/X.svg"
+                      alt=""
+                    />
+                  </div>
                   <div>
-                    <div class="oversigt">
-                      <img
-                        src="public/img/billeder/lakrids_lille_billede.svg"
-                        alt=""
-                      /><div>
-                        <h5>Lakrids Te</h5><p>Mængde: 100g</p>
+                    <div>
+                      <div class="oversigt">
+                        <img
+                          src="public/img/billeder/lakrids_lille_billede.svg"
+                          alt=""
+                        /><div>
+                          <h5>Lakrids Te</h5><p>Mængde: 100g</p>
+                        </div>
                       </div>
                     </div>
+                    <div><img src="" alt="" /></div>
                   </div>
-                  <div><img src="" alt="" /></div>
                 </div>
-                <div class="oversigt2">
-                  <div class="subtotal">
-                    <h3>Subtotal</h3><h4>56,00 DKK</h4>
+                <div>
+                  <div class="oversigt2">
+                    <div class="subtotal">
+                      <h3>Subtotal</h3><h4>56,00 DKK</h4>
+                    </div>
+                    <div><a class="primary_lg a">Se kurv</a></div>
                   </div>
-                  <div><a class="primary_lg a">Se kurv</a></div>
                 </div>
               </div>
             </div>
@@ -504,7 +508,7 @@ import "../styles/global.css";
       right: 0px;
       top: 0;
       width: 450px; /* Full width */
-      height: 1000px; /* Full height */
+      height: 800px; /* Full height */
       overflow: auto; /* Enable scroll if needed */
     }
 
@@ -514,7 +518,10 @@ import "../styles/global.css";
       z-index: 20;
       padding: 20px;
       width: 450px; /* Full width */
-      height: 800px; /* Full height */
+      height: 750px; /* Full height */
+      display: flex;
+      flex-direction: column;
+      place-content: space-between;
     }
 
     /* The Close Button */
@@ -523,6 +530,16 @@ import "../styles/global.css";
       float: right;
       font-size: 28px;
       font-weight: bold;
+    }
+    .overskrift {
+      display: flex;
+      place-content: space-between;
+    }
+    .oversigt {
+      display: flex;
+    }
+    .subtotal {
+      display: flex;
     }
 
     .close:hover,
