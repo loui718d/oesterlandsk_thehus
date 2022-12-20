@@ -2,6 +2,7 @@
 import Backtotop from "../components/backtotop.astro";
 import Card from "../components/Card.astro";
 import Filter from "../components/Filter.astro";
+import Filter3 from "../components/Filter3.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import "../styles/global.css";
@@ -27,7 +28,7 @@ import "../styles/global.css";
         </p>
       </div>
       <section class="section1">
-        <div></div><h1>TE</h1><p class="body1">
+        <div></div><h1>Andre produkter</h1><p class="body1">
           Vores sortiment spænder over de fineste kvaliteter af rene sorte,
           grønne og hvide theer, de mere moderne theer tilført aroma og over til
           rooibos the, urtethe og frugt theer. Et stort udvalg af vores theer er
@@ -56,7 +57,7 @@ import "../styles/global.css";
       <Backtotop />
       <section class="filter">
         <div class="">
-          <Filter />
+          <Filter3 />
         </div>
         <div>
           <div class="filter2">
@@ -103,11 +104,11 @@ import "../styles/global.css";
             />
 
             <Card
-              title="Harlekin Bolcher"
+              title="Iste Ingefær & Lemon"
               oko={false}
-              pris="54,-"
-              vaegt="Pr. 100g"
-              src="/img/billeder/ingefærte.svg"
+              pris="149,-"
+              vaegt="Pr. 500g"
+              src="/img/billeder/iste.svg"
             />
             <Card
               title="Harlekin Bolcher"
@@ -124,11 +125,11 @@ import "../styles/global.css";
               src="/img/billeder/tefilter.svg"
             />
             <Card
-              title="HC Andersen Te Blend"
+              title="Matcha piskeris i bambus"
               oko={false}
-              pris="149,-"
-              vaegt="En dåse"
-              src="/img/billeder/hcandersend.svg"
+              pris="130,-"
+              vaegt="Pr. stk"
+              src="/img/billeder/matcha.svg"
             />
           </div>
           <div class="end">
@@ -185,10 +186,6 @@ import "../styles/global.css";
       gap: 20px;
       margin-bottom: 60px;
     }
-    .variant div {
-      height: 200px;
-      width: 200px;
-    }
 
     .card_grid {
       display: flex;
@@ -208,9 +205,14 @@ import "../styles/global.css";
       filter: drop-shadow(1px 2px 4px var(--color-creme-110));
     }
     .variant img {
-      height: 200px;
-      width: 200px;
+      height: 100px;
+      width: 100px;
       border-radius: 200px;
+    }
+    .variant div {
+      height: 100px;
+      width: 100px;
+      margin-bottom: 60px;
     }
     h3 {
       margin-top: 20px;
@@ -353,7 +355,13 @@ import "../styles/global.css";
       }
 
       .variant img {
-        max-width: 300px;
+        height: 200px;
+        width: 200px;
+        border-radius: 200px;
+      }
+      .variant div {
+        height: 200px;
+        width: 200px;
       }
       .filter {
         display: grid;
