@@ -168,6 +168,7 @@ import "../styles/global.css";
       padding-left: 36px;
       grid-column: 2/3;
       padding-right: 36px;
+      flex-wrap: wrap;
     }
     .brodkrumme img,
     .tilbage img {
@@ -249,6 +250,10 @@ import "../styles/global.css";
         display: grid;
         grid-template-columns: 1fr 1fr;
       }
+      main {
+        margin: 60px;
+        margin-top: 0px;
+      }
       .container {
         width: 80%;
       }
@@ -258,6 +263,11 @@ import "../styles/global.css";
       }
       .oversigt {
         margin-top: 0px;
+      }
+    }
+    @media (min-width: 1200px) {
+      main {
+        margin: 0px;
       }
     }
   </style>

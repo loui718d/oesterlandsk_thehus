@@ -140,6 +140,7 @@ import "../styles/global.css";
 
     .betaling {
       display: flex;
+      flex-wrap: nowrap;
       gap: 6px;
     }
 
@@ -230,6 +231,11 @@ import "../styles/global.css";
         padding-left: 0px;
         padding-right: 0px;
       }
+      .betaling {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
       .brodkrumme {
         padding-left: 0px;
       }
@@ -246,6 +252,15 @@ import "../styles/global.css";
 
         margin-top: 20px;
         margin-bottom: 20px;
+      }
+      main {
+        margin: 60px;
+        margin-top: 0px;
+      }
+    }
+    @media (min-width: 1200px) {
+      main {
+        margin: 0px;
       }
     }
   </style>
