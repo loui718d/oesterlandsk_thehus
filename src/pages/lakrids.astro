@@ -124,11 +124,10 @@ import "../styles/global.css";
                           src="public/img/billeder/lakrids_lille_billede.svg"
                           alt=""
                         /><div>
-                          <h5>Lakrids Te</h5><p>Mængde: 100g</p>
+                          <h5>Lakrids Te</h5><p class="body1">Mængde: 100g</p>
                         </div>
                       </div>
                     </div>
-                    <div><img src="" alt="" /></div>
                   </div>
                 </div>
                 <div>
@@ -136,7 +135,9 @@ import "../styles/global.css";
                     <div class="subtotal">
                       <h3>Subtotal</h3><h4>56,00 DKK</h4>
                     </div>
-                    <div><a class="primary_lg a">Se kurv</a></div>
+                    <div>
+                      <a class="primary_lg a" href="kurv.html">Se kurv</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -497,6 +498,7 @@ import "../styles/global.css";
     .knap_collaps button {
       background-color: transparent;
       border: none;
+      color: #413c1c;
     }
 
     /* pop-up */
@@ -535,12 +537,35 @@ import "../styles/global.css";
     .overskrift {
       display: flex;
       place-content: space-between;
+      margin-bottom: 10px;
     }
     .oversigt {
       display: flex;
+      border-top: 1px solid var(--color-oliven);
+      padding-top: 10px;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .oversigt2 {
+      display: grid;
+      justify-items: stretch;
+    }
+
+    .primary_lg {
+      margin-left: 40px;
+      margin-bottom: 30px;
     }
     .subtotal {
       display: flex;
+      align-items: center;
+      place-content: space-between;
+      margin-bottom: 20px;
+      border-top: 1px solid var(--color-oliven);
+      padding-top: 10px;
+    }
+    #myBtn {
+      margin-top: 20px;
     }
 
     .close:hover,
@@ -562,6 +587,9 @@ import "../styles/global.css";
         grid-template-columns: 1fr 1fr;
         gap: 50px;
         padding: 10px;
+      }
+      .primary_lg {
+        margin-left: 25px;
       }
 
       .valgvagt {
