@@ -104,8 +104,43 @@ import "../styles/global.css";
                 />
               </div>
             </div>
-            <div class="knap">
-              <a class="secondary_lg a" href="kurv.html">Tilføj til kurv</a>
+            <button id="myBtn" class="secondary_lg a">Læg i kurv</button>
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div>
+                  <div class="overskrift">
+                    <h3>Inkøbskurv</h3>
+                    <img
+                      class="close"
+                      src="public/img/ikoner_logo/X.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <div>
+                      <div class="oversigt">
+                        <img
+                          src="public/img/billeder/lakrids_lille_billede.svg"
+                          alt=""
+                        /><div>
+                          <h5>Lakrids Te</h5><p class="body1">Mængde: 100g</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="oversigt2">
+                    <div class="subtotal">
+                      <h3>Subtotal</h3><h4>56,00 DKK</h4>
+                    </div>
+                    <div>
+                      <a class="primary_lg a" href="kurv.html">Se kurv</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <h4 class="h4produktegenskaber">Produktegenskaber:</h4>
@@ -455,10 +490,76 @@ import "../styles/global.css";
       display: flex;
       align-items: center;
       justify-content: space-between;
+      color: #413c1c;
     }
     .knap_collaps button {
       background-color: transparent;
       border: none;
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 19; /* Sit on top */
+      right: 0px;
+      top: 0;
+      width: 450px; /* Full width */
+      height: 800px; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: var(--color-creme-70);
+      z-index: 20;
+      padding: 20px;
+      width: 450px; /* Full width */
+      height: 750px; /* Full height */
+      display: flex;
+      flex-direction: column;
+      place-content: space-between;
+    }
+
+    /* The Close Button */
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .overskrift {
+      display: flex;
+      place-content: space-between;
+      margin-bottom: 10px;
+    }
+    .oversigt {
+      display: flex;
+      border-top: 1px solid var(--color-oliven);
+      padding-top: 10px;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .oversigt2 {
+      display: grid;
+      justify-items: stretch;
+    }
+
+    .primary_lg {
+      margin-left: 40px;
+      margin-bottom: 30px;
+    }
+    .subtotal {
+      display: flex;
+      align-items: center;
+      place-content: space-between;
+      margin-bottom: 20px;
+      border-top: 1px solid var(--color-oliven);
+      padding-top: 10px;
+    }
+    #myBtn {
+      margin-top: 20px;
     }
 
     /* desktop */
@@ -554,5 +655,30 @@ import "../styles/global.css";
         }
       });
     }
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function () {
+      modal.style.display = "block";
+    };
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
   </script>
 </html>
