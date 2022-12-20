@@ -266,10 +266,6 @@ import "../styles/global.css";
           padding-top: 0px;
         }
 
-        .container2 {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-        }
         .produktnavn {
           margin-left: -400px;
         }
@@ -291,6 +287,7 @@ import "../styles/global.css";
           display: flex;
           gap: 120px;
           justify-content: space-between;
+          flex-wrap: wrap;
         }
 
         .kategorier {
@@ -306,6 +303,12 @@ import "../styles/global.css";
 
         .subtotal1 {
           order: 2;
+        }
+      }
+      @media (min-width: 800px) {
+        .container2 {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
         }
         .knapper {
           display: flex;
